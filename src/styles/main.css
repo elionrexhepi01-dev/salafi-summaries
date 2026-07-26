@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-serif-title {
+  font-family: "Playfair Display", serif;
+}
+.font-serif-sub {
+  font-family: "Cormorant Garamond", serif;
+}
+.font-sans-body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade-in {
+  animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+/* Hero Stagger Delays */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.3s;
+}
+.delay-300 {
+  animation-delay: 0.5s;
+}
+.delay-400 {
+  animation-delay: 0.7s;
+}
+.delay-500 {
+  animation-delay: 0.9s;
+}
+
+/* Scroll Observer Base State */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

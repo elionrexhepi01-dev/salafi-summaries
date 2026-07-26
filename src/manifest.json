@@ -1,0 +1,20 @@
+{
+  "short_name": "Manuscripts",
+  "name": "The Distilled Manuscripts",
+  "icons": [
+    {
+      "src": "/public/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/public/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1c1917",
+  "theme_color": "#1c1917",
+  "display": "standalone"
+}

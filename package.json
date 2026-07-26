@@ -1,0 +1,23 @@
+{
+  "name": "book-summaries-pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/main.css -o ./public/main.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles/main.css -o ./public/main.css --watch",
+    "start": "npm run watch:css & eleventy --serve",
+    "build": "npm run build:css && eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "autoprefixer": "^10.5.4",
+    "cssnano": "^8.0.2",
+    "postcss": "^8.5.23",
+    "tailwindcss": "^3.4.19"
+  }
+}

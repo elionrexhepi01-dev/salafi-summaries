@@ -1,0 +1,123 @@
+---
+layout: base.njk
+title: Salafi Summaries — Authentic Book Notes
+---
+
+<!-- HERO SECTION -->
+<section class="relative w-full h-screen flex flex-col justify-between items-center text-center px-4 py-8 overflow-hidden bg-[#1c1a17]">
+  
+  <!-- Hero Background Image -->
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img 
+      id="hero-bg-img"
+      src="/public/hero-bg.jpg" 
+      alt="Bookshelf background" 
+      class="w-full h-full object-cover opacity-60 transition-transform duration-100 ease-out will-change-transform scale-100"
+    />
+    <!-- Warm Vignette Gradient Fading Seamlessly into #1c1a17 -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#1c1a17]/60 via-transparent to-[#1c1a17]"></div>
+  </div>
+
+  <!-- Eyebrow Tag -->
+  <div class="relative z-10 pt-4 hero-fade-in delay-100">
+    <span class="text-[10px] sm:text-xs tracking-[0.35em] uppercase text-[#b3a898] font-medium select-none">
+      SALAFI ASCRIPTION
+    </span>
+  </div>
+
+  <!-- Hero Titles and Description -->
+  <div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center gap-2 my-auto">
+    <h1 class="text-5xl sm:text-7xl md:text-8xl font-normal italic tracking-tight text-white font-serif-title drop-shadow-md hero-fade-in delay-200">
+      Salafi
+    </h1>
+
+    <p class="text-2xl sm:text-3xl md:text-4xl tracking-[0.25em] uppercase text-[#d6b278] font-medium mt-1 font-serif-sub drop-shadow hero-fade-in delay-300">
+      SUMMARIES
+    </p>
+
+    <!-- Project Description Paragraph -->
+    <p class="text-xs sm:text-sm md:text-base text-[#ede8df] font-light max-w-xl mx-auto mt-6 leading-relaxed tracking-wide drop-shadow-sm hero-fade-in delay-400">
+      Concise summaries of authentic Islamic books upon the methodology of the Salaf.
+    </p>
+  </div>
+
+  <!-- Scroll Down Indicator -->
+  <a 
+    href="#summaries" 
+    class="relative z-10 pb-4 flex flex-col items-center gap-1.5 opacity-0 hero-fade-in delay-500 cursor-pointer group"
+  >
+    <span class="text-[9px] tracking-[0.3em] uppercase text-[#b3a898] font-light select-none group-hover:text-[#ede8df] transition-colors">
+      BEGIN YOUR JOURNEY
+    </span>
+    <svg class="w-4 h-4 text-[#b3a898] group-hover:text-[#d6b278] transition-colors animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+    </svg>
+  </a>
+
+</section>
+
+<!-- MAIN CONTENT / SUMMARIES GRID -->
+<main id="summaries" class="max-w-5xl mx-auto px-6 py-20 sm:py-28">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+    {% for summary in collections.summaries %}
+      <!-- Whole Card Clickable Link with On-Scroll Reveal -->
+      <a 
+        href="{{ summary.url }}" 
+        class="scroll-reveal group block p-8 rounded-2xl bg-[#24211e]/80 hover:bg-[#2b2724] border border-[#332e29] hover:border-[#d6b278]/40 transition-all duration-300 hover:-translate-y-1.5 active:scale-[0.98] shadow-sm hover:shadow-xl hover:shadow-black/30"
+      >
+        <div class="flex flex-col justify-between h-full">
+          <div>
+            <!-- Italic White Book Title -->
+            <h2 class="text-2xl sm:text-3xl font-serif-title italic font-normal text-white group-hover:text-[#d6b278] transition-colors duration-300">
+              {{ summary.data.title }}
+            </h2>
+            <p class="text-xs text-[#d6b278]/80 mt-2 font-medium tracking-wider uppercase">
+              By {{ summary.data.author }}
+            </p>
+            <p class="text-sm text-[#b3a898] mt-4 font-light leading-relaxed group-hover:text-[#ede8df] transition-colors duration-300 line-clamp-3">
+              {{ summary.data.description }}
+            </p>
+          </div>
+        </div>
+      </a>
+    {% else %}
+      <div class="col-span-full text-center py-16 border border-dashed border-[#332e29] rounded-2xl text-[#b3a898] font-light text-sm">
+        No summaries published yet.
+      </div>
+    {% endfor %}
+  </div>
+</main>
+
+<script>
+  // 1. Hero Image Scroll Zoom
+  const heroImg = document.getElementById('hero-bg-img');
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition < window.innerHeight) {
+      const scaleValue = 1 + (scrollPosition / window.innerHeight) * 0.08;
+      heroImg.style.transform = `scale(${scaleValue})`;
+    }
+  }, { passive: true });
+
+  // 2. Intersection Observer for On-Scroll Grid Card Fade In
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.15
+  };
+
+  const cardObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('is-visible');
+        }, (index % 2) * 150); 
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.scroll-reveal').forEach(card => {
+    cardObserver.observe(card);
+  });
+</script>
