@@ -12,22 +12,22 @@ title: Salafi Summaries — Authentic Book Notes
       id="hero-bg-img"
       src="/public/hero-bg.jpg" 
       alt="Bookshelf background" 
-      class="w-full h-full object-cover opacity-60 transition-transform duration-100 ease-out will-change-transform scale-100"
+      class="object-cover w-full h-full transition-transform duration-100 ease-out scale-100 opacity-60 will-change-transform"
     />
     <!-- Warm Vignette Gradient Fading Seamlessly into #1c1a17 -->
     <div class="absolute inset-0 bg-gradient-to-b from-[#1c1a17]/60 via-transparent to-[#1c1a17]"></div>
   </div>
 
   <!-- Eyebrow Tag -->
-  <div class="relative z-10 pt-4 hero-fade-in delay-100">
+  <div class="relative z-10 pt-4 delay-100 hero-fade-in">
     <span class="text-[10px] sm:text-xs tracking-[0.35em] uppercase text-[#b3a898] font-medium select-none">
       SALAFI ASCRIPTION
     </span>
   </div>
 
   <!-- Hero Titles and Description -->
-  <div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center gap-2 my-auto">
-    <h1 class="text-5xl sm:text-7xl md:text-8xl font-normal italic tracking-tight text-white font-serif-title drop-shadow-md hero-fade-in delay-200">
+  <div class="relative z-10 flex flex-col items-center max-w-2xl gap-2 mx-auto my-auto">
+    <h1 class="text-5xl italic font-normal tracking-tight text-white delay-200 sm:text-7xl md:text-8xl font-serif-title drop-shadow-md hero-fade-in">
       Salafi
     </h1>
 
@@ -57,8 +57,8 @@ title: Salafi Summaries — Authentic Book Notes
 </section>
 
 <!-- MAIN CONTENT / SUMMARIES GRID -->
-<main id="summaries" class="max-w-5xl mx-auto px-6 py-20 sm:py-28">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+<main id="summaries" class="max-w-5xl px-6 py-20 mx-auto sm:py-28">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 sm:gap-8">
     {% for summary in collections.summaries %}
       <!-- Whole Card Clickable Link with On-Scroll Reveal -->
       <a 
