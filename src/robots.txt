@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://salafisummaries.com/sitemap.xml
+Sitemap: https://salafisummaries.netlify.app/sitemap.xml
