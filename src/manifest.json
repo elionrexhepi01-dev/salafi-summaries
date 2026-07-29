@@ -1,6 +1,6 @@
 {
-  "short_name": "Manuscripts",
-  "name": "The Distilled Manuscripts",
+  "short_name": "Salafi",
+  "name": "Salafi Summaries",
   "icons": [
     {
       "src": "/public/icon-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#1c1917",
-  "theme_color": "#1c1917",
+  "background_color": "#1c1a17",
+  "theme_color": "#1c1a17",
   "display": "standalone"
 }
