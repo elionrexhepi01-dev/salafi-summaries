@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#1c1a17] scroll-smooth">
+<html lang="en" class="bg-[#1c1a17]">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="uKfr28eFrAeUYDNvV6AP81i00mwf2EBEZlaCpYi9g_8" />
 
   <!-- Primary SEO Metadata -->
   <title>{{ title | default("Salafi Summaries — Authentic Book Notes") }}</title>
   <meta name="title" content="{{ title | default('Salafi Summaries') }}" />
   <meta name="description" content="{{ description | default('Concise summaries of authentic Islamic books upon the methodology of the Salaf.') }}" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://salafisummaries.netlify.app/{{ page.url }}" />
+  <link rel="canonical" href="https://https://salafisummaries.netlify.app/{{ page.url }}" />
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://salafisummaries.netlify.app/{{ page.url }}" />
+  <meta property="og:url" content="https://https://salafisummaries.netlify.app/{{ page.url }}" />
   <meta property="og:title" content="{{ title | default('Salafi Summaries') }}" />
   <meta property="og:description" content="{{ description | default('Concise summaries of authentic Islamic books upon the methodology of the Salaf.') }}" />
   <meta property="og:image" content="/public/og-image.jpg" />
 
   <!-- Twitter SEO -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://salafisummaries.netlify.app/{{ page.url }}" />
+  <meta property="twitter:url" content="https://https://salafisummaries.netlify.app/{{ page.url }}" />
   <meta property="twitter:title" content="{{ title | default('Salafi Summaries') }}" />
   <meta property="twitter:description" content="{{ description | default('Concise summaries of authentic Islamic books upon the methodology of the Salaf.') }}" />
   <meta property="twitter:image" content="/public/og-image.jpg" />
@@ -42,18 +41,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Playfair+Display:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#1c1a17] text-[#ede8df] font-sans-body antialiased min-h-screen selection:bg-[#d6b278]/30 selection:text-white">
+<body class="bg-[#1c1a17] text-[#ede8df] font-sans-body antialiased min-h-screen flex flex-col justify-between selection:bg-[#d6b278]/30 selection:text-white">
 
-  <!-- Main Content -->
-  {{ content | safe }}
+  <!-- Main Content Layout wrapper -->
+  <div class="w-full">
+    {{ content | safe }}
+  </div>
 
-  <!-- PWA Registration -->
+  <!-- PWA & Service Worker -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
           .then(reg => console.log('Service Worker registered.', reg))
           .catch(err => console.error('Service Worker registration failed:', err));
+      });
+    }
+
+    // PWA Installation Trigger
+    let deferredPrompt;
+    const footerInstallBtn = document.getElementById('footer-install-btn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+
+    if (footerInstallBtn) {
+      footerInstallBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          if (outcome === 'accepted') {
+            console.log('User installed the PWA');
+          }
+          deferredPrompt = null;
+        } else {
+          alert('To install, tap Share (Safari on iOS) or menu (Chrome on Android) and select "Add to Home Screen".');
+        }
       });
     }
   </script>

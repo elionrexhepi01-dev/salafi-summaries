@@ -14,7 +14,6 @@ title: Salafi Summaries — Authentic Book Notes
       alt="Bookshelf background" 
       class="object-cover w-full h-full transition-transform duration-100 ease-out scale-100 opacity-60 will-change-transform"
     />
-    <!-- Warm Vignette Gradient Fading Seamlessly into #1c1a17 -->
     <div class="absolute inset-0 bg-gradient-to-b from-[#1c1a17]/60 via-transparent to-[#1c1a17]"></div>
   </div>
 
@@ -35,7 +34,6 @@ title: Salafi Summaries — Authentic Book Notes
       SUMMARIES
     </p>
 
-    <!-- Project Description Paragraph -->
     <p class="text-xs sm:text-sm md:text-base text-[#ede8df] font-light max-w-xl mx-auto mt-6 leading-relaxed tracking-wide drop-shadow-sm hero-fade-in delay-400">
       Concise summaries of authentic Islamic books upon the methodology of the Salaf.
     </p>
@@ -60,14 +58,12 @@ title: Salafi Summaries — Authentic Book Notes
 <main id="summaries" class="max-w-5xl px-6 py-20 mx-auto sm:py-28">
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2 sm:gap-8">
     {% for summary in collections.summaries %}
-      <!-- Whole Card Clickable Link with On-Scroll Reveal -->
       <a 
         href="{{ summary.url }}" 
         class="scroll-reveal group block p-8 rounded-2xl bg-[#24211e]/80 hover:bg-[#2b2724] border border-[#332e29] hover:border-[#d6b278]/40 transition-all duration-300 hover:-translate-y-1.5 active:scale-[0.98] shadow-sm hover:shadow-xl hover:shadow-black/30"
       >
         <div class="flex flex-col justify-between h-full">
           <div>
-            <!-- Italic White Book Title -->
             <h2 class="text-2xl sm:text-3xl font-serif-title italic font-normal text-white group-hover:text-[#d6b278] transition-colors duration-300">
               {{ summary.data.title }}
             </h2>
@@ -87,6 +83,46 @@ title: Salafi Summaries — Authentic Book Notes
     {% endfor %}
   </div>
 </main>
+
+<!-- FOOTER SECTION -->
+<footer class="w-full border-t border-[#332e29] bg-[#1e1c19]/60 backdrop-blur-md px-6 py-12 mt-12">
+  <div class="flex flex-col max-w-4xl gap-10 mx-auto">
+    
+    <!-- Scholarly Passages Block -->
+    <div class="space-y-6 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed tracking-wide">
+      <div class="border-l border-[#d6b278]/40 pl-4 py-1 italic text-[#ede8df]">
+        Imam al-Hajjawi رحمه الله said in Zād al-Mustaqniʿ fī Ikhtiṣār al-Muqniʿ: “Ambition has decreased and the hindrances to achieving the objectives have increased.”
+      </div>
+      
+      <p>
+        Shaykh Ṣāliḥ al-Fawzān حفظه الله explained that concise works were authored because people’s dedication to seeking knowledge weakened, while distractions increased. Earlier generations memorized lengthy works, but later generations required easier access to knowledge. Therefore, scholars summarized books to assist students, adapting methods of teaching to the needs of the time.
+      </p>
+
+      <p class="text-[#ede8df] font-normal">
+        The seeker of knowledge should remain diligent, for the Prophet ﷺ said: <span class="italic text-[#d6b278]">“The greed of two people is never satisfied: the seeker of knowledge and the seeker of the world.”</span> <span class="text-xs text-[#b3a898]/70 font-light">[Reported by al-Tabarani in al-Kabir (10/223) from the narration of ‘Abdullah ibn Masud.]</span>
+      </p>
+    </div>
+
+    <!-- PWA Install Application Block -->
+    <div class="border-t border-[#332e29]/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+      <div class="max-w-md">
+        <h4 class="text-sm font-serif-title text-[#ede8df] font-medium tracking-wide">Access Offline Anytime</h4>
+        <p class="text-xs text-[#b3a898] mt-1 font-light">Install this platform directly to your mobile device home screen to carry these texts securely wherever you go.</p>
+      </div>
+      
+      <button 
+        id="footer-install-btn"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#24211e] hover:bg-[#2d2a26] text-xs font-medium tracking-wide text-[#ede8df] border border-[#3d3731] hover:border-[#d6b278]/40 shadow-sm transition-all duration-300 transform active:scale-95 cursor-pointer"
+      >
+        <svg class="w-3.5 h-3.5 text-[#d6b278]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+        </svg>
+        <span>Install On Device</span>
+      </button>
+    </div>
+
+  </div>
+</footer>
 
 <script>
   // 1. Hero Image Scroll Zoom
