@@ -2,7 +2,7 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-const CACHE_NAME = 'salafi-summaries-v7';
+const CACHE_NAME = 'salafi-summaries-v8';
 
 const STATIC_ASSETS = [
   '/',
@@ -15,26 +15,60 @@ const STATIC_ASSETS = [
   {% endfor %}
 ];
 
-// 1. Install Event — Pre-cache static assets & summaries
+// Helper: Smart cache lookup (handles trailing slashes & Netlify clean URLs)
+async function matchInCache(request) {
+  const cache = await caches.open(CACHE_NAME);
+  
+  // 1. Direct match
+  let response = await cache.match(request);
+  if (response) return response;
+
+  const url = new URL(request.url);
+  const path = url.pathname;
+
+  // 2. Try alternate trailing slash (/path/ vs /path)
+  const altPath = path.endsWith('/') ? path.slice(0, -1) : path + '/';
+  response = await cache.match(altPath);
+  if (response) return response;
+
+  // 3. Scan cache keys by pathname comparison
+  const keys = await cache.keys();
+  for (const key of keys) {
+    const keyUrl = new URL(key.url);
+    if (keyUrl.pathname === path || keyUrl.pathname === altPath) {
+      return await cache.match(key);
+    }
+  }
+
+  return null;
+}
+
+// 1. Install Event — Pre-cache all summaries with dual-slash resolution
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
       await Promise.allSettled(
-        STATIC_ASSETS.map((url) =>
-          fetch(url, { cache: 'reload' })
-            .then((response) => {
-              if (response.ok) return cache.put(url, response);
-              console.warn(`[PWA] Precache missed (status ${response.status}): ${url}`);
-            })
-            .catch((err) => console.warn(`[PWA] Failed to fetch asset: ${url}`, err))
-        )
+        STATIC_ASSETS.map(async (url) => {
+          try {
+            const res = await fetch(url);
+            if (res.ok) {
+              await cache.put(url, res);
+              // Also cache without trailing slash to guarantee hits
+              if (url.length > 1 && url.endsWith('/')) {
+                await cache.put(url.slice(0, -1), res.clone());
+              }
+            }
+          } catch (err) {
+            console.warn(`[PWA] Precache failed for: ${url}`, err);
+          }
+        })
       );
     })
   );
-  // Do NOT force skipWaiting() here so active loads aren't hijacked
+  self.skipWaiting();
 });
 
-// 2. Activate Event — Clean up legacy caches
+// 2. Activate Event
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
@@ -56,7 +90,6 @@ self.addEventListener('fetch', (event) => {
   const isHTML = request.mode === 'navigate' || request.headers.get('accept')?.includes('text/html');
 
   if (isHTML) {
-    // --- HTML PAGES: NETWORK-FIRST WITH CACHE FALLBACK ---
     event.respondWith(
       fetch(request)
         .then((networkResponse) => {
@@ -67,25 +100,23 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          // OFFLINE FALLBACK
-          const cachedResponse = await caches.match(request);
-          if (cachedResponse) return cachedResponse;
+          // Offline lookup via smart match
+          const cached = await matchInCache(request);
+          if (cached) return cached;
 
-          // Check clean URL trailing slash variations
-          const path = url.pathname;
-          const altPath = path.endsWith('/') ? path.slice(0, -1) : path + '/';
-          const altCached = await caches.match(altPath);
-          if (altCached) return altCached;
-
-          return caches.match('/');
+          // Fallback message if specific summary wasn't stored
+          return new Response(
+            '<!DOCTYPE html><html><body style="background:#1c1a17;color:#ede8df;font-family:sans-serif;padding:2rem;">' +
+            '<h1>Summary Not Offline</h1><p>This book summary was not found in cache.</p>' +
+            '<a href="/" style="color:#d6b278;">Go to Homepage</a></body></html>',
+            { status: 503, headers: { 'Content-Type': 'text/html' } }
+          );
         })
     );
   } else {
-    // --- IMAGES / CSS / ASSETS: CACHE-FIRST WITH NETWORK FALLBACK ---
     event.respondWith(
       caches.match(request).then((cachedResponse) => {
         if (cachedResponse) return cachedResponse;
-
         return fetch(request).then((networkResponse) => {
           if (networkResponse && networkResponse.status === 200) {
             const copy = networkResponse.clone();
