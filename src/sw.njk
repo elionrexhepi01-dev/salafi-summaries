@@ -2,7 +2,7 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-const CACHE_NAME = 'salafi-summaries-v8';
+const CACHE_NAME = 'salafi-summaries-v9';
 
 const STATIC_ASSETS = [
   '/',
@@ -15,51 +15,42 @@ const STATIC_ASSETS = [
   {% endfor %}
 ];
 
-// Helper: Smart cache lookup (handles trailing slashes & Netlify clean URLs)
-async function matchInCache(request) {
+// Helper: Case-insensitive and slash-agnostic cache matcher
+async function matchOfflineCache(requestUrl) {
   const cache = await caches.open(CACHE_NAME);
-  
-  // 1. Direct match
-  let response = await cache.match(request);
-  if (response) return response;
-
-  const url = new URL(request.url);
-  const path = url.pathname;
-
-  // 2. Try alternate trailing slash (/path/ vs /path)
-  const altPath = path.endsWith('/') ? path.slice(0, -1) : path + '/';
-  response = await cache.match(altPath);
-  if (response) return response;
-
-  // 3. Scan cache keys by pathname comparison
   const keys = await cache.keys();
+  
+  const targetPath = new URL(requestUrl).pathname.toLowerCase();
+  const targetPathNoSlash = targetPath.endsWith('/') ? targetPath.slice(0, -1) : targetPath;
+
   for (const key of keys) {
-    const keyUrl = new URL(key.url);
-    if (keyUrl.pathname === path || keyUrl.pathname === altPath) {
+    const keyPath = new URL(key.url).pathname.toLowerCase();
+    const keyPathNoSlash = keyPath.endsWith('/') ? keyPath.slice(0, -1) : keyPath;
+
+    if (keyPath === targetPath || keyPathNoSlash === targetPathNoSlash) {
       return await cache.match(key);
     }
   }
-
   return null;
 }
 
-// 1. Install Event — Pre-cache all summaries with dual-slash resolution
+// 1. Install Event
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
+      console.log('[PWA] Precaching assets...');
       await Promise.allSettled(
         STATIC_ASSETS.map(async (url) => {
           try {
             const res = await fetch(url);
             if (res.ok) {
               await cache.put(url, res);
-              // Also cache without trailing slash to guarantee hits
-              if (url.length > 1 && url.endsWith('/')) {
-                await cache.put(url.slice(0, -1), res.clone());
-              }
+              console.log(`[PWA Precached] ${url}`);
+            } else {
+              console.warn(`[PWA Precache HTTP Error ${res.status}] ${url}`);
             }
           } catch (err) {
-            console.warn(`[PWA] Precache failed for: ${url}`, err);
+            console.error(`[PWA Precache Failed] ${url}`, err);
           }
         })
       );
@@ -100,15 +91,21 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          // Offline lookup via smart match
-          const cached = await matchInCache(request);
-          if (cached) return cached;
+          console.log(`[PWA Offline Request] Navigating to: ${request.url}`);
+          const cached = await matchOfflineCache(request.url);
+          
+          if (cached) {
+            console.log(`[PWA Cache HIT] Served offline: ${request.url}`);
+            return cached;
+          }
 
-          // Fallback message if specific summary wasn't stored
+          console.error(`[PWA Cache MISS] No cached file found for: ${request.url}`);
           return new Response(
             '<!DOCTYPE html><html><body style="background:#1c1a17;color:#ede8df;font-family:sans-serif;padding:2rem;">' +
-            '<h1>Summary Not Offline</h1><p>This book summary was not found in cache.</p>' +
-            '<a href="/" style="color:#d6b278;">Go to Homepage</a></body></html>',
+            '<h1>Offline Page Not Found</h1>' +
+            '<p>Requested path: <code>' + url.pathname + '</code></p>' +
+            '<p>Check DevTools Console for details.</p>' +
+            '<a href="/" style="color:#d6b278;">Back to Home</a></body></html>',
             { status: 503, headers: { 'Content-Type': 'text/html' } }
           );
         })
