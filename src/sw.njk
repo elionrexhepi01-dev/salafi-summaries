@@ -2,9 +2,10 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-const CACHE_NAME = 'salafi-summaries-v10';
+const CACHE_NAME = 'salafi-summaries-v11';
 
-const STATIC_ASSETS = [
+// 1. Raw asset list from Eleventy
+const RAW_ASSETS = [
   '/',
   '/manifest.json',
   '/public/main.css',
@@ -15,37 +16,28 @@ const STATIC_ASSETS = [
   {% endfor %}
 ];
 
-// Helper: Decode HTML entities & normalize URL paths
-function normalizePath(urlStr) {
-  try {
-    const parsed = new URL(urlStr, location.origin);
-    let path = decodeURIComponent(parsed.pathname).toLowerCase();
-    if (path.length > 1 && path.endsWith('/')) {
-      path = path.slice(0, -1);
-    }
-    return path;
-  } catch (e) {
-    return urlStr;
-  }
-}
+// 2. Pre-process assets to encode URLs cleanly (fixes ' and & issues)
+const STATIC_ASSETS = [...new Set(RAW_ASSETS.flatMap(url => {
+  if (!url) return [];
+  const encoded = encodeURI(url);
+  const decoded = decodeURI(url);
+  return [url, encoded, decoded];
+}))];
 
-// 1. Install Event — Pre-cache all summaries with clean unescaped URLs
+// Install Event
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
-      console.log('[PWA] Starting precache...');
+      console.log('[PWA] Precaching all summaries...');
       await Promise.allSettled(
         STATIC_ASSETS.map(async (url) => {
           try {
-            const res = await fetch(url);
+            const res = await fetch(url, { cache: 'reload' });
             if (res.ok) {
               await cache.put(url, res);
-              console.log(`[PWA Precached OK] ${url}`);
-            } else {
-              console.warn(`[PWA Precache HTTP ${res.status}] ${url}`);
             }
           } catch (err) {
-            console.error(`[PWA Precache Failed] ${url}`, err);
+            console.warn('[PWA Precache Error]', url, err);
           }
         })
       );
@@ -54,7 +46,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// 2. Activate Event — Clean old caches
+// Activate Event
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
@@ -65,7 +57,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// 3. Fetch Event — Match offline URLs reliably
+// Fetch Event — Network First for HTML, falling back to cache
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
@@ -86,27 +78,32 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          const cache = await caches.open(CACHE_NAME);
-          const targetPath = normalizePath(request.url);
+          // Attempt 1: Exact match
+          let cached = await caches.match(request);
+          if (cached) return cached;
 
-          // Search cache keys matching normalized path
-          const keys = await cache.keys();
-          for (const key of keys) {
-            if (normalizePath(key.url) === targetPath) {
-              return await cache.match(key);
-            }
-          }
+          // Attempt 2: Decoded/Encoded URL match
+          const decodedUrl = decodeURI(request.url);
+          cached = await caches.match(decodedUrl);
+          if (cached) return cached;
 
+          // Attempt 3: Trailing slash match
+          const path = url.pathname;
+          const altPath = path.endsWith('/') ? path.slice(0, -1) : path + '/';
+          cached = await caches.match(altPath);
+          if (cached) return cached;
+
+          // Fallback message if not cached
           return new Response(
             '<!DOCTYPE html><html><body style="background:#1c1a17;color:#ede8df;font-family:sans-serif;padding:2rem;">' +
-            '<h1>Offline Page Not Saved</h1>' +
-            '<p>The summary at <code>' + url.pathname + '</code> is not stored in offline cache.</p>' +
+            '<h1>Page Not Cached</h1><p>This summary is not available offline yet.</p>' +
             '<a href="/" style="color:#d6b278;">Return Home</a></body></html>',
             { status: 503, headers: { 'Content-Type': 'text/html' } }
           );
         })
     );
   } else {
+    // Assets (CSS/Images)
     event.respondWith(
       caches.match(request).then((cachedResponse) => {
         if (cachedResponse) return cachedResponse;

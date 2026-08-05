@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy("src/_headers");
 
   // Summaries Collection
   eleventyConfig.addCollection("summaries", function (collectionApi) {
