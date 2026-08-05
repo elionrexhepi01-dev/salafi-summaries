@@ -2,7 +2,7 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-const CACHE_NAME = 'salafi-summaries-v9';
+const CACHE_NAME = 'salafi-summaries-v10';
 
 const STATIC_ASSETS = [
   '/',
@@ -11,43 +11,38 @@ const STATIC_ASSETS = [
   '/public/favicon.ico',
   '/public/hero-bg.jpg',
   {% for summary in collections.summaries %}
-  '{{ summary.url }}'{% if not loop.last %},{% endif %}
+  {{ summary.url | dump | safe }}{% if not loop.last %},{% endif %}
   {% endfor %}
 ];
 
-// Helper: Case-insensitive and slash-agnostic cache matcher
-async function matchOfflineCache(requestUrl) {
-  const cache = await caches.open(CACHE_NAME);
-  const keys = await cache.keys();
-  
-  const targetPath = new URL(requestUrl).pathname.toLowerCase();
-  const targetPathNoSlash = targetPath.endsWith('/') ? targetPath.slice(0, -1) : targetPath;
-
-  for (const key of keys) {
-    const keyPath = new URL(key.url).pathname.toLowerCase();
-    const keyPathNoSlash = keyPath.endsWith('/') ? keyPath.slice(0, -1) : keyPath;
-
-    if (keyPath === targetPath || keyPathNoSlash === targetPathNoSlash) {
-      return await cache.match(key);
+// Helper: Decode HTML entities & normalize URL paths
+function normalizePath(urlStr) {
+  try {
+    const parsed = new URL(urlStr, location.origin);
+    let path = decodeURIComponent(parsed.pathname).toLowerCase();
+    if (path.length > 1 && path.endsWith('/')) {
+      path = path.slice(0, -1);
     }
+    return path;
+  } catch (e) {
+    return urlStr;
   }
-  return null;
 }
 
-// 1. Install Event
+// 1. Install Event — Pre-cache all summaries with clean unescaped URLs
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
-      console.log('[PWA] Precaching assets...');
+      console.log('[PWA] Starting precache...');
       await Promise.allSettled(
         STATIC_ASSETS.map(async (url) => {
           try {
             const res = await fetch(url);
             if (res.ok) {
               await cache.put(url, res);
-              console.log(`[PWA Precached] ${url}`);
+              console.log(`[PWA Precached OK] ${url}`);
             } else {
-              console.warn(`[PWA Precache HTTP Error ${res.status}] ${url}`);
+              console.warn(`[PWA Precache HTTP ${res.status}] ${url}`);
             }
           } catch (err) {
             console.error(`[PWA Precache Failed] ${url}`, err);
@@ -59,7 +54,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// 2. Activate Event
+// 2. Activate Event — Clean old caches
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
@@ -70,7 +65,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// 3. Fetch Event
+// 3. Fetch Event — Match offline URLs reliably
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
@@ -91,21 +86,22 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         })
         .catch(async () => {
-          console.log(`[PWA Offline Request] Navigating to: ${request.url}`);
-          const cached = await matchOfflineCache(request.url);
-          
-          if (cached) {
-            console.log(`[PWA Cache HIT] Served offline: ${request.url}`);
-            return cached;
+          const cache = await caches.open(CACHE_NAME);
+          const targetPath = normalizePath(request.url);
+
+          // Search cache keys matching normalized path
+          const keys = await cache.keys();
+          for (const key of keys) {
+            if (normalizePath(key.url) === targetPath) {
+              return await cache.match(key);
+            }
           }
 
-          console.error(`[PWA Cache MISS] No cached file found for: ${request.url}`);
           return new Response(
             '<!DOCTYPE html><html><body style="background:#1c1a17;color:#ede8df;font-family:sans-serif;padding:2rem;">' +
-            '<h1>Offline Page Not Found</h1>' +
-            '<p>Requested path: <code>' + url.pathname + '</code></p>' +
-            '<p>Check DevTools Console for details.</p>' +
-            '<a href="/" style="color:#d6b278;">Back to Home</a></body></html>',
+            '<h1>Offline Page Not Saved</h1>' +
+            '<p>The summary at <code>' + url.pathname + '</code> is not stored in offline cache.</p>' +
+            '<a href="/" style="color:#d6b278;">Return Home</a></body></html>',
             { status: 503, headers: { 'Content-Type': 'text/html' } }
           );
         })
