@@ -36,36 +36,38 @@ description: "An exploration of the necessity of adhering to the Prophetic Sunna
 <article class="max-w-3xl mx-auto px-6 py-16 text-[#ECE8EF] animate-page-entry">
   
   <header class="mb-10 text-center">
-    <h1 class="text-4xl sm:text-5xl font-serif-title italic font-normal text-white mt-4 mb-2">{{ title }}</h1>
+    <h1 class="mt-4 mb-2 text-4xl italic font-normal text-white sm:text-5xl font-serif-title">{{ title }}</h1>
     <p class="text-[#d6b278] font-light text-sm">By {{ author }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span></p>
   </header>
 
+<article class="max-w-3xl mx-auto px-6 py-16 text-[#ECE8EF] animate-page-entry">
+  
   <div class="prose prose-invert max-w-none text-[#B3ADB9] space-y-10 leading-relaxed font-light">
 
     <!-- Section 1: Divine Status & Quranic Obligation of the Sunnah -->
-    <div class="reveal-on-scroll space-y-6">
-      <div class="text-center space-y-1 border-b border-[#24211e] pb-4">
-        <p class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Part I</p>
-        <h2 class="text-2xl font-serif-sub text-white font-medium uppercase tracking-wide">
+    <div class="space-y-6 reveal-on-scroll">
+      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
+        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Part I</p>
+        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
           The Authority of the Sunnah
         </h2>
       </div>
 
-      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-5 rounded-r-lg space-y-3">
-        <p class="text-base text-[#ECE8EF] italic leading-relaxed font-sans-body">
-          “Allāh has sent down to you the Book, and al-Ḥikmah [the Prophet's Sunnah].” <span class="text-xs text-[#d6b278]">[Qur’ān 4:113]</span>
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed font-sans-body">
+          “Allāh has sent down to you the Book, and al-Ḥikmah [the Prophet's Sunnah].” <span class="text-sm text-[#d6b278]">[Qur’ān 4:113]</span>
         </p>
       </div>
 
       <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
         <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Scriptural Obligations</span>
-          <span class="text-xs text-[#B3ADB9]">Divine Commands</span>
+          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Scriptural Obligations</span>
+          <span class="text-sm text-[#B3ADB9]">Divine Commands</span>
         </div>
-        <p class="text-sm sm:text-base text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “And whatsoever the Messenger gives you, take it; and whatsoever he forbids you, abstain from it.” <span class="text-xs text-[#d6b278]">[Qur’ān 59:7]</span>
+        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
+          “And whatsoever the Messenger gives you, take it; and whatsoever he forbids you, abstain from it.” <span class="text-sm text-[#d6b278]">[Qur’ān 59:7]</span>
         </p>
-        <ul class="space-y-2 text-xs text-[#B3ADB9] pt-2">
+        <ul class="space-y-2 text-sm sm:text-base text-[#B3ADB9] pt-2">
           <li class="flex items-start">
             <span class="text-[#d6b278] mr-2">•</span>
             <span><strong>Obedience to the Messenger:</strong> Direct obedience to the Prophet ﷺ is intrinsically bound to obedience to Allah [Qur’ān 4:59].</span>
@@ -83,53 +85,53 @@ description: "An exploration of the necessity of adhering to the Prophetic Sunna
     </div>
 
     <!-- Section 2: Prophetic Admonitions & Adherence -->
-    <div class="reveal-on-scroll space-y-6">
-      <div class="text-center space-y-1 border-b border-[#24211e] pb-4">
-        <p class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Part II</p>
-        <h2 class="text-2xl font-serif-sub text-white font-medium uppercase tracking-wide">
+    <div class="space-y-6 reveal-on-scroll">
+      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
+        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Part II</p>
+        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
           Clinging to the Path
         </h2>
       </div>
 
       <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
         <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Prophetic Instruction</span>
-          <span class="text-xs text-[#B3ADB9]">The Way of Guidance</span>
+          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Prophetic Instruction</span>
+          <span class="text-sm text-[#B3ADB9]">The Way of Guidance</span>
         </div>
-        <p class="text-sm sm:text-base text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
+        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
           “So you must keep to my Sunnah and to the Sunnah of the Khulafā’ ar-Rāshidīn... Cling to it with your molar teeth.”
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="bg-[#24211e] border border-[#24211e] p-5 rounded-lg space-y-2">
-          <span class="text-xs text-[#d6b278] font-mono uppercase tracking-wider block">Warning Against Neglect</span>
-          <p class="text-xs sm:text-sm text-[#ECE8EF] italic">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-2">
+          <span class="text-sm text-[#d6b278] font-mono uppercase tracking-wider block">Warning Against Neglect</span>
+          <p class="text-sm sm:text-base text-[#ECE8EF] italic">
             “Let me not find any one of you reclining on his couch saying: ‘What we find in the Book of Allah, we follow it.’ Beware! I have been given the Qur’ān and something like it.”
           </p>
         </div>
 
-        <div class="bg-[#24211e] border border-[#24211e] p-5 rounded-lg space-y-2">
-          <span class="text-xs text-[#d6b278] font-mono uppercase tracking-wider block">The Believers' Stance</span>
-          <p class="text-xs sm:text-sm text-[#ECE8EF] italic">
-            When called to Allah and His Messenger to judge between them, the response of true believers is always: “We hear and we obey.” <span class="text-xs text-[#d6b278]">[Qur’ān 24:51]</span>
+        <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-2">
+          <span class="text-sm text-[#d6b278] font-mono uppercase tracking-wider block">The Believers' Stance</span>
+          <p class="text-sm sm:text-base text-[#ECE8EF] italic">
+            When called to Allah and His Messenger to judge between them, the response of true believers is always: “We hear and we obey.” <span class="text-sm text-[#d6b278]">[Qur’ān 24:51]</span>
           </p>
         </div>
       </div>
     </div>
 
     <!-- Section 3: Transformative Effects of the Sunnah -->
-    <div class="reveal-on-scroll space-y-6">
-      <div class="text-center space-y-1 border-b border-[#24211e] pb-4">
-        <p class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Part III</p>
-        <h2 class="text-2xl font-serif-sub text-white font-medium uppercase tracking-wide">
+    <div class="space-y-6 reveal-on-scroll">
+      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
+        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Part III</p>
+        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
           Spiritual & Practical Effects
         </h2>
       </div>
 
       <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-4">
-        <p class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Fruits of True Adherence</p>
-        <ul class="space-y-3 text-xs sm:text-sm text-[#ECE8EF]">
+        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Fruits of True Adherence</p>
+        <ul class="space-y-3 text-sm sm:text-base text-[#ECE8EF]">
           <li class="flex items-start">
             <span class="text-[#d6b278] mr-2">•</span>
             <span><strong>Consciousness in Prayer:</strong> Performing Ṣalāt while keeping in mind that one is directly following the Prophet ﷺ—as if observing him—profoundly transforms and illuminates the heart.</span>
@@ -152,10 +154,10 @@ description: "An exploration of the necessity of adhering to the Prophetic Sunna
       <!-- Section 4: Caution Against Innovation -->
       <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
         <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Genuine Adherence vs. Innovation</span>
-          <span class="text-xs text-[#B3ADB9]">Preserving Purity</span>
+          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Genuine Adherence vs. Innovation</span>
+          <span class="text-sm text-[#B3ADB9]">Preserving Purity</span>
         </div>
-        <blockquote class="text-sm sm:text-base text-[#ECE8EF] italic leading-relaxed pl-2 border-none">
+        <blockquote class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-none">
           Genuine adherence to the Sunnah means doing what the Prophet ﷺ did and avoiding what he refrained from doing. Innovating in Islam carries severe spiritual danger, as it involves introducing acts of worship that were never legislated by Allah or His Messenger.
         </blockquote>
       </div>
