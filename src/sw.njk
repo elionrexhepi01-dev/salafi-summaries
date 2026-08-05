@@ -2,25 +2,33 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-const CACHE_NAME = 'salafi-summaries-v4';
+const CACHE_NAME = 'salafi-summaries-v5';
 
 const ASSETS_TO_CACHE = [
   '/',
-  '/index.html',
   '/manifest.json',
   '/public/main.css',
-  '/public/hero-bg.jpg',
   '/public/favicon.ico',
   {% for summary in collections.summaries %}
-  '{{ summary.url }}',
+  '{{ summary.url }}'{% if not loop.last %},{% endif %}
   {% endfor %}
 ];
 
-// Install Event — Pre-cache every asset and book page instantly
+// Install Event — Fault-tolerant pre-caching of all book summaries
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
+    caches.open(CACHE_NAME).then(async (cache) => {
+      // Promise.allSettled ensures if 1 non-critical asset fails (e.g. missing image), 
+      // all the book summaries still get successfully cached offline.
+      await Promise.allSettled(
+        ASSETS_TO_CACHE.map(async (url) => {
+          try {
+            await cache.add(url);
+          } catch (err) {
+            console.warn(`[PWA] Failed to cache asset: ${url}`, err);
+          }
+        })
+      );
     })
   );
   self.skipWaiting();
@@ -38,24 +46,37 @@ self.addEventListener('activate', (e) => {
   self.clients.claim();
 });
 
-// Fetch Event — Serve from cache first, then fall back to network
+// Fetch Event — Serve from cache first, with trailing-slash normalization
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
 
+  // Skip cross-origin requests like Google Fonts during offline fallback
+  const requestUrl = new URL(e.request.url);
+  if (requestUrl.origin !== location.origin) return;
+
   e.respondWith(
-    caches.match(e.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(e.request).then((networkResponse) => {
+    (async () => {
+      // 1. Try exact match from cache
+      const cachedResponse = await caches.match(e.request);
+      if (cachedResponse) return cachedResponse;
+
+      // 2. Try match with/without trailing slash (Eleventy clean URLs)
+      const path = requestUrl.pathname;
+      const normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path + '/';
+      const altCachedResponse = await caches.match(normalizedPath);
+      if (altCachedResponse) return altCachedResponse;
+
+      // 3. If not in cache, fetch from network
+      try {
+        const networkResponse = await fetch(e.request);
         if (networkResponse.status === 200) {
-          const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(e.request, responseToCache);
-          });
+          const cache = await caches.open(CACHE_NAME);
+          cache.put(e.request, networkResponse.clone());
         }
         return networkResponse;
-      });
-    })
+      } catch (err) {
+        console.error('[PWA] Fetch failed offline:', e.request.url);
+      }
+    })()
   );
 });

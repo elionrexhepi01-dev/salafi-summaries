@@ -110,7 +110,6 @@ description: "An exploration of the necessity of adhering to the Prophetic Sunna
             “Let me not find any one of you reclining on his couch saying: ‘What we find in the Book of Allah, we follow it.’ Beware! I have been given the Qur’ān and something like it.”
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-2">
           <span class="text-sm text-[#d6b278] font-mono uppercase tracking-wider block">The Believers' Stance</span>
           <p class="text-sm sm:text-base text-[#ECE8EF] italic">
