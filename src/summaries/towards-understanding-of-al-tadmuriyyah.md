@@ -5,7 +5,7 @@ author: "Shaykh ul-Islām Ibn Taymiyyah"
 explanationBy: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Aqīdah & Theology"
 readTime: "10 min read"
-description: "A foundational guide to understanding the Divine Names and Attributes of Allah according to the methodology of Ahl al-Sunnah, balancing affirmation and negation while refuting historical deviations."
+description: "A foundational guide to Allah’s Names and Attributes according to Ahl al-Sunnah, affirming truth and refuting deviation."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Animations -->
