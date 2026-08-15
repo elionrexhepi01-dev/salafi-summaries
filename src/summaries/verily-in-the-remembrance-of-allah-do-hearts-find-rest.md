@@ -4,7 +4,7 @@ title: "Verily, in the Remembrance of Allah Do Hearts Find Rest"
 author: "Shaykh ‘Abdur-Razzāq al-Badr"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "7 min read"
-description: "The spiritual state of the heart, the tranquility of Dhikr, and Prophetic supplications for peace.
+description: "The spiritual state of the heart, the tranquility of Dhikr, and Prophetic supplications for peace."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->
