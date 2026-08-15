@@ -4,7 +4,7 @@ title: "Characteristics of the Time of Ignorance"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abd al-Wahhāb"
 category: "Aqīdah & Tawḥīd"
 readTime: "6 min read"
-description: "A comprehensive summary detailing the key traits, beliefs, and practices of Jāhilīyyah, highlighting how opposing them clarifies the beauty of Islam."
+description: "Key traits, beliefs, and practices of Jāhilīyyah, and how opposing them reveals the beauty of Islam."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

@@ -4,7 +4,7 @@ title: "Youth's Problems"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Aqīdah & Tazkiyah"
 readTime: "6 min read"
-description: "A breakdown of the three categories of youth, the primary causes of youth corruption and confusion, and the prescribed prophetic remedies for doubts and insinuations."
+description: "The three categories of youth, causes of corruption and confusion, and Prophetic remedies for doubts and insinuations."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

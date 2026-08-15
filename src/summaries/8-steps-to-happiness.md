@@ -4,7 +4,7 @@ title: "8 Steps to Happiness"
 author: "Shaykh ‘Abdur-Raḥmān Nāṣir as-Sa‘dī"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "8 min read"
-description: "Key practical and spiritual means for attaining true happiness, tranquility, and peace of mind based on Islamic monotheism and prophetic guidance."
+description: "Practical and spiritual means to attain happiness, tranquility, and peace through Tawḥīd and Prophetic guidance."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

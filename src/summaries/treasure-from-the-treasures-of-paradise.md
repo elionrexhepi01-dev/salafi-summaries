@@ -4,7 +4,7 @@ title: "Treasure from the Treasures of Paradise"
 author: "Shaykh ‘Abdur-Razzāq al-Badr"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "8 min read"
-description: "A comprehensive exploration of the virtues, meanings, and spiritual depth of “Lā Ḥawla wa lā Quwwata illā Billāh” through classical sources and authentic prophetic traditions."
+description: "The virtues, meanings, and spiritual depth of this profound statement through authentic Prophetic traditions."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

@@ -4,7 +4,7 @@ title: "The Excellence of Supplicating to Allah and Constantly Remembering Him"
 author: "Shaykh Ṣāliḥ ibn Fawzān al-Fawzān"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "7 min read"
-description: "A profound discourse on the true nature of Dhikr across tongue and heart, protection against Satan, inner tranquility, and the supreme status of Du‘ā’."
+description: "The reality and virtues of Dhikr, protection from Satan, inner tranquility, and the status of Du‘ā’."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

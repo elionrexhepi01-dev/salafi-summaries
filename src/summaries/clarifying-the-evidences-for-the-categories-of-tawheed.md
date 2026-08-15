@@ -4,7 +4,7 @@ title: "Clarifying the Evidences for the Categories of Tawheed"
 author: "Shaykh ‘Abdur-Razzāq al-Badr"
 category: "Aqīdah & Tawḥīd"
 readTime: "7 min read"
-description: "A scriptural and historical clarification on the three categories of Tawḥīd, demonstrating that these divisions are rooted in the Qur’ān and classical statements of the Salaf."
+description: "A Qur’ānic and classical explanation of the three categories of Tawḥīd and their basis in the teachings of the Salaf."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

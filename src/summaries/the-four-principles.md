@@ -4,7 +4,7 @@ title: "The Four Principles"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abd al-Wahhāb"
 category: "Aqīdah & Tawḥīd"
 readTime: "6 min read"
-description: "A summary of the four foundational principles distinguishing pure monotheism from polytheism, illustrating why Tawḥīd in lordship alone is insufficient without exclusivity in worship."
+description: "Four foundational principles distinguishing Tawḥīd from Shirk and explaining why lordship alone is insufficient."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

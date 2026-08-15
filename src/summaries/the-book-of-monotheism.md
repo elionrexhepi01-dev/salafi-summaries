@@ -4,7 +4,7 @@ title: "The Book of Monotheism"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abd al-Wahhāb"
 category: "Aqīdah & Tawḥīd"
 readTime: "7 min read"
-description: "A foundational breakdown on the reality of Tawḥīd, its three categories, its immense virtues, and the distinctions between major and minor Shirk."
+description: "An overview of Tawḥīd, its three categories, virtues, and the distinction between major and minor Shirk."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

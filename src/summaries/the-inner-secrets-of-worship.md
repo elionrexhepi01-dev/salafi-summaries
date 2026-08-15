@@ -4,7 +4,7 @@ title: "The Inner Secrets of Worship"
 author: "Shaykh Aḥmad ibn Qudāmah al-Maqdisī"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "9 min read"
-description: "A structured journey through the ten foundational pillars of spiritual and ritual worship, detailing their inner meanings, virtues, and transformative power."
+description: "A journey through ten foundational pillars of worship, their meanings, virtues, and transformative effects."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

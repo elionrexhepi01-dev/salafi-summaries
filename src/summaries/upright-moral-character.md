@@ -4,7 +4,7 @@ title: "Upright Moral Character"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Aqīdah & Tazkiyah"
 readTime: "5 min read"
-description: "A foundational overview on the reality of noble character—encompassing one's obligations toward the Creator and the creation, and how good manners are acquired."
+description: "The reality of noble character, our duties toward Allah and creation, and how good manners are cultivated."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

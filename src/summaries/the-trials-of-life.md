@@ -4,7 +4,7 @@ title: "The Trials of Life"
 author: "Shaykh Ṣāliḥ ibn Fawzān al-Fawzān"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "7 min read"
-description: "A concise discourse on recognizing life’s trials, remaining steadfast through end-time tribulations, and seeking salvation through knowledge, the Sunnah, and supplication."
+description: "Recognizing life’s trials and seeking salvation through knowledge, the Sunnah, steadfastness, and supplication."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->

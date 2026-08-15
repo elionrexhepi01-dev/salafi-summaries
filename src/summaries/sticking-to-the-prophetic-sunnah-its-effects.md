@@ -4,7 +4,7 @@ title: "Sticking to the Prophetic Sunnah & Its Effects"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Aqīdah & Spiritual Well-Being"
 readTime: "7 min read"
-description: "An exploration of the necessity of adhering to the Prophetic Sunnah, its divine status, and its transformative effects on the worshipper's heart and conduct."
+description: "The necessity, divine status, and transformative effects of adhering to the Prophetic Sunnah."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->
