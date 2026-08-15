@@ -4,7 +4,7 @@ title: "The Three Fundamental Principles"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abd al-Wahhāb"
 category: "Aqīdah & Tawḥīd"
 readTime: "8 min read"
-description: "The four obligatory matters, three foundational lessons, and the essential questions of the grave.
+description: "The four obligatory matters, three foundational lessons, and the essential questions of the grave."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->
