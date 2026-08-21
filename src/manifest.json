@@ -1,20 +1,31 @@
 {
-  "short_name": "Salafi Summaries",
+  "id": "/",
   "name": "Salafi Summaries",
+  "short_name": "Summaries",
+  "description": "Concise summaries of authentic Islamic books upon the methodology of the Salaf.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1c1a17",
+  "theme_color": "#1c1a17",
   "icons": [
     {
-      "src": "/public/icon-192.png",
+      "src": "/public/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png",
-      "sizes": "192x192"
+      "purpose": "any maskable"
     },
     {
       "src": "/public/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "any maskable"
     }
-  ],
-  "start_url": "/",
-  "background_color": "#1c1a17",
-  "theme_color": "#1c1a17",
-  "display": "standalone"
+  ]
 }
