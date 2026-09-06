@@ -6,8 +6,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/_headers");
 
   // Summaries Collection
+  // Sort 'summaries' collection by dateAdded (newest first)
   eleventyConfig.addCollection("summaries", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/summaries/*.md");
+    return collectionApi.getFilteredByTag("summaries").sort((a, b) => {
+      const dateA = new Date(a.data.dateAdded || a.date);
+      const dateB = new Date(b.data.dateAdded || b.date);
+      return dateB - dateA;
+    });
   });
 
   return {

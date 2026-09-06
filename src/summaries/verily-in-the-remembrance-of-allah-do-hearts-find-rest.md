@@ -1,16 +1,17 @@
 ---
 layout: base.njk
-title: "Verily, in the Remembrance of Allah Do Hearts Find Rest"
+title: "Finding Rest in the Remembrance of Allah"
 author: "Shaykh ‘Abdur-Razzāq al-Badr"
-category: "Aqīdah & Spiritual Well-Being"
-readTime: "7 min read"
-description: "The spiritual state of the heart, the tranquility of Dhikr, and Prophetic supplications for peace."
+category: "Purification of the Soul"
+readTime: "6 min read"
+dateAdded: 2026-09-03
+description: "An editorial exposition on Quran 13:28, the three conditions of the human heart, and how divine remembrance serves as an impenetrable fortress against spiritual decay."
 ---
 
-<!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->
+<!-- Custom CSS for Scroll-Reveal & Page Animations -->
 <style>
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
+    from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
@@ -18,7 +19,6 @@ description: "The spiritual state of the heart, the tranquility of Dhikr, and Pr
     animation: fadeIn 0.8s ease-out forwards;
   }
 
-  /* Scroll reveal elements initial hidden state */
   .reveal-on-scroll {
     opacity: 0;
     transform: translateY(24px);
@@ -26,7 +26,6 @@ description: "The spiritual state of the heart, the tranquility of Dhikr, and Pr
     will-change: opacity, transform;
   }
 
-  /* Revealed state when scrolled into view */
   .reveal-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -35,127 +34,211 @@ description: "The spiritual state of the heart, the tranquility of Dhikr, and Pr
 
 <article class="max-w-3xl mx-auto px-6 py-16 text-[#ECE8EF] animate-page-entry">
   
-  <header class="mb-12 text-center">
-    <h1 class="mt-4 mb-3 text-5xl italic font-normal text-white sm:text-6xl font-serif-title">{{ title }}</h1>
-    <p class="text-[#d6b278] font-light text-base sm:text-lg">By {{ author }} <span class="text-[#B3ADB9]">حَفِظَهُ ٱللَّٰهُ</span></p>
+  <!-- Centered Header -->
+  <header class="mb-16 space-y-4 text-center">
+    <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
+      {{ category }} • {{ readTime }}
+    </div>
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+      {{ title }}
+    </h1>
+    <p class="text-[#d6b278] text-lg sm:text-xl font-light">
+      By {{ author }} <span class="text-[#B3ADB9]">حَفِظَهُ ٱللَّٰهُ</span>
+    </p>
   </header>
 
-  <div class="prose prose-invert max-w-none text-[#B3ADB9] space-y-10 leading-relaxed font-light">
+  <div class="space-y-16 font-light leading-relaxed">
 
-    <!-- Section 1: The Restless Heart and Its Cure -->
-    <div class="space-y-6 reveal-on-scroll">
+    <!-- Foundational Opening Quote Card -->
+    <section class="reveal-on-scroll">
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+          “Those who believed, and whose hearts find rest in the remembrance of Allâh: verily, in the remembrance of Allâh do hearts find rest.”
+        </p>
+        <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
+          — Sūrah ar-Ra‘d [Quran 13:28]
+        </p>
+      </div>
+    </section>
+
+    <!-- Introductory Context -->
+    <section class="space-y-6 reveal-on-scroll">
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        When reflecting upon this gracious Quranic declaration alongside the condition of humanity, one confronts a stark reality: the human heart in this worldly life is constantly assaulted by competing desires, seductions, doubts, and anxieties.
+      </p>
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Bereft of divine attachment, the inner self drifts into a state of perpetual loss and annoyance. True tranquility remains entirely unreachable until the heart anchors itself in the constant, conscious remembrance of its Creator.
+      </p>
+    </section>
+
+    <!-- PRINCIPLE I -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Anatomy of Spiritual Restlessness
+        </h2>
+      </div>
+
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        A heart devoid of divine remembrance is fundamentally vulnerable. Without the stabilizing anchor of <e>Dhikr</e>, the soul becomes susceptible to spiritual afflictions—chief among them being persistent suspicion, doubt, and emotional agitation.
+      </p>
+
+      <!-- Proof / Quote Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed font-sans-body">
-          “Those who believed, and whose hearts find rest in the remembrance of Allāh: verily, in the remembrance of Allāh do hearts find rest.” <span class="text-sm text-[#d6b278]">[Qur’ān 13:28]</span>
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed">
+          “No heart can achieve true rest unless it engages in the remembrance of Allah. Should it become empty of His remembrance, it instantly becomes exposed to the diseases of doubt and discontent.”
         </p>
+        <span class="text-sm font-mono text-[#d6b278] block">— The Reality of the Vulnerable Heart</span>
       </div>
 
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Exposition on the Modern Condition</p>
-        <blockquote class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-none">
-          In this worldly life, the human heart is constantly exposed to desires, lusts, doubts, and tribulations—leaving a deep sense of restlessness, loss, and anxiety. No heart can attain genuine, enduring rest unless it is anchored in the remembrance of Allah. When vacant of Dhikr, it becomes vulnerable to spiritual diseases.
-        </blockquote>
-      </div>
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Tranquility is not merely an emotional state, but a spiritual atmosphere cultivated through pure monotheism (<e>Tawḥīd</e>), absolute reliance (<e>Tawakkul</e>), and directing every hope, fear, and supplication exclusively to Allah alone.
+      </p>
+    </section>
 
-      <!-- Parable of Living and Dead -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Prophetic Parable</span>
-          <span class="text-sm text-[#B3ADB9]">Abū Mūsā al-Ash‘arī (رَضِيَ ٱللَّٰهُ عَنْهُ)</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “The similitude of the one who remembers his Lord and the one who does not remember Him is like that of the living and the dead. The house in which Allah is remembered and the house in which Allah is not remembered are like the living and the dead respectively.”
-        </p>
-      </div>
-    </div>
-
-    <!-- Section 2: The Three Types of Hearts -->
-    <div class="space-y-8 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Spiritual Classification</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          The Three States of the Heart
+    <!-- PRINCIPLE II -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          A Taxonomy of the Human Heart
         </h2>
       </div>
 
-      <!-- Sound Heart -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">State One</span>
-          <span class="text-sm text-[#B3ADB9]">The Sound Heart (Qalb Salīm)</span>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        Scholars categorize the human heart into three distinct conditions based on its spiritual vitality and alignment with divine guidance.
+      </p>
+
+      <!-- Grid Callout for Three Types of Hearts -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. The Sound Heart</span>
+          <h3 class="text-xl font-medium text-white">Qalb Salīm</h3>
+          <p class="text-base text-[#B3ADB9]">
+            A heart cleansed from polytheism (<e>Shirk</e>) and hypocrisy (<e>Nifāq</e>). It acts with pure intention, seeking only Allah’s pleasure.
+          </p>
         </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “Except him who brings to Allāh a clean heart [clean from Shirk and hypocrisy].” <span class="text-sm text-[#d6b278]">[Qur’ān 26:89]</span>
-        </p>
-        <p class="text-sm sm:text-base text-[#B3ADB9] pt-2">
-          A heart purified from hidden diseases, evil intentions, and doubts; its deeds are done purely and sincerely for the sake of Allah alone.
-        </p>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. The Dead Heart</span>
+          <h3 class="text-xl font-medium text-white">Qalb Mayyit</h3>
+          <p class="text-base text-[#B3ADB9]">
+            A heart turned entirely away from its Creator. It worships worldly desires, neglects acts of devotion, and ignores divine commands.
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. The Fluctuating Heart</span>
+          <h3 class="text-xl font-medium text-white">Qalb Mutaraddid</h3>
+          <p class="text-base text-[#B3ADB9]">
+            A heart in which life and disease struggle for dominance. Its ultimate state depends on which influence—truth or temptation—prevails.
+          </p>
+        </div>
+
       </div>
 
-      <!-- Dead Heart -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">State Two</span>
-          <span class="text-sm text-[#B3ADB9]">The Dead Heart (Qalb Mayyit)</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          A heart that turns completely away from its Lord and Creator, worshipping others, refusing His commands, and lacking any life through Dhikr or righteous deeds.
+      <!-- Proof Quote Card -->
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed">
+          “The Day when there will not benefit [anyone] wealth or children, but only one who comes to Allah with a sound heart.”
         </p>
+        <span class="text-sm font-mono text-[#d6b278] block">[Sūrah ash-Shu‘arā’ 26:88-89]</span>
       </div>
+    </section>
 
-      <!-- Sick / Mixed Heart -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">State Three</span>
-          <span class="text-sm text-[#B3ADB9]">The Mixed Heart (Features Life and Death)</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          It possesses life when driven by truthfulness, Monotheism, and sincere worship; yet it experiences spiritual illness when overcome by lusts and desires. Its final quality depends on whichever drive gains dominance.
-        </p>
-      </div>
-    </div>
-
-    <!-- Section 3: The Impermeable Fortress & Prophetic Supplication -->
-    <div class="space-y-8 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Protection & Relief</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          Fortification Against Anxiety & Shayṭān
+    <!-- PRINCIPLE III -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          Remembrance as the Criterion of Life and Death
         </h2>
       </div>
 
-      <!-- Parable of Yahya (AS) -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">The Impermeable Fortress</span>
-          <span class="text-sm text-[#B3ADB9]">Commandment to Yaḥyā ibn Zakariyyā (عَلَيْهِ ٱلسَّلَامُ)</span>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        The Prophet ﷺ drew a profound distinction between a soul engaged in divine remembrance and one that neglects it, framing the contrast not as a mere variance in virtue, but as the difference between life and mortality itself.
+      </p>
+
+      <!-- Custom Numbered List -->
+      <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#24211e] space-y-6">
+
+        <div class="flex items-start gap-4">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">01.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">The Individual Parable</h3>
+            <p class="text-base text-[#B3ADB9]">
+              “The similitude of one who remembers his Lord and one who does not remember Him is like that of the living and the dead.”
+            </p>
+            <span class="text-xs font-mono text-[#d6b278]">— Narrated by Abū Mūsā al-Ash‘arī ﷺ</span>
+          </div>
         </div>
-        <blockquote class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-none">
-          “And He commands you to remember Allah. Indeed, the parable of that is a man whose enemy quickly tracks him until he reaches an impermeable fortress in which he protects himself from them. This is how the worshipper is; he does not protect himself from Shayṭān except by the remembrance of Allah.”
-        </blockquote>
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">02.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">The Dwellings Parable</h3>
+            <p class="text-base text-[#B3ADB9]">
+              “The house in which Allah is remembered and the house in which Allah is not remembered are like the living and the dead respectively.”
+            </p>
+            <span class="text-xs font-mono text-[#d6b278]">— Sahīh Muslim</span>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Supplication for Distress -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-4">
-        <div class="border-b border-[#24211e] pb-2 flex items-center justify-between">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Du‘ā’ for Relief from Distress and Sorrow</span>
-          <span class="text-sm text-[#B3ADB9]">Musnad Aḥmad</span>
-        </div>
-
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “O Allah, I am Your servant, the son of Your servant, the son of Your maidservant. My forelock is in Your hand, Your command concerning me prevails, and Your decision concerning me is just. I call upon You by every one of the Beautiful Names by which You have described Yourself, or which You have revealed in Your Book, or You have taught to anyone of Your creatures, or which You have chosen to keep in the knowledge of the unseen with You, to make the Qur’ān the delight of my heart, the light of my chest, and to remove my sadness and dispel my anxiety.”
+      <!-- Prophetic Supplication Card -->
+      <div class="bg-[#1c1a18] p-6 sm:p-8 rounded-lg border border-[#332f2b] space-y-4">
+        <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Prophetic Prescription for Anxiety</span>
+        <h3 class="text-xl font-medium text-white">The Comprehensive Supplication of Distress</h3>
+        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed">
+          “O Allah, I am Your servant, the son of Your servant, the son of Your maidservant. My forelock is in Your hand, Your command concerning me prevails, and Your decision concerning me is just. I call upon You by every one of the Beautiful Names by which You have described Yourself... to make the Qur’ān the delight of my heart, the light of my chest, the remover of my sadness, and the dispeller of my anxiety.”
         </p>
-
-        <p class="text-sm sm:text-base text-[#B3ADB9] pt-1">
-          The Prophet ﷺ noted: <em>“If he says this, Allah will remove his affliction and replace it with joy and happiness.”</em> When asked if believers should learn it, he replied: <em>“Yes, whoever hears it should know it.”</em>
+        <p class="text-sm text-[#B3ADB9]">
+          The Prophet ﷺ stated that whoever recites this with understanding will have their affliction removed and replaced with joy.
         </p>
       </div>
-    </div>
+    </section>
+
+    <!-- PRINCIPLE IV -->
+    <section class="space-y-8 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Impermeable Fortress
+        </h2>
+      </div>
+
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        In a powerful tradition preserved in <e>Al-Musnad</e>, the Prophet ﷺ recounted the divine commandments given to Prophet Yaḥyā ibn Zakariyyā <span class="text-[#B3ADB9]">عليه السلام</span>, who instructed the Children of Israel using vivid imagery.
+      </p>
+
+      <!-- Fortress Callout Card -->
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed">
+          “And He commands you to remember Allah. For indeed, the parable of that is a man whose enemy swiftly tracks him until he reaches an unbreachable fortress in which he protects himself. This is how the servant is: he cannot protect himself from Shayṭān except through the remembrance of Allah.”
+        </p>
+        <span class="text-sm font-mono text-[#d6b278] block">— The Parable of Spiritual Protection</span>
+      </div>
+
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Just as a physical fort protects a soldier from approaching enemies, continuous remembrance builds an impenetrable barrier around the heart, shielding it from satanic whispers, destructive lusts, and deadly doubts.
+      </p>
+
+      <!-- Conclusion Summary Card -->
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
+        <h3 class="text-xl font-medium text-white">Synthesis</h3>
+        <p class="text-base sm:text-lg text-[#B3ADB9]">
+          The heart cannot find solace in worldly distractions or material abundance. True peace is found exclusively through sincere devotion, monotheistic reliance, and consistent remembrance of Allah. By cultivating a sound heart and remaining within the fortress of <e>Dhikr</e>, the believer secures tranquility in this life and success in the Next.
+        </p>
+      </div>
+    </section>
 
   </div>
 </article>
 
-<!-- Script to handle reveal on scroll -->
+<!-- Scroll Animation Script & Styles -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const observerOptions = {

@@ -2,15 +2,16 @@
 layout: base.njk
 title: "Upright Moral Character"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
-category: "Aqīdah & Tazkiyah"
+category: "Character & Ethics"
 readTime: "5 min read"
-description: "The reality of noble character, our duties toward Allah and creation, and how good manners are cultivated."
+dateAdded: 2026-09-01
+description: "An essential study on the true definition of noble character, its manifestation toward both the Creator and creation, and practical steps for its cultivation."
 ---
 
-<!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->
+<!-- Custom CSS for Scroll-Reveal & Page Animations -->
 <style>
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
+    from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
@@ -18,7 +19,6 @@ description: "The reality of noble character, our duties toward Allah and creati
     animation: fadeIn 0.8s ease-out forwards;
   }
 
-  /* Scroll reveal elements initial hidden state */
   .reveal-on-scroll {
     opacity: 0;
     transform: translateY(24px);
@@ -26,7 +26,6 @@ description: "The reality of noble character, our duties toward Allah and creati
     will-change: opacity, transform;
   }
 
-  /* Revealed state when scrolled into view */
   .reveal-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -35,142 +34,268 @@ description: "The reality of noble character, our duties toward Allah and creati
 
 <article class="max-w-3xl mx-auto px-6 py-16 text-[#ECE8EF] animate-page-entry">
   
-  <header class="mb-12 text-center">
-    <h1 class="mt-4 mb-3 text-5xl italic font-normal text-white sm:text-6xl font-serif-title">{{ title }}</h1>
-    <p class="text-[#d6b278] font-light text-base sm:text-lg">By {{ author }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span></p>
+  <!-- Centered Header -->
+  <header class="mb-16 space-y-4 text-center">
+    <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
+      {{ category }} • {{ readTime }}
+    </div>
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+      {{ title }}
+    </h1>
+    <p class="text-[#d6b278] text-lg sm:text-xl font-light">
+      By {{ author }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span>
+    </p>
   </header>
 
-  <div class="prose prose-invert max-w-none text-[#B3ADB9] space-y-10 leading-relaxed font-light">
+  <div class="space-y-16 font-light leading-relaxed">
 
-    <!-- Introduction & Key Prophetic Hadiths -->
-    <div class="space-y-6 reveal-on-scroll">
-      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed font-sans-body">
-          “The strong man is not the one who can physically overtake others. Rather, the strong man (in truth) is the one who can control himself when he is angry.”
-        </p>
-      </div>
-
-      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed font-sans-body">
-          “There is nothing heavier in the Scales (on the Day of Judgment) than good character.”
-        </p>
-      </div>
-
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">The Prophetic Mission</p>
-        <blockquote class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-none">
+    <!-- Foundational Opening Quote Card -->
+    <section class="reveal-on-scroll">
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
           “I have only been sent to complete upright moral character.”
-        </blockquote>
+        </p>
+        <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
+          — The Prophet Muḥammad ﷺ
+        </p>
       </div>
-    </div>
+    </section>
 
-    <!-- Example of the Prophet's Character -->
-    <div class="space-y-6 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">The Living Example</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          Character of the Prophet ﷺ
+    <!-- PRINCIPLE I -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The True Nature of Strength and Moral Weight
         </h2>
       </div>
 
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">As cited by Ibn al-Qayyim (رَحِمَهُ ٱللَّٰهُ)</p>
-        <ul class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278] space-y-2 list-none">
-          <li>• Greeted children when passing by them</li>
-          <li>• Was in the service of his family when at home</li>
-          <li>• Never became angry over anything personal</li>
-          <li>• Repaired his own sandals and mended his torn clothes</li>
-          <li>• Milked his goat himself and fed his own camel</li>
-          <li>• Ate with his servants and sat with the poor</li>
-          <li>• Cared for orphans and initiated the greeting</li>
-          <li>• Was soft in manners, kind, easy to get along with, and had a pleasant smile</li>
-          <li>• Was gracefully humble and generous without wastefulness</li>
-        </ul>
-      </div>
-    </div>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        Popular perception often equates strength with physical dominance, athletic conquest, or the ability to subdue others. In the Islamic paradigm, however, true strength is an internal mastery—the capacity to govern one's own soul when provoked by anger.
+      </p>
 
-    <!-- The Two Dimensions of Character Cards -->
-    <div class="space-y-8 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Summary of the Text</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          The Scope & Acquisition of Good Character
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Maintaining composure and self-control during emotional turbulence is the hallmark of noble conduct. It is this internal discipline that weighs most heavily when human deeds are measured.
+      </p>
+
+      <!-- Grid Callout for Core Hadiths -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Self-Mastery</span>
+          <h3 class="text-xl font-medium text-white">The Meaning of Strength</h3>
+          <p class="text-base text-[#B3ADB9] italic">
+            “The strong man is not the one who can physically overtake others. Rather, the strong man in truth is the one who can control himself when he is angry.”
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Eschatological Weight</span>
+          <h3 class="text-xl font-medium text-white">The Balance on the Scales</h3>
+          <p class="text-base text-[#B3ADB9] italic">
+            “There is nothing heavier in the Scales on the Day of Judgment than good character.”
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRINCIPLE II -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Lived Prophetic Model of Humility
         </h2>
       </div>
 
-      <!-- Dimension 1: Good Character with the Creator -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Dimension One</span>
-          <span class="text-sm text-[#B3ADB9]">Manners with the Creator</span>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        Upright character is not an abstract theory; it was fully embodied in the daily life of the Messenger of Allah ﷺ. As Ibn al-Qayyim <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> documented, the Prophet’s conduct blended lofty dignity with profound personal humility.
+      </p>
+
+      <!-- Prophetic Qualities Cards Grid -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Domestic Conduct</span>
+          <h3 class="text-xl font-medium text-white">Service Within the Home</h3>
+          <p class="text-base text-[#B3ADB9]">
+            He remained in the active service of his family, repaired his own sandals, mended his torn garments, and milked his goat himself.
+          </p>
         </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          Good manners with Allaah revolve around three core affairs:
-        </p>
-        <ol class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-6 space-y-1 list-decimal">
-          <li>Believing what Allaah says when it reaches you</li>
-          <li>Implementing and putting His rulings into practice</li>
-          <li>Facing His decreed affairs (Qadar) with patience and acceptance</li>
-        </ol>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Social Engagement</span>
+          <h3 class="text-xl font-medium text-white">Warmth Toward Creation</h3>
+          <p class="text-base text-[#B3ADB9]">
+            He initiated greetings, greeted passing children, sat with the poor, cared for orphans, fed his own camel, and ate alongside his servants.
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Emotional Temperament</span>
+          <h3 class="text-xl font-medium text-white">Equanimity & Softness</h3>
+          <p class="text-base text-[#B3ADB9]">
+            He never became angry over personal slights. He was soft in manner, gentle, easy to get along with, and constantly wore a pleasant smile.
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Financial Dispositions</span>
+          <h3 class="text-xl font-medium text-white">Balanced Generosity</h3>
+          <p class="text-base text-[#B3ADB9]">
+            He exhibited graceful humility and generous giving without ever succumbing to wastefulness or extravagance.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRINCIPLE III -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Two Dimensions of Noble Character
+        </h2>
       </div>
 
-      <!-- Dimension 2: Good Character with Creation -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Dimension Two</span>
-          <span class="text-sm text-[#B3ADB9]">Manners with Creation</span>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        A common misconception restricts good character solely to interpersonal dealings. In reality, sound ethics encompasses a believer's relationship with both the Creator and His creation.
+      </p>
+
+      <!-- Comparative Framework Grid -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <!-- Toward Creator -->
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Dimension I</span>
+            <h3 class="text-xl font-medium text-white">Good Character With Allah</h3>
+          </div>
+          <p class="text-base text-[#B3ADB9]">
+            Revolves around three foundational pillars:
+          </p>
+          <ul class="space-y-2 text-base text-[#ECE8EF]">
+            <li class="flex items-start gap-2">
+              <span class="text-[#d6b278] font-bold">•</span>
+              <span><strong>Firm Belief:</strong> Affirming with complete trust whatever Allah reveals.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#d6b278] font-bold">•</span>
+              <span><strong>Execution:</strong> Faithfully putting His sacred rulings into practice.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#d6b278] font-bold">•</span>
+              <span><strong>Acceptance of Decree:</strong> Meeting divine destiny (<e>Qadar</e>) with patience and contentment.</span>
+            </li>
+          </ul>
         </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          Scholars define good manners with creation through three pillars:
-        </p>
-        <ol class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-6 space-y-1 list-decimal">
-          <li>Refraining from harming others</li>
-          <li>Performing acts of kindness</li>
-          <li>Having a pleasant smile on one's face</li>
-        </ol>
-        <p class="text-sm sm:text-base text-[#B3ADB9] pt-2">
-          A key sign is being easy to be around, bringing happiness to family and friends within the boundaries of Islaam.
-        </p>
+
+        <!-- Toward Creation -->
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Dimension II</span>
+            <h3 class="text-xl font-medium text-white">Good Character With Creation</h3>
+          </div>
+          <p class="text-base text-[#B3ADB9]">
+            Defined by scholars through three essential qualities:
+          </p>
+          <ul class="space-y-2 text-base text-[#ECE8EF]">
+            <li class="flex items-start gap-2">
+              <span class="text-[#d6b278] font-bold">•</span>
+              <span><strong>Restraint:</strong> Refraining from causing harm to others in any form.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#d6b278] font-bold">•</span>
+              <span><strong>Benevolence:</strong> Actively initiating acts of kindness and assistance.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#d6b278] font-bold">•</span>
+              <span><strong>Amiability:</strong> Maintaining a cheerful demeanor and welcoming countenance.</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
-      <!-- Dimension 3: Attaining Good Character -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Acquisition</span>
-          <span class="text-sm text-[#B3ADB9]">How to Attain Good Character</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          Good character can be acquired through practice and striving via three means:
+      <!-- Family Benchmark Callout -->
+      <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#24211e] space-y-3">
+        <h3 class="text-xl font-medium text-white">The Domestic Benchmark</h3>
+        <p class="text-base sm:text-lg text-[#B3ADB9]">
+          A true indicator of excellent manners is being easy to live with. Relatives and companions should not find dealings difficult or harsh. Instead, the noble person brings joy to their household within lawful boundaries, following the Prophetic standard:
         </p>
-        <ul class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-6 space-y-1 list-disc">
-          <li>Reading the Book of Allaah and the Sunnah of His Messenger ﷺ</li>
-          <li>Accompanying those known for good character</li>
-          <li>Contemplating the negative consequences of bad character</li>
-        </ul>
+        <p class="text-lg text-[#ECE8EF] italic font-serif pt-2 border-t border-[#332f2b]">
+          “The best of you are the best to his family, and I am the best of you to my family.”
+        </p>
+      </div>
+    </section>
+
+    <!-- PRINCIPLE IV -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          Practical Cultivation and Eternal Fruits
+        </h2>
       </div>
 
-      <!-- Closing Virtues & Supplication -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-4">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Virtue & Conclusion</span>
-          <span class="text-sm text-[#B3ADB9]">The Ultimate Reward</span>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        Noble character is not strictly an innate disposition fixed at birth; it can be acquired and refined through conscious effort, self-discipline, and dedicated practice.
+      </p>
+
+      <!-- Custom Numbered List for Practical Steps -->
+      <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#24211e] space-y-6">
+
+        <div class="flex items-start gap-4">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">01.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Immersion in Revelation</h3>
+            <p class="text-base text-[#B3ADB9]">
+              Consistently reading, pondering, and internalizing the Book of Allah and the guidance found in the authentic Sunnah of His Messenger ﷺ.
+            </p>
+          </div>
         </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed">
-          “The most complete believers are those with the finest character.”
-        </p>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed">
-          “(The one with) good manners gets the best of this life and the Hereafter.”
-        </p>
-        <div class="border-t border-[#24211e] pt-3 text-sm sm:text-base text-[#B3ADB9] italic">
-          We ask Allaah to make us from those who stick tenaciously to His Book and the Sunnah of His Messenger ﷺ in secret and openly, and may He take our souls in that state. May He protect us in this life and the Next and not allow our hearts to stray after He has guided us. May He grant us a portion of His Mercy, as He is al-Wahhaab.
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">02.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Righteous Companionship</h3>
+            <p class="text-base text-[#B3ADB9]">
+              Keeping company with people renowned for their composure, piety, and refined manners, allowing their habits to naturally influence your own.
+            </p>
+          </div>
         </div>
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">03.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Contemplating Consequences</h3>
+            <p class="text-base text-[#B3ADB9]">
+              Reflecting deeply on the spiritual harm, social fallout, and personal loss caused by poor conduct and uncontrolled temper.
+            </p>
+          </div>
+        </div>
+
       </div>
-    </div>
+
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        The ultimate return for cultivating good manners spans both realms of existence: <e>“The most complete believers are those with the finest character,”</e> and <e>“The one with good manners obtains the best of this life and the Hereafter.”</e>
+      </p>
+
+      <!-- Closing Supplication Card -->
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
+        <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Closing Supplication</span>
+        <p class="text-base sm:text-lg text-[#ECE8EF] italic">
+          “We ask Allah to make us from those who stick tenaciously to His Book and the Sunnah of His Messenger ﷺ in secret and openly, and may He take our souls in that state. May He protect us in this life and the Next, and not allow our hearts to stray after He has guided us. May He grant us a portion of His Mercy, as He is al-Wahhāb (the Ever-Giving).”
+        </p>
+      </div>
+    </section>
 
   </div>
 </article>
 
-<!-- Script to handle reveal on scroll -->
+<!-- Scroll Animation Script -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const observerOptions = {

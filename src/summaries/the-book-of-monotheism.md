@@ -1,16 +1,17 @@
 ---
 layout: base.njk
 title: "The Book of Monotheism"
-author: "Shaykh al-Islām Muḥammad ibn ‘Abd al-Wahhāb"
-category: "Aqīdah & Tawḥīd"
+author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
+category: "Aqīdah & Foundations"
 readTime: "7 min read"
-description: "An overview of Tawḥīd, its three categories, virtues, and the distinction between major and minor Shirk."
+dateAdded: 2026-09-05
+description: "An authoritative study on the essence, categories, virtues, and opposing realities of Islamic Monotheism."
 ---
 
-<!-- Custom CSS for Scroll-Reveal & Fade-In Animations -->
+<!-- Custom CSS for Scroll-Reveal & Page Animations -->
 <style>
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
+    from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
@@ -18,7 +19,6 @@ description: "An overview of Tawḥīd, its three categories, virtues, and the d
     animation: fadeIn 0.8s ease-out forwards;
   }
 
-  /* Scroll reveal elements initial hidden state */
   .reveal-on-scroll {
     opacity: 0;
     transform: translateY(24px);
@@ -26,7 +26,6 @@ description: "An overview of Tawḥīd, its three categories, virtues, and the d
     will-change: opacity, transform;
   }
 
-  /* Revealed state when scrolled into view */
   .reveal-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -35,176 +34,299 @@ description: "An overview of Tawḥīd, its three categories, virtues, and the d
 
 <article class="max-w-3xl mx-auto px-6 py-16 text-[#ECE8EF] animate-page-entry">
   
-  <header class="mb-12 text-center">
-    <h1 class="mt-4 mb-3 text-5xl italic font-normal text-white sm:text-6xl font-serif-title">{{ title }}</h1>
-    <p class="text-[#d6b278] font-light text-base sm:text-lg">By {{ author }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span></p>
+  <!-- Centered Header -->
+  <header class="mb-16 space-y-4 text-center">
+    <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
+      {{ category }} • {{ readTime }}
+    </div>
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+      {{ title }}
+    </h1>
+    <p class="text-[#d6b278] text-lg sm:text-xl font-light">
+      By {{ author }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span>
+    </p>
   </header>
 
-  <div class="prose prose-invert max-w-none text-[#B3ADB9] space-y-10 leading-relaxed font-light">
+  <div class="space-y-16 font-light leading-relaxed">
 
-    <!-- Definition & Centrality of Tawḥīd -->
-    <div class="space-y-6 reveal-on-scroll">
-      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed font-sans-body">
-          “In the absolute sense, Tawḥīd refers to the knowledge and recognition that the Lord solely possesses the most perfect attributes, acknowledging Him to be the sole possessor of the greatest and most majestic attributes, and singling Him out alone for worship.”
+    <!-- Intro Quote Card -->
+    <section class="reveal-on-scroll">
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic leading-relaxed">
+          “Know that in the absolute sense, Tawḥīd refers to the knowledge and recognition that the Lord solely possesses the most perfect attributes, acknowledging Him to be the sole possessor of majesty, and singling Him out alone for worship.”
+        </p>
+        <p class="text-sm text-[#B3ADB9] uppercase tracking-wider font-mono">
+          — The Fundamental Definition of Monotheism
         </p>
       </div>
+    </section>
 
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">The Call of the Messengers</p>
-        <blockquote class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-none">
-          “All of the messengers called to this Tawḥīd, and they forbade contradicting it by shirk and rivalry to Allah... He made it known that there is no salvation, success, nor happiness, except by this Tawḥīd.”
-        </blockquote>
-      </div>
-    </div>
-
-    <!-- The Three Categories of Tawḥīd -->
-    <div class="space-y-8 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Categorization</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          The Three Branches of Tawḥīd
+    <!-- PRINCIPLE I -->
+    <section class="space-y-6 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Supreme Right and Universal Call
         </h2>
       </div>
 
-      <!-- Branch 1 -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Category One</span>
-          <span class="text-sm text-[#B3ADB9]">Tawḥīd al-Asmā' wa al-Ṣifāt</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “The belief that the Lord alone—magnificent is His majesty—is the sole possessor of ultimate perfection in every sense, by the magnificent, majestic, and beautiful characteristics, which none shares with Him in any way whatsoever.”
-        </p>
-      </div>
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        Monotheism is the greatest of all religious commands, the most fundamental of all principles, and the bedrock upon which all deeds rest. Every divine Messenger was sent to establish it, forbidding its opposite—associating partners with Allah (<e>Shirk</e>) and setting up rivals to Him.
+      </p>
 
-      <!-- Branch 2 -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Category Two</span>
-          <span class="text-sm text-[#B3ADB9]">Tawḥīd al-Rubūbiyyah</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “The worshipper is to believe that Allah is the sole Lord of creating, providing, originating, the One who nurtures all creation with His bounty.”
-        </p>
-      </div>
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        The Noble Qur’an repeatedly commands, obligates, and clarifies Tawḥīd as the sole path to salvation, success, and happiness. All evidences—whether grounded in sound reason, sacred revelation, divine wisdom, or human nature—concur that Tawḥīd is the paramount right of Allah over His creation.
+      </p>
+    </section>
 
-      <!-- Branch 3 -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Category Three</span>
-          <span class="text-sm text-[#B3ADB9]">Tawḥīd al-Ulūhiyyah / al-‘Ibādah</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “The knowledge and recognition that Allah is the lone possessor of divinity and worship over all of His creatures, singling Him out solely for all worship, making the religion for Allah alone.”
-        </p>
-        <p class="text-sm sm:text-base text-[#B3ADB9] pt-2">
-          This final type is required and implied by the first two, derived directly from Allah's characteristics of greatness, majesty, and lordship.
-        </p>
-      </div>
-    </div>
-
-    <!-- Virtues of Tawḥīd -->
-    <div class="space-y-6 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Virtues & Fruits</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          The Virtues of Monotheism
+    <!-- PRINCIPLE II -->
+    <section class="space-y-8 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Three Dimensions of Monotheism
         </h2>
       </div>
 
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <ul class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278] space-y-2 list-none">
-          <li>• The best produce in this world and the Hereafter, yielding unmatched virtues.</li>
-          <li>• The greatest means for removing sorrows and warding off punishment in both worlds.</li>
-          <li>• Grants complete guidance, perfection, and safety to its practitioner.</li>
-          <li>• The exclusive reason for being granted Allah’s pleasure and eternal rewards.</li>
-          <li>• Facilitates the accomplishment of good deeds and guards against evil and affliction.</li>
-          <li>• The statement <em>“Lā ilāha illā Allāh”</em> will tip the Scale, outweighing the heavens, the earths, and all their inhabitants.</li>
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Sound Islamic doctrine organizes monotheism into three distinct, interconnected branches that together form a complete comprehension of the Divine:
+      </p>
+
+      <!-- Grid for Categories -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. Names & Attributes</span>
+          <h3 class="text-xl font-medium text-white">Tawḥīd al-Asmā’ wa al-Ṣifāt</h3>
+          <p class="text-base text-[#B3ADB9]">
+            The firm conviction that Allah alone possesses ultimate perfection in every sense, defined by majestic and beautiful characteristics shared by none in creation.
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Lordship</span>
+          <h3 class="text-xl font-medium text-white">Tawḥīd al-Rubūbīyah</h3>
+          <p class="text-base text-[#B3ADB9]">
+            Affirming Allah as the sole Lord of creation, provision, and governance, who nurtures all of existence with His abundant bounty and sovereignty.
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3 sm:col-span-2 lg:col-span-1">
+          <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. Worship</span>
+          <h3 class="text-xl font-medium text-white">Tawḥīd al-Ulūhīyah</h3>
+          <p class="text-base text-[#B3ADB9]">
+            Recognizing Allah as the lone possessor of divinity (<e>Ulūhīyah</e>) and singling Him out for all acts of devotion. This branch is directly required and implied by the first two.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-2">
+        <h4 class="text-lg font-medium text-white">The Relationship Between Lordship and Worship</h4>
+        <p class="text-base sm:text-lg text-[#B3ADB9]">
+          Because <e>al-Ulūhīyah</e> reflects attributes of absolute perfection and flows directly from <e>al-Rubūbīyah</e>, only the Creator who sustains and bestows all blessings is entitled to receive the worship of creation.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRINCIPLE III -->
+    <section class="space-y-8 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Virtues and Weight of Monotheism
+        </h2>
+      </div>
+
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Nothing produces greater goodness or holds a wider array of virtues than Tawḥīd. It stands as the finest yield in both this life and the Hereafter.
+      </p>
+
+      <!-- Custom Numbered List -->
+      <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#24211e] space-y-6">
+
+        <div class="flex items-start gap-4">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">01.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Removal of Sorrows & Punishment</h3>
+            <p class="text-base sm:text-lg text-[#B3ADB9]">
+              It serves as the paramount means to dispel earthly and eternal grief, warding off Divine punishment in both realms.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">02.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Absolute Guidance & Security</h3>
+            <p class="text-base sm:text-lg text-[#B3ADB9]">
+              It grants its practitioner complete moral guidance, perfection of character, and ultimate safety in both worlds.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">03.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Attainment of Divine Pleasure</h3>
+            <p class="text-base sm:text-lg text-[#B3ADB9]">
+              It is the exclusive key that unlocks Allah’s pleasure and eternal rewards.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">04.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Facilitation of Righteous Deeds</h3>
+            <p class="text-base sm:text-lg text-[#B3ADB9]">
+              It eases the execution of virtuous actions, fortifies against evil, and delivers the servant from severe trials.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 border-t border-[#332f2b] pt-6">
+          <span class="text-2xl sm:text-3xl font-bold font-mono text-[#d6b278]">05.</span>
+          <div class="space-y-1">
+            <h3 class="text-lg font-medium text-white sm:text-xl">Unmatched Weight on the Scale</h3>
+            <p class="text-base sm:text-lg text-[#B3ADB9]">
+              The statement of sincerity—<e>Kalimat al-Ikhlāṣ</e> (“Lā ilāha illā Allāh”)—outweighs the heavens, the earth, and all their inhabitants combined when placed upon the Scale.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRINCIPLE IV -->
+    <section class="space-y-8 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          The Categorization of Shirk and Forbidden Means
+        </h2>
+      </div>
+
+      <p class="text-lg sm:text-xl text-[#ECE8EF]">
+        Any compromise in <e>Tawḥīd al-Ulūhīyah</e> negates a person’s monotheism. Association of partners with Allah falls into two distinct categories:
+      </p>
+
+      <!-- Grid comparing Major and Minor Shirk -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
+            <span class="text-sm font-mono text-[#d6b278] uppercase">Major Shirk</span>
+            <span class="text-xs font-mono text-[#B3ADB9] bg-[#24211e] px-2 py-0.5 rounded">Nullifies Faith</span>
+          </div>
+          <p class="text-base text-[#B3ADB9]">
+            Assigning a rival to Allah by invoking, fearing, hoping in, loving, or directing acts of worship to creation as one should to Allah. This form completely destroys Tawḥīd, excludes its practitioner from Paradise, and leads to eternal condemnation.
+          </p>
+        </div>
+
+        <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
+          <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
+            <span class="text-sm font-mono text-[#d6b278] uppercase">Minor Shirk</span>
+            <span class="text-xs font-mono text-[#B3ADB9] bg-[#24211e] px-2 py-0.5 rounded">Prohibited Avenue</span>
+          </div>
+          <p class="text-base text-[#B3ADB9]">
+            Statements or actions that lead toward major shirk or aggrandize creation without reaching actual worship. Examples include swearing oaths by other than Allah or performing deeds for subtle ostentation (<e>Riyā’</e>).
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Specific Prohibited Practices Callout -->
+      <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#332f2b] space-y-4">
+        <h3 class="text-xl font-medium text-white">Prohibited Practices That Compromise Monotheism</h3>
+        <p class="text-base text-[#B3ADB9]">
+          Scholars unanimously agree that the Islamic law has assigned no inherent spiritual blessings (<e>Tabarruk</e>) to be derived from trees, stones, physical spots, or tombs:
+        </p>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base text-[#ECE8EF] pt-2">
+          <li class="flex items-center gap-2">
+            <span class="text-[#d6b278]">•</span> Seeking blessings from sacred spots or tombs
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#d6b278]">•</span> Wearing bracelets, cords, or amulets for protection
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#d6b278]">•</span> Sacrificing animals to other than Allah
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#d6b278]">•</span> Making solemn vows to creation
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#d6b278]">•</span> Seeking refuge in created beings
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#d6b278]">•</span> Exaggerating honor even at virtuous sites
+          </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- Categorization of Shirk -->
-    <div class="space-y-8 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Negation of Tawḥīd</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          Major vs. Minor Shirk
+    <!-- PRINCIPLE V -->
+    <section class="space-y-8 reveal-on-scroll">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle V</span>
+        <h2 class="text-3xl font-medium text-white sm:text-4xl">
+          Deconstructing False Intercession & Grave Exaggeration
         </h2>
       </div>
 
-      <!-- Major Shirk -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Major Shirk</span>
-          <span class="text-sm text-[#B3ADB9]">Nullifies Islam Entirely</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “To make a rival to Allah that is called upon as Allah is called upon, or to fear him, or hope in him, or love him as Allah is loved, or to render a type of worship to him. This leaves its practitioner with no Tawḥīd at all.”
-        </p>
-        <div class="text-sm sm:text-base text-[#B3ADB9] pt-2 space-y-1">
-          <p>Examples include: Sacrificing to other than Allah, making vows or seeking refuge in created beings, and supplicating directly to grave inhabitants.</p>
-        </div>
-      </div>
+      <p class="text-lg sm:text-xl text-[#B3ADB9]">
+        Throughout history, those who associated partners with Allah defended their actions by claiming that angels, prophets, and righteous souls (<e>Awliyā’</e>) acted merely as influential intermediaries.
+      </p>
 
-      <!-- Minor Shirk -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Minor Shirk</span>
-          <span class="text-sm text-[#B3ADB9]">Means Leading to Major Shirk</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “Every saying or action which leads to shirk, like aggrandizing creatures in a way that does not quite reach the level of worship.”
-        </p>
-        <div class="text-sm sm:text-base text-[#B3ADB9] pt-2 space-y-1">
-          <p>Examples include: Swearing an oath by other than Allah, performing deeds for show (Riyā’), or wearing amulets, bracelets, and cords to ward off affliction.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Misconceptions Regarding Intercession & Graves -->
-    <div class="space-y-8 reveal-on-scroll">
-      <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
-        <p class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Refutation of Fallacies</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white uppercase font-serif-sub">
-          Intercession & Exaggeration at Graves
-        </h2>
-      </div>
-
-      <!-- Intercession Falsehood -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Intercession</span>
-          <span class="text-sm text-[#B3ADB9]">False Analogy of Kings</span>
-        </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “The polytheists claimed: ‘We call on them to bring us nearer to Allah, and so that they will intercede for us... just like one would do with advisors of kings.’ This is the greatest of falsehoods—likening the Sovereign Creator to needy kings who depend on advisors.”
-        </p>
-        <p class="text-sm sm:text-base text-[#B3ADB9] pt-2">
-          All intercession belongs solely to Allah. None intercedes without His permission, and He only permits it for those with whose Tawḥīd and sincere deeds He is pleased.
+      <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-3">
+        <h3 class="text-lg font-medium text-white">The Fallacy of Human Analogies</h3>
+        <p class="text-base sm:text-lg text-[#B3ADB9]">
+          The polytheists likened the Sovereign King of the universe to needy earthly monarchs who rely on ministers and advisors to manage their realms. This is the greatest of falsehoods. Allah needs no intermediaries; all intercession belongs strictly to Him, requiring His explicit permission and His satisfaction with the monotheism of the supplicant.
         </p>
       </div>
 
-      <!-- Grave Exaggeration -->
-      <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg space-y-3">
-        <div class="flex items-center justify-between border-b border-[#24211e] pb-2">
-          <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Sacred Spots & Graves</span>
-          <span class="text-sm text-[#B3ADB9]">Prohibited Means & Worship</span>
+      <!-- Scriptural Evidence -->
+      <div class="space-y-4">
+        <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278] block">Quranic Refutation of False Intercession</span>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div class="bg-[#1c1a18] p-5 rounded border border-[#332f2b] space-y-2">
+            <p class="text-base text-[#ECE8EF] italic">
+              “We worship them only that they may bring us near to Allah.”
+            </p>
+            <span class="text-xs font-mono text-[#d6b278] block">[Sūrah az-Zumar 39:3]</span>
+          </div>
+
+          <div class="bg-[#1c1a18] p-5 rounded border border-[#332f2b] space-y-2">
+            <p class="text-base text-[#ECE8EF] italic">
+              “They say: ‘These are our intercessors with Allah.’”
+            </p>
+            <span class="text-xs font-mono text-[#d6b278] block">[Sūrah Yūnus 10:18]</span>
+          </div>
         </div>
-        <p class="text-base sm:text-lg text-[#ECE8EF] italic leading-relaxed pl-2 border-l-2 border-[#d6b278]">
-          “The Shari‘ah has assigned no blessings to be derived from trees, stones, spots, or tombs. Touching graves, performing Ṣalāh at them, or building structures over them are prohibited avenues leading to shirk.”
-        </p>
-        <p class="text-sm sm:text-base text-[#B3ADB9] pt-2">
-          Calling directly upon grave inhabitants or seeking their help for worldly or otherworldly needs is major shirk—the exact error of idolaters who claimed: <em>“We worship them only that they may bring us near to Allāh.”</em> (Qur'ān 39:3).
-        </p>
       </div>
-    </div>
+
+      <!-- Distinction between grave practices -->
+      <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-4">
+        <h3 class="text-xl font-medium text-white">Distinguishing Avenues to Shirk from Major Shirk at Graves</h3>
+
+        <div class="space-y-4 text-base text-[#B3ADB9]">
+          <div class="border-b border-[#332f2b] pb-3">
+            <strong class="block mb-1 text-white">Avenues Leading to Shirk (Forbidden Innovations):</strong>
+            Touching graves for blessing, building structures or shrines over them, lighting them, or performing regular <e>Ṣalāh</e> at grave sites without direct supplication to the deceased.
+          </div>
+          <div>
+            <strong class="block mb-1 text-white">Major Shirk (Direct Polytheism):</strong>
+            Supplicating directly to the inhabitants of the grave, seeking their assistance for worldly or afterlife needs, or relying on them as independent mediators. Calling upon the dead for aid is equivalent to ancient idol worship.
+          </div>
+        </div>
+      </div>
+    </section>
 
   </div>
 </article>
 
-<!-- Script to handle reveal on scroll -->
+<!-- Scroll Animation Script & Styles -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const observerOptions = {
