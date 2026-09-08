@@ -5,6 +5,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addPassthroughCopy("src/_headers");
 
+  // Date formatting filter
+  eleventyConfig.addFilter("formatDate", function (date) {
+    const d = new Date(date);
+
+    return d.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  });
+
   // Summaries Collection
   // Sort 'summaries' collection by dateAdded (newest first)
   eleventyConfig.addCollection("summaries", function (collectionApi) {

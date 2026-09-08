@@ -63,7 +63,7 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
 <main id="summaries" class="max-w-5xl px-6 py-20 mx-auto sm:py-28">
   
   <!-- Section Title: SUMMARIES -->
-  <div class="scroll-reveal mb-10 pb-4 border-b border-[#332e29]/60 flex flex-col items-start">
+  <div class="scroll-reveal mb-10 pb-4 border-b border-[#332e29]/60 flex flex-col items-center text-center">
     <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
       LIBRARY
     </span>
@@ -87,7 +87,7 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
               By {{ summary.data.author }}
             </p>
             <p class="text-xs text-[#d6b278]/60 mt-2 font-light">
-            Added {{ summary.data.dateAdded }}
+              Added {{ summary.data.dateAdded | formatDate }}
             </p>
             <p class="text-sm text-[#b3a898] mt-4 font-light leading-relaxed group-hover:text-[#ede8df] transition-colors duration-300 line-clamp-3">
               {{ summary.data.description }}
@@ -149,7 +149,7 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
 <!-- SECTION: OUR PURPOSE -->
 <section class="max-w-4xl px-6 py-12 mx-auto scroll-reveal">
   <div class="border-t border-[#332e29] pt-16">
-    <div class="mb-6">
+    <div class="mb-6 text-center">
       <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
         ABOUT THE PLATFORM
       </span>
@@ -164,7 +164,13 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
       </p>
       <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29] text-xs sm:text-sm text-[#ede8df] leading-relaxed">
         <span class="text-[#d6b278] font-medium uppercase tracking-wider block mb-1">Note for Students:</span>
-        These summaries are prepared strictly as an aid to revision, initial orientation, and gaining a clear overview of a text. They are not intended as a replacement or substitute for reading and studying the complete original works under qualified instruction.
+These summaries are intended only as an aid to revision and initial orientation. They are
+<strong class="font-medium text-[#d6b278]">not a substitute for studying the complete books</strong>.
+
+Students should strive to
+<strong class="font-medium text-[#d6b278]">follow the Sunnah and the methodology of the Salaf</strong>,
+and study the full works under the guidance of
+<strong class="font-medium text-[#d6b278]">qualified scholars and teachers</strong>.
       </div>
     </div>
   </div>
@@ -173,7 +179,7 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
 <!-- SECTION: OUR METHODOLOGY -->
 <section class="max-w-4xl px-6 py-12 mx-auto scroll-reveal">
   <div class="border-t border-[#332e29] pt-16">
-    <div class="mb-8">
+    <div class="mb-8 text-center">
       <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
         GUIDING PRINCIPLES
       </span>
@@ -182,63 +188,63 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-      <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
-        <h3 class="text-sm font-medium text-[#ede8df] mb-1 flex items-center gap-2">
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="p-6 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
+        <h3 class="text-base font-medium text-[#ede8df] mb-1 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-[#d6b278]"></span>
           Adherence to Revelation
         </h3>
-        <p class="text-xs text-[#b3a898] font-light leading-relaxed">
+        <p class="text-sm text-[#b3a898] font-light leading-relaxed">
           Giving primary importance to the Noble Qur'an and authentic Sunnah of the Messenger of Allah ﷺ.
         </p>
       </div>
 
-      <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
-        <h3 class="text-sm font-medium text-[#ede8df] mb-1 flex items-center gap-2">
+      <div class="p-6 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
+        <h3 class="text-base font-medium text-[#ede8df] mb-1 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-[#d6b278]"></span>
           Understanding of the Salaf
         </h3>
-        <p class="text-xs text-[#b3a898] font-light leading-relaxed">
+        <p class="text-sm text-[#b3a898] font-light leading-relaxed">
           Understanding texts strictly according to the comprehension of the Companions and early generations.
         </p>
       </div>
 
-      <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
-        <h3 class="text-sm font-medium text-[#ede8df] mb-1 flex items-center gap-2">
+      <div class="p-6 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
+        <h3 class="text-base font-medium text-[#ede8df] mb-1 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-[#d6b278]"></span>
           Established Works
         </h3>
-        <p class="text-xs text-[#b3a898] font-light leading-relaxed">
+        <p class="text-sm text-[#b3a898] font-light leading-relaxed">
           Summarizing recognized, authentic classical and contemporary books of reliable scholars.
         </p>
       </div>
 
-      <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
-        <h3 class="text-sm font-medium text-[#ede8df] mb-1 flex items-center gap-2">
+      <div class="p-6 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
+        <h3 class="text-base font-medium text-[#ede8df] mb-1 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-[#d6b278]"></span>
           Preserving Meaning
         </h3>
-        <p class="text-xs text-[#b3a898] font-light leading-relaxed">
+        <p class="text-sm text-[#b3a898] font-light leading-relaxed">
           Carefully preserving the author’s intended context, tone, and core argument without distortion.
         </p>
       </div>
 
-      <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
-        <h3 class="text-sm font-medium text-[#ede8df] mb-1 flex items-center gap-2">
+      <div class="p-6 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
+        <h3 class="text-base font-medium text-[#ede8df] mb-1 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-[#d6b278]"></span>
           Accuracy & Clarity
         </h3>
-        <p class="text-xs text-[#b3a898] font-light leading-relaxed">
+        <p class="text-sm text-[#b3a898] font-light leading-relaxed">
           Striving for precise, clear phrasing that simplifies complex topics while keeping vital concepts intact.
         </p>
       </div>
 
-      <div class="p-5 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
-        <h3 class="text-sm font-medium text-[#ede8df] mb-1 flex items-center gap-2">
+      <div class="p-6 rounded-xl bg-[#24211e]/60 border border-[#332e29]">
+        <h3 class="text-base font-medium text-[#ede8df] mb-1 flex items-center gap-2">
           <span class="w-1.5 h-1.5 rounded-full bg-[#d6b278]"></span>
           Encouraging Full Study
         </h3>
-        <p class="text-xs text-[#b3a898] font-light leading-relaxed">
+        <p class="text-sm text-[#b3a898] font-light leading-relaxed">
           Consistently encouraging readers to return to the original source texts for complete study.
         </p>
       </div>
@@ -247,80 +253,201 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
 </section>
 
 <!-- SECTION: FREQUENTLY ASKED QUESTIONS -->
+
 <section class="max-w-4xl px-6 py-12 mx-auto scroll-reveal">
   <div class="border-t border-[#332e29] pt-16">
-    <div class="mb-8">
-      <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
-        COMMON INQUIRIES
-      </span>
-      <h2 class="text-2xl font-normal tracking-wide text-white sm:text-3xl font-serif-title">
-        FREQUENTLY ASKED QUESTIONS
-      </h2>
-    </div>
 
-    <div class="space-y-3">
-      <details class="group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
-        <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
-          <span>Are these summaries a replacement for the original books?</span>
-          <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
+```
+<!-- Centered Title -->
+<div class="mb-8 text-center">
+  <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
+    COMMON INQUIRIES
+  </span>
+
+  <h2 class="text-2xl font-normal tracking-wide text-white sm:text-3xl font-serif-title">
+    FREQUENTLY ASKED QUESTIONS
+  </h2>
+</div>
+
+<!-- FAQ Accordion -->
+<div class="space-y-3">
+
+  <details class="faq-item group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
+    <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
+      <span>Are these summaries a replacement for the original books?</span>
+
+      <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2"
+           fill="none"
+           stroke="currentColor"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+      <div class="overflow-hidden">
         <p class="mt-4 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed border-t border-[#332e29]/60 pt-3">
           No. The summaries are intended strictly as an aid to understanding, review, and gaining a quick overview of a work. Readers should always return to the original books for comprehensive, detailed study.
         </p>
-      </details>
+      </div>
+    </div>
+  </details>
 
-      <details class="group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
-        <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
-          <span>Who are these summaries for?</span>
-          <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
+
+  <details class="faq-item group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
+    <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
+      <span>Who are these summaries for?</span>
+
+      <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2"
+           fill="none"
+           stroke="currentColor"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+      <div class="overflow-hidden">
         <p class="mt-4 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed border-t border-[#332e29]/60 pt-3">
-          They are intended for students of knowledge and anyone seeking a concise introduction or structured review of authentic, beneficial Islamic works.
+          They are intended for beginners and those taking their first steps in seeking beneficial Islamic knowledge, offering a concise and accessible introduction to authentic Islamic works.
         </p>
-      </details>
+      </div>
+    </div>
+  </details>
 
-      <details class="group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
-        <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
-          <span>What methodology does the website follow?</span>
-          <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
+
+  <details class="faq-item group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
+    <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
+      <span>What methodology does the website follow?</span>
+
+      <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2"
+           fill="none"
+           stroke="currentColor"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+      <div class="overflow-hidden">
         <p class="mt-4 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed border-t border-[#332e29]/60 pt-3">
           The summaries are prepared upon the methodology of the Salaf (Salafiyyah), emphasizing the Qur'an, authentic Sunnah, and the understanding of the early generations of Islam.
         </p>
-      </details>
+      </div>
+    </div>
+  </details>
 
-      <details class="group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
-        <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
-          <span>Can I use these summaries to study a book?</span>
-          <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
+
+  <details class="faq-item group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
+    <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
+      <span>Can I use these summaries to study a book?</span>
+
+      <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2"
+           fill="none"
+           stroke="currentColor"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+      <div class="overflow-hidden">
         <p class="mt-4 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed border-t border-[#332e29]/60 pt-3">
           The summaries serve well as an introductory outline or revision guide, but they should not be treated as a complete substitute for studying the original text itself.
         </p>
-      </details>
-
-      <details class="group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
-        <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
-          <span>Can I report an error or correction?</span>
-          <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
-        <p class="mt-4 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed border-t border-[#332e29]/60 pt-3">
-          Yes. Readers are strongly encouraged to report any typos, errors, or inaccuracies so the content can be reviewed and corrected promptly. Please reach out via Instagram at <a href="https://instagram.com/salafiascription" target="_blank" rel="noopener noreferrer" class="text-[#d6b278] underline hover:text-white transition-colors">@salafiascription</a>.
-        </p>
-      </details>
+      </div>
     </div>
+  </details>
+
+
+  <details class="faq-item group bg-[#24211e]/80 border border-[#332e29] rounded-xl p-5 cursor-pointer transition-colors hover:border-[#d6b278]/30">
+    <summary class="flex items-center justify-between text-sm sm:text-base font-medium text-[#ede8df] group-hover:text-[#d6b278] transition-colors list-none">
+      <span>Can I report an error or correction?</span>
+
+      <svg class="w-4 h-4 text-[#b3a898] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-2"
+           fill="none"
+           stroke="currentColor"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+      <div class="overflow-hidden">
+        <p class="mt-4 text-xs sm:text-sm text-[#b3a898] font-light leading-relaxed border-t border-[#332e29]/60 pt-3">
+          Yes. Readers are strongly encouraged to report any typos, errors, or inaccuracies so the content can be reviewed and corrected promptly. Please reach out via Instagram at
+          <a href="https://instagram.com/salafiascription"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-[#d6b278] underline hover:text-white transition-colors">
+            @salafiascription
+          </a>.
+        </p>
+      </div>
+    </div>
+  </details>
+
+</div>
+```
+
   </div>
 </section>
+
+<!-- FAQ ACCORDION SCRIPT -->
+
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach((item) => {
+    const answer = item.querySelector('.faq-answer');
+
+    item.addEventListener('toggle', () => {
+      if (item.open) {
+        // Close every other FAQ
+        faqItems.forEach((otherItem) => {
+          if (otherItem !== item && otherItem.open) {
+            otherItem.open = false;
+          }
+        });
+
+        // Open animation
+        requestAnimationFrame(() => {
+          answer.classList.remove('grid-rows-[0fr]');
+          answer.classList.add('grid-rows-[1fr]');
+        });
+      } else {
+        // Close animation
+        answer.classList.remove('grid-rows-[1fr]');
+        answer.classList.add('grid-rows-[0fr]');
+      }
+    });
+
+    // Make the entire card clickable
+    item.addEventListener('click', (event) => {
+      if (event.target.closest('a')) return;
+
+      if (!event.target.closest('summary')) {
+        item.open = !item.open;
+      }
+    });
+  });
+</script>
+
 
 <!-- FOOTER SECTION -->
 <footer class="scroll-reveal w-full border-t border-[#332e29] bg-[#1e1c19]/60 backdrop-blur-md px-6 py-12 mt-12">
@@ -330,9 +457,9 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
     <div class="space-y-6 text-sm sm:text-base text-[#b3a898] font-light leading-relaxed tracking-wide">
       
       <!-- Added Title: THE INSPIRATION -->
-      <div>
+      <div class="text-center">
         <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
-          MOTIVATION & REASONING
+          THE DRIVING IDEA
         </span>
         <h3 class="text-2xl font-normal tracking-wide text-white font-serif-title">
           THE INSPIRATION

@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Characteristics of Pre-Islamic Ignorance"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
 category: "Aqīdah & History"
-readTime: "7 min read"
 dateAdded: 2026-09-05
-description: "An editorial analysis of the mindsets, social habits, and spiritual corruptions that defined the era of Jāhilīyyah, compiled so pure monotheism may be understood through contrast."
+description: "An analysis of Jāhilīyyah, highlighting its corruptions through the clarity of pure monotheism."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,7 +36,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
     <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
       {{ title }}
@@ -52,7 +51,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] font-serif leading-relaxed">
           “Opposites elicit the beauty of a thing—and through opposites are matters clarified.”
         </p>
         <p class="text-sm text-[#B3ADB9] uppercase tracking-wider font-mono">
@@ -73,7 +72,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Spiritual Compromise & Sacralizing Creation
@@ -99,7 +98,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Epistemological Fallacies & Social Disunity
@@ -120,7 +119,6 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
             They assumed that if a custom or belief was held by the majority, it served as definitive proof of its correctness.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Materialistic Bias</span>
           <h3 class="text-xl font-medium text-white">Equating Power with Truth</h3>
@@ -128,7 +126,6 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
             They assumed the rich and powerful were inherently guided, while dismissing the poor and weak as followers of falsehood.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. Partisan Bias</span>
           <h3 class="text-xl font-medium text-white">Selective Acceptance</h3>
@@ -136,7 +133,6 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
             They habitually rejected absolute truth if it was voiced by rival groups or people they disliked.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">04. Flawed Rationalization</span>
           <h3 class="text-xl font-medium text-white">Invalid Analogies</h3>
@@ -144,9 +140,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
             They constructed false intellectual equivalencies and unsound analogies to bypass clear divine commands.
           </p>
         </div>
-
       </div>
-
       <p class="text-lg sm:text-xl text-[#ECE8EF]">
         Intellectual confusion directly produced social dissolution. They remained perpetually divided and split into warring factions, while simultaneously viewing opposition to legitimate leadership and order as a badge of noble independence.
       </p>
@@ -154,7 +148,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Distortion of Revelation & Vain Delusions
@@ -185,7 +179,7 @@ description: "An editorial analysis of the mindsets, social habits, and spiritua
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Classism, Ancestral Pride, and Social Arrogance
