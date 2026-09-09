@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Book of Monotheism"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
 category: "Aqīdah & Foundations"
-readTime: "7 min read"
 dateAdded: 2026-09-05
-description: "An authoritative study on the essence, categories, virtues, and opposing realities of Islamic Monotheism."
+description: "The essence, categories, virtues, and opposites of Islamic Monotheism."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An authoritative study on the essence, categories, virtues, and op
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -63,7 +62,7 @@ description: "An authoritative study on the essence, categories, virtues, and op
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Supreme Right and Universal Call
@@ -81,7 +80,7 @@ description: "An authoritative study on the essence, categories, virtues, and op
 
     <!-- PRINCIPLE II -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Three Dimensions of Monotheism
@@ -102,7 +101,6 @@ description: "An authoritative study on the essence, categories, virtues, and op
             The firm conviction that Allah alone possesses ultimate perfection in every sense, defined by majestic and beautiful characteristics shared by none in creation.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Lordship</span>
           <h3 class="text-xl font-medium text-white">Tawḥīd al-Rubūbīyah</h3>
@@ -110,7 +108,6 @@ description: "An authoritative study on the essence, categories, virtues, and op
             Affirming Allah as the sole Lord of creation, provision, and governance, who nurtures all of existence with His abundant bounty and sovereignty.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3 sm:col-span-2 lg:col-span-1">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. Worship</span>
           <h3 class="text-xl font-medium text-white">Tawḥīd al-Ulūhīyah</h3>
@@ -118,9 +115,7 @@ description: "An authoritative study on the essence, categories, virtues, and op
             Recognizing Allah as the lone possessor of divinity (<e>Ulūhīyah</e>) and singling Him out for all acts of devotion. This branch is directly required and implied by the first two.
           </p>
         </div>
-
       </div>
-
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-2">
         <h4 class="text-lg font-medium text-white">The Relationship Between Lordship and Worship</h4>
         <p class="text-base sm:text-lg text-[#B3ADB9]">
@@ -131,7 +126,7 @@ description: "An authoritative study on the essence, categories, virtues, and op
 
     <!-- PRINCIPLE III -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Virtues and Weight of Monotheism
@@ -200,7 +195,7 @@ description: "An authoritative study on the essence, categories, virtues, and op
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Categorization of Shirk and Forbidden Means
@@ -223,7 +218,6 @@ description: "An authoritative study on the essence, categories, virtues, and op
             Assigning a rival to Allah by invoking, fearing, hoping in, loving, or directing acts of worship to creation as one should to Allah. This form completely destroys Tawḥīd, excludes its practitioner from Paradise, and leads to eternal condemnation.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
             <span class="text-sm font-mono text-[#d6b278] uppercase">Minor Shirk</span>
@@ -267,7 +261,7 @@ description: "An authoritative study on the essence, categories, virtues, and op
 
     <!-- PRINCIPLE V -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle V</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Deconstructing False Intercession & Grave Exaggeration
@@ -296,7 +290,6 @@ description: "An authoritative study on the essence, categories, virtues, and op
             </p>
             <span class="text-xs font-mono text-[#d6b278] block">[Sūrah az-Zumar 39:3]</span>
           </div>
-
           <div class="bg-[#1c1a18] p-5 rounded border border-[#332f2b] space-y-2">
             <p class="text-base text-[#ECE8EF] italic">
               “They say: ‘These are our intercessors with Allah.’”
