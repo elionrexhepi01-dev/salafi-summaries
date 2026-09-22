@@ -1,11 +1,10 @@
 ---
 layout: base.njk
-title: "Clarifying the Evidences for the Categories of Tawḥīd"
+title: "Clarifying the Evidences for the Categories of Tawhid"
 author: "Shaykh ‘Abdur-Razzāq al-Badr"
 category: "Aqīdah & Foundations"
-readTime: "7 min read"
 dateAdded: 2026-09-04
-description: "A scholarly exposition of the Quranic proofs for the three categories of Tawḥīd and their explicit affirmation by the early Salaf."
+description: "Quranic proofs for the three categories of Tawhid and their affirmation by the Salaf."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -63,7 +62,7 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Inadequacy of Affirming Lordship Alone
@@ -94,7 +93,7 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
 
       <!-- Additional Quranic Evidence for Rububiyah -->
       <div class="pt-2 space-y-4">
-        <h3 class="text-xl font-medium text-white">Scriptural Proofs for Tawḥīd ar-Rubūbīyah</h3>
+        <h3 class="text-xl font-medium text-center text-white">Scriptural Proofs for Tawḥīd ar-Rubūbīyah</h3>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div class="bg-[#1c1a18] p-4 rounded border border-[#332f2b] space-y-1">
             <p class="text-base text-[#ECE8EF] italic">“All praise and thanks belong to Allah, Lord of all the worlds.”</p>
@@ -118,7 +117,7 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Exclusive Divinity and Devotion (Tawḥīd al-Ulūhīyah)
@@ -136,7 +135,6 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">[Sūrah al-Fātiḥah 1:5]</span>
         </div>
-
         <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 rounded-r-lg space-y-2">
           <p class="text-lg text-[#ECE8EF] italic">
             “O mankind, worship your Lord, who created you and those before you, so that you may become righteous.”
@@ -155,7 +153,7 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Uniqueness in Divine Names and Attributes
@@ -188,7 +186,7 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Historical Affirmation by the Early Salaf
@@ -241,7 +239,7 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
 
       <!-- Grid Callouts: Early Scholars -->
       <div class="pt-4 space-y-4">
-        <h3 class="text-xl font-medium text-white">Statements of Early Pre-Ibn Taymiyyah Imāms</h3>
+        <h3 class="text-xl font-medium text-center text-white">Statements of Early Pre-Ibn Taymiyyah Imāms</h3>
 
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 
@@ -251,28 +249,24 @@ description: "A scholarly exposition of the Quranic proofs for the three categor
               “Allah is to be invoked upwards, not downwards, because lowness is not an attribute of <e>ar-Rubūbīyah</e> or <e>al-Ulūhīyah</e> in any respect.”
             </p>
           </div>
-
           <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
             <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Ibn Jarīr aṭ-Ṭabarī (d. 310 AH)</span>
             <p class="text-base text-[#B3ADB9] italic">
               “Know that none is deserving of <e>al-Ulūhīyah</e> except Allah, who created all creation. Everything besides Him must submit to Him in worship through <e>ar-Rubūbīyah</e>.”
             </p>
           </div>
-
           <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
             <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Imām aṭ-Ṭaḥāwī (d. 321 AH)</span>
             <p class="text-base text-[#B3ADB9] italic">
               “We say concerning the Tawḥīd of Allah: Allah is One without any partner, nothing is similar to Him, nothing renders Him incapable, and there is no deity besides Him.”
             </p>
           </div>
-
           <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
             <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Ibn Abī Zayd al-Qayrawānī (d. 386 AH)</span>
             <p class="text-base text-[#B3ADB9] italic">
               “Faith requires professing with the tongue and believing in the heart that Allah is One God, with no equal. The true reality of His Attributes cannot be fully comprehended by thinkers.”
             </p>
           </div>
-
         </div>
       </div>
     </section>

@@ -3,9 +3,8 @@ layout: base.njk
 title: "Sticking to the Prophetic Sunnah & Its Effects"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Sunnah & Methodology"
-readTime: "5 min read"
 dateAdded: 2026-09-03
-description: "An exploration of the divine obligation to adhere to the Sunnah of Prophet Muḥammad ﷺ, its status in Islamic legislation, and its profound spiritual and practical effects."
+description: "The obligation to follow the Sunnah and its spiritual and practical effects."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
     <!-- Opening Lead Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Allāh has sent down to you the Book, and al-Ḥikmah...”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -66,7 +65,7 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Quranic Foundation of Prophetic Authority
@@ -88,7 +87,6 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Sūrah an-Nisā’ [4:59]</span>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Warning of Disobedience</span>
           <h3 class="text-xl font-medium text-white">The Consequence of Rejection</h3>
@@ -97,7 +95,6 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Sūrah al-Jinn [72:23]</span>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Comprehensive Submission</span>
           <h3 class="text-xl font-medium text-white">Acceptance and Abstinence</h3>
@@ -106,7 +103,6 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Sūrah al-Ḥashr [59:7]</span>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Ultimate Paradigm</span>
           <h3 class="text-xl font-medium text-white">The Excellent Example</h3>
@@ -115,13 +111,12 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Sūrah al-Aḥzāb [33:21]</span>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Prophetic Mandate & Equal Authority of Revelation
@@ -137,7 +132,7 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
 
         <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Adherence to Righteous Guidance</span>
-          <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+          <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
             “So you must keep to my Sunnah and to the Sunnah of the Khulafā’ ar-Rāshidīn (the rightly guided caliphs), those who guide to the right way. Cling to it with your molar teeth.”
           </p>
           <span class="text-xs font-mono text-[#d6b278] uppercase block">— Prophet Muḥammad ﷺ</span>
@@ -145,7 +140,7 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
 
         <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Warning Against Rejectionism</span>
-          <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+          <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
             “Let me not find any one of you reclining on his couch when a command comes that I ordered, and he says: ‘I do not know. What we find in the Book of Allah, we follow it.’ Beware! I have been given the Qur’an and something like it.”
           </p>
           <span class="text-xs font-mono text-[#d6b278] uppercase block">— Prophet Muḥammad ﷺ</span>
@@ -156,7 +151,7 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
       <!-- Affirmation Card -->
       <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] text-center space-y-2">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Stance of the Believer</span>
-        <p class="font-serif text-2xl italic text-white">
+        <p class="text-2xl italic text-white">
           “We hear and we obey.”
         </p>
         <span class="text-xs font-mono text-[#B3ADB9] block">— Sūrah an-Nūr [24:51]</span>
@@ -165,7 +160,7 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Transformative Spiritual & Practical Effects
@@ -186,7 +181,6 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
             Many pray according to outward rules, but when a believer performs <e>Ṣalāt</e> conscious that they are imitating the Prophet ﷺ as if seeing him, it produces a profound, transformative effect on the heart.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Effect 02</span>
           <h3 class="text-xl font-medium text-white">Exemplary Moral Leadership</h3>
@@ -194,7 +188,6 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
             The one who faithfully embodies the Sunnah naturally becomes a guided role model and leader in society, rendered invulnerable to justified criticism.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Effect 03</span>
           <h3 class="text-xl font-medium text-white">Refinement of Character</h3>
@@ -202,7 +195,6 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
             A primary fruit of adherence is inheriting the refined manners, noble etiquette, and compassionate disposition of the Messenger ﷺ in daily interactions.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Effect 04</span>
           <h3 class="text-xl font-medium text-white">Balanced Moderation</h3>
@@ -210,13 +202,12 @@ description: "An exploration of the divine obligation to adhere to the Sunnah of
             True Sunnah anchors the believer in Islamic moderation (<e>Wasaṭiyyah</e>), safeguarding them from both religious extremism (<e>Ghuluww</e>) and negligent laxity (<e>Tafrīṭ</e>).
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Genuine Adherence vs. The Gravity of Innovation

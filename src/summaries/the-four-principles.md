@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Four Principles of Monotheism"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
 category: "Aqīdah & Foundations"
-readTime: "5 min read"
 dateAdded: 2026-09-04
-description: "A foundational exposition outlining four fundamental principles to distinguish pure Islamic monotheism from idolatry and false intercession."
+description: "Four fundamental principles distinguishing Tawhīd from shirk and false intercession."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "A foundational exposition outlining four fundamental principles to
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -73,7 +72,7 @@ description: "A foundational exposition outlining four fundamental principles to
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Affirmation of Lordship Alone Does Not Grant Entry into Islam
@@ -99,7 +98,7 @@ description: "A foundational exposition outlining four fundamental principles to
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Reality of False Intercession and Nearness
@@ -119,7 +118,6 @@ description: "A foundational exposition outlining four fundamental principles to
             They directed acts of devotion to intermediaries under the pretext that the spiritual standing of these beings would bridge the gap between them and the Almighty.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Seeking Intercession (Shafā‘ah)</span>
           <h3 class="text-xl font-medium text-white">Plea of Advocacy</h3>
@@ -128,7 +126,6 @@ description: "A foundational exposition outlining four fundamental principles to
           </p>
         </div>
       </div>
-
       <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#332f2b] space-y-4">
         <p class="text-lg text-[#ECE8EF] italic leading-relaxed">
           “They say: ‘We only worship them so that they may bring us nearer to Allah in position...’ In reality, they desire requests from Allah, but seek to access Him through created intermediaries.”
@@ -139,7 +136,7 @@ description: "A foundational exposition outlining four fundamental principles to
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Universal Condemnation of Intermediaries
@@ -192,7 +189,7 @@ description: "A foundational exposition outlining four fundamental principles to
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Uncompromising Severity of Contemporary Shirk
@@ -215,7 +212,6 @@ description: "A foundational exposition outlining four fundamental principles to
             In times of ease, the polytheists of old associated partners with Allah. However, when severe calamity or danger at sea struck them, they abandoned their intermediaries and called upon Allah with absolute sincerity.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
             <span class="text-sm font-mono text-[#d6b278] uppercase">The Later Generations</span>
@@ -225,7 +221,6 @@ description: "A foundational exposition outlining four fundamental principles to
             In contrast, later transgressors commit shirk continuously—in times of calm as well as during times of dire distress, calling upon created beings even when facing life-threatening hardship.
           </p>
         </div>
-
       </div>
 
       <!-- Conclusion Summary Card -->
