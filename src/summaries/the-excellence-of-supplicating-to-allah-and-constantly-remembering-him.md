@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Excellence of Supplicating to Allah and Constantly Remembering Him"
 author: "Shaykh Ṣāliḥ ibn Fawzān al-Fawzān"
 category: "Remembrance & Supplication"
-readTime: "5 min read"
 dateAdded: 2026-09-01
-description: "An authoritative study on the dual reality of Dhikr across tongue and heart, its protective shield against heedlessness, and the supreme status of Du‘ā."
+description: "Dhikr of the tongue and heart, protection from heedlessness, and the virtue of Du‘ā."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Entry Animations -->
@@ -37,9 +36,9 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Therefore remember Me; I will remember you. And be grateful to Me and do not deny Me.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -63,7 +62,7 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Dual Dimensions of Dhikr: Heart and Tongue
@@ -76,7 +75,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
       <!-- Grid Comparison for Vocal vs Heart Actions -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Outward Expressions</span>
           <h3 class="text-xl font-medium text-white">Remembrance of the Tongue</h3>
@@ -84,7 +82,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             Proclaiming Allah’s perfection (<e>Tasbīḥ</e>), praising Him (<e>Taḥmīd</e>), exalting His majesty (<e>Takbīr</e>), and reciting the verses of His revealed Quran.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Inward Realities</span>
           <h3 class="text-xl font-medium text-white">Remembrance of the Heart</h3>
@@ -92,7 +89,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             Cultivating reverential awe, fearful hope, intense yearning, total reliance (<e>Tawakkul</e>), and seeking sanctuary exclusively in Him.
           </p>
         </div>
-
       </div>
 
       <p class="text-lg sm:text-xl text-[#B3ADB9]">
@@ -112,7 +108,7 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Impenetrable Fortress & Spiritual Vitality
@@ -161,7 +157,7 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Tranquility of Soul Versus the Hazard of Heedlessness
@@ -174,7 +170,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
       <!-- Comparison Grid for States of Heart -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Path of Serenity</span>
           <h3 class="text-xl font-medium text-white">The Believer's Heart</h3>
@@ -185,7 +180,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             When Allah is mentioned, their hearts feel reverential awe, and when His verses are recited, their faith increases as they place total trust in Him. <br><span class="text-xs font-mono text-[#d6b278]">[Quran 8:2]</span>
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Danger of Distraction</span>
           <h3 class="text-xl font-medium text-white">The Heedless State</h3>
@@ -196,13 +190,12 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             Believers are warned not to follow those whose hearts have been rendered heedless, who follow low desires and whose affairs are lost. <br><span class="text-xs font-mono text-[#d6b278]">[Quran 18:28]</span>
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Du‘ā as Supreme Worship & Shield in Tribulation
@@ -215,7 +208,7 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
       <!-- Primary Evidence Card for Dua -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “And your Lord said: ‘Invoke Me; I will respond to you. Indeed, those who disdain My worship will surely enter Hell in humiliation.’”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -225,7 +218,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
 
       <!-- Sacred Times & Etiquettes Grid -->
       <div class="grid grid-cols-1 gap-6 pt-4 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Sacred Timing</span>
           <h3 class="text-xl font-medium text-white">The Last Third of the Night</h3>
@@ -233,7 +225,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             Allah descends to the lowest heaven in the final third of every night, asking: <em>“Is there anyone requesting, so I may give? Calling, so I may answer? Seeking forgiveness, so I may forgive?”</em>
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Optimal Posture</span>
           <h3 class="text-xl font-medium text-white">Prostration (<e>Sujūd</e>)</h3>
@@ -241,7 +232,6 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             The Prophet ﷺ taught: “The servant is closest to his Lord when he is prostrating, so supplicate abundantly therein, for it is most worthy of being answered.”
           </p>
         </div>
-
       </div>
 
       <!-- Refuge Against Four Afflictions -->
@@ -262,7 +252,7 @@ description: "An authoritative study on the dual reality of Dhikr across tongue 
             <span class="text-[#d6b278]">•</span> Trials of Life and Death
           </li>
           <li class="flex items-center gap-2">
-            <span class="text-[#d6b278]">•</span> Trial of the Anti-Christ (<e>Dajjāl</e>)
+            <span class="text-[#d6b278]">•</span> Trial of the Anti-Christ (Dajjāl)
           </li>
         </ul>
       </div>

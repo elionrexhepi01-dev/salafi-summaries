@@ -38,7 +38,7 @@ description: "A study of four essential obligations and the three questions of t
     <div class="inline-block px-4 py-1.5 mb-4 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#d6b278]/20">
       {{ category }}
     </div>
-    <h1 class="mt-2 mb-4 text-5xl font-normal leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="mt-2 mb-4 text-5xl font-normal leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] font-light text-lg sm:text-xl">
@@ -51,7 +51,7 @@ description: "A study of four essential obligations and the three questions of t
     <!-- Introduction Preamble -->
     <section class="space-y-6 reveal-on-scroll">
       <div class="bg-[#24211e] border-l-4 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] font-serif-sub italic leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Know, may Allah have mercy upon you, that it is obligatory upon every Muslim to learn four fundamental matters...”
         </p>
         <p class="text-base text-[#B3ADB9]">
@@ -64,7 +64,7 @@ description: "A study of four essential obligations and the three questions of t
     <section class="space-y-8 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Part I</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           The Four Essential Obligations
         </h2>
       </div>
@@ -134,7 +134,6 @@ description: "A study of four essential obligations and the three questions of t
             “If Allah had revealed no other proof to His creation besides this single Sūrah, it would have been sufficient for them as a complete guidance.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <strong class="text-white font-medium text-lg block border-b border-[#332f2b] pb-2">
             Imām al-Bukhārī <span class="text-[#B3ADB9] text-sm font-normal">رَحِمَهُ ٱللَّٰهُ</span>
@@ -150,7 +149,7 @@ description: "A study of four essential obligations and the three questions of t
     <section class="space-y-8 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Part II</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           Three Essential Precepts of Monotheism
         </h2>
       </div>
@@ -219,7 +218,7 @@ description: "A study of four essential obligations and the three questions of t
     <section class="space-y-8 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Part III</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           The Great Commandment & Categories of Worship
         </h2>
       </div>
@@ -291,7 +290,7 @@ description: "A study of four essential obligations and the three questions of t
     <section class="space-y-8 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Part IV</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           The Three Questions of the Grave
         </h2>
       </div>
@@ -301,31 +300,27 @@ description: "A study of four essential obligations and the three questions of t
       </p>
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-
         <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg text-center space-y-3">
           <span class="text-[#d6b278] font-mono text-sm uppercase tracking-widest">Question I</span>
           <h3 class="text-xl font-medium text-white">Who is your Lord?</h3>
           <div class="bg-[#1c1a18] p-3 rounded border border-[#332f2b]">
-            <p class="text-lg text-[#ECE8EF] font-serif-sub">“My Lord is Allah, who sustained me and all creation.”</p>
+            <p class="text-lg text-[#ECE8EF]">“My Lord is Allah, who sustained me and all creation.”</p>
           </div>
         </div>
-
         <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg text-center space-y-3">
           <span class="text-[#d6b278] font-mono text-sm uppercase tracking-widest">Question II</span>
           <h3 class="text-xl font-medium text-white">What is your Religion?</h3>
           <div class="bg-[#1c1a18] p-3 rounded border border-[#332f2b]">
-            <p class="text-lg text-[#ECE8EF] font-serif-sub">“My religion is Islam—submission to Allah alone.”</p>
+            <p class="text-lg text-[#ECE8EF]">“My religion is Islam—submission to Allah alone.”</p>
           </div>
         </div>
-
         <div class="bg-[#24211e] border border-[#24211e] p-6 rounded-lg text-center space-y-3">
           <span class="text-[#d6b278] font-mono text-sm uppercase tracking-widest">Question III</span>
           <h3 class="text-xl font-medium text-white">Who is your Prophet?</h3>
           <div class="bg-[#1c1a18] p-3 rounded border border-[#332f2b]">
-            <p class="text-lg text-[#ECE8EF] font-serif-sub">“My Prophet is Muhammad ibn ‘Abdillāh ﷺ.”</p>
+            <p class="text-lg text-[#ECE8EF]">“My Prophet is Muhammad ibn ‘Abdillāh ﷺ.”</p>
           </div>
         </div>
-
       </div>
     </section>
 

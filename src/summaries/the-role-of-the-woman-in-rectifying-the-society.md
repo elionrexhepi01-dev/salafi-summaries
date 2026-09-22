@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Role of the Woman in Rectifying Society"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Society & Family"
-readTime: "5 min read"
 dateAdded: 2026-09-01
-description: "An authoritative editorial exploration of the vital domestic, moral, and educational roles women hold in reforming and sustaining a righteous society."
+description: "Women’s domestic, moral, and educational roles in building a righteous society."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An authoritative editorial exploration of the vital domestic, mora
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -63,7 +62,7 @@ description: "An authoritative editorial exploration of the vital domestic, mora
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Dual Spheres of Societal Rectification
@@ -76,7 +75,6 @@ description: "An authoritative editorial exploration of the vital domestic, mora
 
       <!-- Two-Column Sphere Comparison Grid -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The External Sphere</span>
           <h3 class="text-xl font-medium text-white">Public Civic Life</h3>
@@ -84,7 +82,6 @@ description: "An authoritative editorial exploration of the vital domestic, mora
             Conducted primarily by men in marketplaces, mosques, and public assemblies to maintain societal order, trade, and communal affairs.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Internal Sphere</span>
           <h3 class="text-xl font-medium text-white">Domestic Foundation</h3>
@@ -92,7 +89,6 @@ description: "An authoritative editorial exploration of the vital domestic, mora
             Enkindled and guarded primarily by women within the home, cultivating moral character, spiritual tranquility, and familial integrity.
           </p>
         </div>
-
       </div>
 
       <!-- Divine Command Quote Card -->
@@ -107,7 +103,7 @@ description: "An authoritative editorial exploration of the vital domestic, mora
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Personal Uprightness & Sacred Knowledge
@@ -134,7 +130,7 @@ description: "An authoritative editorial exploration of the vital domestic, mora
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Eloquence, Articulacy, & Wisdom (<e>Ḥikmah</e>)
@@ -146,7 +142,6 @@ description: "An authoritative editorial exploration of the vital domestic, mora
       </p>
 
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Communication</span>
           <h3 class="text-xl font-medium text-white">Articulacy & Eloquence</h3>
@@ -154,7 +149,6 @@ description: "An authoritative editorial exploration of the vital domestic, mora
             The ability to give clear expression to shared moral convictions, giving voice to noble sentiments that many feel but struggle to articulate.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Methodology</span>
           <h3 class="text-xl font-medium text-white">Wisdom (<e>Ḥikmah</e>)</h3>
@@ -162,7 +156,6 @@ description: "An authoritative editorial exploration of the vital domestic, mora
             As scholars define it, wisdom is placing every action, word, and counsel in its proper place, tailor-fitted to the disposition of the listener.
           </p>
         </div>
-
       </div>
 
       <!-- Wisdom Scripture Card -->
@@ -177,7 +170,7 @@ description: "An authoritative editorial exploration of the vital domestic, mora
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Maternal Nurturing & Educational Leadership

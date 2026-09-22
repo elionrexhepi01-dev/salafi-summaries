@@ -3,9 +3,8 @@ layout: base.njk
 title: "Treasure from the Treasures of Paradise"
 author: "Shaykh ‘Abdur Razzāq al-Badr"
 category: "Remembrance & Theology"
-readTime: "7 min read"
 dateAdded: 2026-09-01
-description: "A profound study on the linguistic depths, singular virtues, and theological dimensions of the phrase 'Lā Ḥawla wa lā Quwwata illā Billāh'."
+description: "The linguistic depths, virtues, and theological meanings of Lā Ḥawla wa lā Quwwata illā Billāh."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "A profound study on the linguistic depths, singular virtues, and t
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "A profound study on the linguistic depths, singular virtues, and t
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “O you who have believed, remember Allah with much remembrance and exalt Him morning and afternoon. It is He who confers blessing upon you, and His angels ask Him to do so that He may bring you out from darknesses into the light. And ever is He, to the believers, Merciful.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -81,7 +80,7 @@ description: "A profound study on the linguistic depths, singular virtues, and t
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Preeminence of Authentic Prophetic Adhkār
@@ -94,7 +93,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
 
       <!-- Grid Comparison for Scholarly Insights -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Ibn Taymiyyah <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span></span>
           <h3 class="text-xl font-medium text-white">Adhering to the Sunnah</h3>
@@ -102,7 +100,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
             “From the most blameworthy of people is one who adopts as his habitual remembrance that which was not used by the Prophet ﷺ, abandoning the invocations of the Leader of Mankind.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Ibn al-Qayyim <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span></span>
           <h3 class="text-xl font-medium text-white">Heart-Tongue Harmony</h3>
@@ -110,13 +107,12 @@ description: "A profound study on the linguistic depths, singular virtues, and t
             “The best and most beneficial remembrances are those established in the Prophetic Sunnah where the heart fully aligns with what is uttered by the tongue in contemplation.”
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Linguistic Depths & Scholarly Explanations
@@ -133,41 +129,36 @@ description: "A profound study on the linguistic depths, singular virtues, and t
 
       <!-- Grid Callout for Salaf Statements -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono text-[#d6b278] uppercase">‘Abdullāh ibn ‘Abbās <span class="text-[#B3ADB9]">رَضِيَ ٱللَّٰهُ عَنْهُ</span></span>
           <p class="text-base text-[#ECE8EF]">
             “We have no power to act obediently except by Allah, nor do we have strength to abandon sin except by Allah.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono text-[#d6b278] uppercase">‘Abdullāh ibn Mas‘ūd <span class="text-[#B3ADB9]">رَضِيَ ٱللَّٰهُ عَنْهُ</span></span>
           <p class="text-base text-[#ECE8EF]">
             “There is no strength to refrain from sinning against Allah except through His protection, and no power to obey Him except through His help.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono text-[#d6b278] uppercase">‘Alī ibn Abī Ṭālib <span class="text-[#B3ADB9]">رَضِيَ ٱللَّٰهُ عَنْهُ</span></span>
           <p class="text-base text-[#ECE8EF]">
             “We do not own anything alongside Allah or instead of Him; we only own what He permits us to possess, and it ultimately belongs entirely to Him.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono text-[#d6b278] uppercase">Zuhayr ibn Muḥammad <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span></span>
           <p class="text-base text-[#ECE8EF]">
             “You do not obtain what you love except by Allah, and you do not avoid what you hate except through the help of Allah.”
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Singular Virtues & Celestial Status
@@ -226,7 +217,7 @@ description: "A profound study on the linguistic depths, singular virtues, and t
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Theological Foundations of Absolute Reliance
@@ -239,7 +230,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
 
       <!-- Theological Dimensions Grid -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Sincerity in Seeking Help</span>
           <h3 class="text-xl font-medium text-white">Ikhlāṣ in Isti‘ānah</h3>
@@ -247,7 +237,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
             Just as <e>Lā ilāha illallāh</e> establishes sincerity in worship, <e>Lā Ḥawla wa lā Quwwata illā Billāh</e> establishes absolute sincerity in seeking divine assistance.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Monotheism of Lordship</span>
           <h3 class="text-xl font-medium text-white">Affirmation of Rubūbiyyah</h3>
@@ -255,7 +244,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
             It acknowledges Allah as the sole Creator and Sovereign Controller of the universe, who decrees all matters according to His ultimate Wisdom.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Divine Attributes</span>
           <h3 class="text-xl font-medium text-white">Asmā’ wa’ṣ-Ṣifāt & Human Need</h3>
@@ -263,7 +251,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
             The phrase affirms that Allah is entirely free of needs (<e>al-Ghanī</e>), while creation remains intrinsically needy and poor (<e>al-Faqīr</e>) before Him in every instant.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Predestination</span>
           <h3 class="text-xl font-medium text-white">Belief in Qaḍā’ wa’l-Qadar</h3>
@@ -271,7 +258,6 @@ description: "A profound study on the linguistic depths, singular virtues, and t
             It embeds firm belief in the Divine Will (<e>Mashī’ah</e>): whatever Allah wills must inevitably occur, and whatever He does not will can never come to pass.
           </p>
         </div>
-
       </div>
 
       <!-- Synthesis Card -->

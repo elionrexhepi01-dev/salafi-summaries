@@ -3,9 +3,8 @@ layout: base.njk
 title: "Advice of the Salaf to the Youth"
 author: "Shaykh ‘Abdur Razzāq al-Badr"
 category: "Youth & Guidance"
-readTime: "6 min read"
 dateAdded: 2026-09-02
-description: "Timeless counsel and wisdom from the early generations of Islam on capitalizing on the season of youth, seeking knowledge, and avoiding the trap of procrastination."
+description: "Timeless wisdom on youth, seeking knowledge, and overcoming procrastination."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
     <!-- Opening Foundational Hadith Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Take advantage of five before five: your youth before your infirmity, your health before illness, your wealth before poverty, your free time before being busy, and your life before your death.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -63,7 +62,7 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Fleeting Season of Vigor
@@ -89,7 +88,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Prophet Muḥammad ﷺ</span>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Pithy Wisdom</span>
           <h3 class="text-xl font-medium text-white">The Essence of Goodness</h3>
@@ -98,13 +96,12 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Mālik ibn Dīnār <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> (d. 127 AH)</span>
         </div>
-
       </div>
 
       <!-- Poetic Warning Callout -->
       <div class="bg-[#24211e] p-6 sm:p-8 rounded-lg border border-[#24211e] space-y-3">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Classical Poetry</span>
-        <p class="text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-xl text-[#ECE8EF] italic">
           “Certainly youth, idle time, and wealth—ruin a man in a most terrible fashion.”
         </p>
       </div>
@@ -112,7 +109,7 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Legacy and Seeking of Sacred Knowledge
@@ -133,7 +130,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
             When Abū Sa‘īd al-Khudrī <span class="text-[#B3ADB9]">رَضِيَ ٱللَّٰهُ عَنْهُ</span> saw young seekers, he would say: <e>“Welcome to the legacy of Allah’s Messenger... certainly, you are our successors and the people of Hadith after us.”</e>
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Poetic Greeting</span>
           <h3 class="text-xl font-medium text-white">Lanterns in Darkness</h3>
@@ -141,7 +137,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
             ‘Abdullāh ibn Mas‘ūd <span class="text-[#B3ADB9]">رَضِيَ ٱللَّٰهُ عَنْهُ</span> would address young seekers: <e>“Welcome to you, springs of wisdom, lanterns in the darkness, who have worn-out clothing while being new in heart!”</e>
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Urgency in Learning</span>
           <h3 class="text-xl font-medium text-white">Rushing to Knowledge</h3>
@@ -149,7 +144,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
             Sufyān ath-Thawrī <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> urged: <e>“O young people, rush to get the blessing of this knowledge, for certainly you do not know—perhaps you will not reach what you expect from it.”</e>
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Epistemic Integrity</span>
           <h3 class="text-xl font-medium text-white">Discerning the Sources</h3>
@@ -157,7 +151,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
             Anas ibn Sīrīn <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> advised on his deathbed: <e>“Be fearfully mindful of Allah, O young people! Look carefully at those from whom you take these Hadith, for certainly they are part of your religion.”</e>
           </p>
         </div>
-
       </div>
 
       <!-- Advice on Resolving Doubt -->
@@ -172,7 +165,7 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Devotion, Independence, and the Eternal Destination
@@ -193,7 +186,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
             Abū Isḥāq as-Sabī‘ī <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> encouraged the young by sharing his own devotion: reciting 1,000 verses a night, praying Sūrah al-Baqarah in a single unit (<e>rak‘ah</e>), and fasting the sacred months alongside Mondays and Thursdays.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Financial Honor</span>
           <h3 class="text-xl font-medium text-white">Dignity in Work</h3>
@@ -201,7 +193,6 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
             Ayyūb as-Sakhtiyānī <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> advised: <e>“O young people, work a skilled trade. You will not need to go to the doors of such-and-such people.”</e>
           </p>
         </div>
-
       </div>
 
       <!-- Hasan al-Basri Contrast Card -->
@@ -211,7 +202,7 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
         <p class="text-base sm:text-lg text-[#B3ADB9]">
           al-Ḥasan al-Baṣrī <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> taught a vital law of spiritual economy:
         </p>
-        <p class="text-lg text-[#ECE8EF] italic font-serif pt-2 border-t border-[#332f2b]">
+        <p class="text-lg text-[#ECE8EF] italic pt-2 border-t border-[#332f2b]">
           “O young people, it is upon you to pursue the Hereafter. We have often seen those who pursued the Hereafter reach it while still attaining the dunyā. However, we have never seen someone pursue the dunyā and still get the Hereafter alongside it.”
         </p>
       </div>
@@ -219,7 +210,7 @@ description: "Timeless counsel and wisdom from the early generations of Islam on
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Peril of Procrastination

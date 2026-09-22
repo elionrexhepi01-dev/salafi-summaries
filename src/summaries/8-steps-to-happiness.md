@@ -3,9 +3,8 @@ layout: base.njk
 title: "Eight Foundations for a Pure and Happy Life"
 author: "Shaykh ‘Abd al-Raḥmān ibn Nāṣir as-Sa‘dī"
 category: "Purification & Well-Being"
-readTime: "7 min read"
 dateAdded: 2026-09-01
-description: "A timeless spiritual and practical framework for overcoming anxiety, cultivating inner peace, and attaining true contentment through faith and mindful living."
+description: "Overcoming anxiety, cultivating inner peace, and attaining contentment through faith."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Whoever works righteousness, whether male or female, while he is a believer—verily, for him We will give a life that is good and pure, and We will surely bestow on them their reward according to the best of what they used to do.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -73,7 +72,7 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Faith and Righteous Action as the Core Foundation
@@ -99,7 +98,7 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Mastering the Mind and the Present Moment
@@ -112,7 +111,6 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
 
       <!-- Grid Callout for Mental Disciplines -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. Temporal Focus</span>
           <h3 class="text-xl font-medium text-white">Living in the Present Day</h3>
@@ -120,7 +118,6 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
             Concentrate your mental energy strictly on today’s duties. Do not drain present strength by grieving over what has passed or anticipating future calamities.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Productive Displacement</span>
           <h3 class="text-xl font-medium text-white">Engagement in Useful Work</h3>
@@ -128,7 +125,6 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
             Occupying the mind with beneficial knowledge, constructive work, or meaningful tasks displaces sorrow and restores cheerfulness to the spirit.
           </p>
         </div>
-
       </div>
 
       <p class="text-lg sm:text-xl text-[#B3ADB9]">
@@ -138,7 +134,7 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Spiritual Remembrance and the Gratitude Lens
@@ -195,7 +191,7 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Fortifying the Heart Against Illusion and External Expectations
@@ -228,10 +224,8 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
           </p>
         </div>
       </div>
-
       <!-- Additional Insights Grid -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Expectation Management</span>
           <h3 class="text-xl font-medium text-white">Seek Thanks from God Alone</h3>
@@ -239,7 +233,6 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
             Train yourself not to desire gratitude or appreciation from anyone other than Allah. When you expect nothing from people, human ingratitude can no longer cause you distress.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Perspective on Time</span>
           <h3 class="text-xl font-medium text-white">Preserve Life’s Brevity</h3>
@@ -247,7 +240,6 @@ description: "A timeless spiritual and practical framework for overcoming anxiet
             Your real lifespan is only the portion lived in peace and happiness. Do not shorten your already brief existence by allowing sorrow and conflict to consume your days.
           </p>
         </div>
-
       </div>
 
       <!-- Conclusion Summary Card -->

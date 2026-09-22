@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Inner Secrets of Worship"
 author: "Shaykh Aḥmad ibn Qudāmah al-Maqdisī"
 category: "Spiritual Purification & Ethics"
-readTime: "9 min read"
 dateAdded: 2026-09-02
-description: "An authoritative exposition on the ten foundational pillars of spiritual devotion, inner purification, and the deep realities of worship."
+description: "The ten foundations of worship, spiritual devotion, and inner purification."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An authoritative exposition on the ten foundational pillars of spi
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Say: Are those who know equal to those who do not know? Only those who possess understanding will take heed.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -63,7 +62,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Knowledge: The Root of All Devotion
@@ -87,7 +86,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">[Quran 58:11]</span>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Reverential Awe</span>
           <p class="text-base text-[#ECE8EF] italic">
@@ -123,7 +121,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Purification: The Four Ascending Stages
@@ -182,7 +180,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Prayer: Spiritual Presence and Expiation
@@ -192,7 +190,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
       <p class="text-lg sm:text-xl text-[#ECE8EF]">
         The obligatory prayer (<e>Ṣalāh</e>) is an intimate converse with the Lord. Its capacity to expiate sins and elevate rank depends directly upon the internal presence brought to its physical movements.
       </p>
-
       <!-- Hadith Proof Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
         <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
@@ -200,7 +197,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">— Prophet Muḥammad ﷺ</span>
       </div>
-
       <!-- Life of Prayer Grid -->
       <div class="grid grid-cols-1 gap-6 pt-2 sm:grid-cols-2">
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
@@ -210,7 +206,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             Emptying the mind of worldly anxieties so that the soul remains fully attentive to the Divine presence.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Contemplation</span>
           <h3 class="text-xl font-medium text-white">Deep Understanding</h3>
@@ -218,7 +213,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             Reflecting deeply upon the meanings of the recited verses, glorifyings, and invocations.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Veneration</span>
           <h3 class="text-xl font-medium text-white">Exaltation & Awe</h3>
@@ -226,7 +220,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             Recognizing the grandeur of Allah while realizing the inherent weakness and poverty of creation.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Physical Submission</span>
           <h3 class="text-xl font-medium text-white">Humility in Posture</h3>
@@ -239,7 +232,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Zakāh: The Triad of Inner Wisdom
@@ -249,7 +242,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
       <p class="text-lg sm:text-xl text-[#ECE8EF]">
         While Zakāh functions as an essential financial pillar in Islam, its spiritual dimensions fulfill three profound inner objectives.
       </p>
-
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Purpose I</span>
@@ -258,7 +250,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             Testing those who claim to love Allah by requiring them to part with wealth, which is naturally beloved to the human ego.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Purpose II</span>
           <h3 class="text-lg font-medium text-white">Cleansing Miserliness</h3>
@@ -266,7 +257,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             Purifying the soul from stinginess (<e>Shuḥḥ</e>), which is among the most destructive spiritual maladies.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Purpose III</span>
           <h3 class="text-lg font-medium text-white">Expressing Gratitude</h3>
@@ -279,7 +269,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION V -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation V</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Fasting: The Unseen Shield & Subduer of Desire
@@ -298,7 +288,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             Because fasting consists of restraint rather than outward motion, no creature can observe it directly. It remains shielded from ostentation (<e>Riyā’</e>).
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Spiritual Warfare</span>
           <h3 class="text-xl font-medium text-white">Subduing the Enemy</h3>
@@ -311,7 +300,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION VI -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation VI</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Hajj: Rites of Sacred Rectification
@@ -330,7 +319,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base text-[#ECE8EF] pt-2">
           <li class="flex items-center gap-2">
-            <span class="text-[#d6b278]">•</span> Sincere, unreserved repentance (<e>Tawbah</e>)
+            <span class="text-[#d6b278]">•</span> Sincere, unreserved repentance (Tawbah)
           </li>
           <li class="flex items-center gap-2">
             <span class="text-[#d6b278]">•</span> Redressing all grievances and wrongdoings
@@ -339,7 +328,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             <span class="text-[#d6b278]">•</span> Full settlement of outstanding debts
           </li>
           <li class="flex items-center gap-2">
-            <span class="text-[#d6b278]">•</span> Returning all entrusted properties (<e>Amanāt</e>)
+            <span class="text-[#d6b278]">•</span> Returning all entrusted properties (Amanāt)
           </li>
           <li class="flex items-center gap-2 sm:col-span-2">
             <span class="text-[#d6b278]">•</span> Securing lawful provisions for dependents until return
@@ -350,7 +339,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION VII -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation VII</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Quran: Divine Speech and Living Elevation
@@ -367,7 +356,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">[Sūrah al-Isrā’ 17:9]</span>
       </div>
-
       <div class="grid grid-cols-1 gap-6 pt-2 sm:grid-cols-2">
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Honor of Learning</span>
@@ -376,7 +364,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             “The best of you is he who learns the Quran and teaches it.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Celestial Degree</span>
           <h3 class="text-xl font-medium text-white">Ascension in Paradise</h3>
@@ -389,7 +376,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION VIII -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation VIII</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Invocations & Supplications: Continuous Neediness
@@ -408,7 +395,6 @@ description: "An authoritative exposition on the ten foundational pillars of spi
             The Prophet ﷺ stated: <e>“The noblest worship is supplication,”</e> noting that Allah loves to be asked and is displeased with those who neglect invocation.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Unbroken Connection</span>
           <h3 class="text-xl font-medium text-white">Remembrance in All States</h3>
@@ -421,7 +407,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION IX -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation IX</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Daily Litanies: Structuring Time and Guarding the Soul
@@ -442,7 +428,7 @@ description: "An authoritative exposition on the ten foundational pillars of spi
 
     <!-- FOUNDATION X -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Foundation X</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Night Vigilance: The Quiet Discipline of the Pious

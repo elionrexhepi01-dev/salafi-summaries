@@ -3,9 +3,8 @@ layout: base.njk
 title: "Upright Moral Character"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Character & Ethics"
-readTime: "5 min read"
 dateAdded: 2026-09-01
-description: "An essential study on the true definition of noble character, its manifestation toward both the Creator and creation, and practical steps for its cultivation."
+description: "The true nature of noble character and how to cultivate it toward Allah and creation."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An essential study on the true definition of noble character, its 
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An essential study on the true definition of noble character, its 
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “I have only been sent to complete upright moral character.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -63,7 +62,7 @@ description: "An essential study on the true definition of noble character, its 
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The True Nature of Strength and Moral Weight
@@ -80,7 +79,6 @@ description: "An essential study on the true definition of noble character, its 
 
       <!-- Grid Callout for Core Hadiths -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Self-Mastery</span>
           <h3 class="text-xl font-medium text-white">The Meaning of Strength</h3>
@@ -88,7 +86,6 @@ description: "An essential study on the true definition of noble character, its 
             “The strong man is not the one who can physically overtake others. Rather, the strong man in truth is the one who can control himself when he is angry.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Eschatological Weight</span>
           <h3 class="text-xl font-medium text-white">The Balance on the Scales</h3>
@@ -96,13 +93,12 @@ description: "An essential study on the true definition of noble character, its 
             “There is nothing heavier in the Scales on the Day of Judgment than good character.”
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Lived Prophetic Model of Humility
@@ -115,7 +111,6 @@ description: "An essential study on the true definition of noble character, its 
 
       <!-- Prophetic Qualities Cards Grid -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Domestic Conduct</span>
           <h3 class="text-xl font-medium text-white">Service Within the Home</h3>
@@ -123,7 +118,6 @@ description: "An essential study on the true definition of noble character, its 
             He remained in the active service of his family, repaired his own sandals, mended his torn garments, and milked his goat himself.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Social Engagement</span>
           <h3 class="text-xl font-medium text-white">Warmth Toward Creation</h3>
@@ -131,7 +125,6 @@ description: "An essential study on the true definition of noble character, its 
             He initiated greetings, greeted passing children, sat with the poor, cared for orphans, fed his own camel, and ate alongside his servants.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Emotional Temperament</span>
           <h3 class="text-xl font-medium text-white">Equanimity & Softness</h3>
@@ -139,7 +132,6 @@ description: "An essential study on the true definition of noble character, its 
             He never became angry over personal slights. He was soft in manner, gentle, easy to get along with, and constantly wore a pleasant smile.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Financial Dispositions</span>
           <h3 class="text-xl font-medium text-white">Balanced Generosity</h3>
@@ -147,13 +139,12 @@ description: "An essential study on the true definition of noble character, its 
             He exhibited graceful humility and generous giving without ever succumbing to wastefulness or extravagance.
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Two Dimensions of Noble Character
@@ -191,7 +182,6 @@ description: "An essential study on the true definition of noble character, its 
             </li>
           </ul>
         </div>
-
         <!-- Toward Creation -->
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-4">
           <div class="space-y-1">
@@ -225,7 +215,7 @@ description: "An essential study on the true definition of noble character, its 
         <p class="text-base sm:text-lg text-[#B3ADB9]">
           A true indicator of excellent manners is being easy to live with. Relatives and companions should not find dealings difficult or harsh. Instead, the noble person brings joy to their household within lawful boundaries, following the Prophetic standard:
         </p>
-        <p class="text-lg text-[#ECE8EF] italic font-serif pt-2 border-t border-[#332f2b]">
+        <p class="text-lg text-[#ECE8EF] italic pt-2 border-t border-[#332f2b]">
           “The best of you are the best to his family, and I am the best of you to my family.”
         </p>
       </div>
@@ -233,7 +223,7 @@ description: "An essential study on the true definition of noble character, its 
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Practical Cultivation and Eternal Fruits

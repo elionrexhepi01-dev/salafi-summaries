@@ -3,9 +3,8 @@ layout: base.njk
 title: "Youth's Problems"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Youth & Character"
-readTime: "6 min read"
 dateAdded: 2026-09-02
-description: "An insightful taxonomy of modern youth—upright, corrupt, and confused—examining the root causes of spiritual crisis and providing Prophetic remedies."
+description: "The three types of youth, causes of spiritual crisis, and Prophetic remedies."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
     <!-- Opening Lead Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “The youth are the pride of this Ummah, the symbol of its vitality, and the beacon of its future. Upon their orientation rests the spiritual and social trajectory of society.”
         </p>
       </div>
@@ -60,7 +59,7 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           A Taxonomy of Modern Youth
@@ -73,7 +72,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
 
       <!-- Three Archetypes Grid -->
       <div class="grid grid-cols-1 gap-6">
-
         <!-- The Upright Youth -->
         <div class="bg-[#1c1a18] p-6 sm:p-8 rounded-lg border border-[#332f2b] space-y-4">
           <div class="flex items-center justify-between border-b border-[#332f2b] pb-3">
@@ -98,7 +96,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             </li>
           </ul>
         </div>
-
         <!-- The Corrupt Youth -->
         <div class="bg-[#1c1a18] p-6 sm:p-8 rounded-lg border border-[#332f2b] space-y-4">
           <div class="flex items-center justify-between border-b border-[#332f2b] pb-3">
@@ -119,7 +116,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             </li>
           </ul>
         </div>
-
         <!-- The Confused Youth -->
         <div class="bg-[#1c1a18] p-6 sm:p-8 rounded-lg border border-[#332f2b] space-y-4">
           <div class="flex items-center justify-between border-b border-[#332f2b] pb-3">
@@ -140,13 +136,12 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             </li>
           </ul>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Root Causes of Youth Misdirection
@@ -167,7 +162,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             Unoccupied time and lack of meaningful direction naturally allow destructive thoughts and vices to take root.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Factor II</span>
           <h3 class="text-xl font-medium text-white">Generational Estrangement</h3>
@@ -175,7 +169,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             A growing rift between youth and older generations deprives the young of essential wisdom, mentorship, and grounding.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Factor III</span>
           <h3 class="text-xl font-medium text-white">Corrupt Companionship</h3>
@@ -183,7 +176,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             Frequent association with reckless individuals gradually erodes moral boundaries and distorts sound values.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Factor IV</span>
           <h3 class="text-xl font-medium text-white">Destructive Media Exposure</h3>
@@ -191,7 +183,6 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
             Unfiltered consumption of harmful content across literature, digital platforms, and internet media.
           </p>
         </div>
-
       </div>
 
       <!-- Misconception Callout -->
@@ -205,7 +196,7 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Prophetic Remedy for Insinuations
@@ -263,7 +254,7 @@ description: "An insightful taxonomy of modern youth—upright, corrupt, and con
 
       <!-- Scriptural Reference Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
           “Say: He is Allah, [who is] One, Allah the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">

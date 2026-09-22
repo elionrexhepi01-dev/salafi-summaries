@@ -3,9 +3,8 @@ layout: base.njk
 title: "Navigating the Trials of Life"
 author: "Shaykh Ṣāliḥ ibn Fawẓān al-Fawẓān"
 category: "Trials & Perseverance"
-readTime: "6 min read"
 dateAdded: 2026-09-02
-description: "An authoritative guide on recognizing the nature of worldly tribulations, avoiding ideological division, and shielding faith through revelation, authentic knowledge, and prayer."
+description: "Recognizing worldly trials, avoiding division, and protecting faith through revelation and prayer."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “The people used to ask the Messenger of Allah ﷺ about good things, whereas I used to ask him about evil things fearing that they might befall me.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -81,7 +80,7 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Dual Nature of Worldly Testing
@@ -110,7 +109,6 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
             Afflictions such as drought, illness, and poverty test a believer's patience, contentment, and trust in divine decree.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Trials of Ease</span>
           <h3 class="text-xl font-medium text-white">Wealth, Kin & Status</h3>
@@ -128,7 +126,7 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Standing Firm Amid Sectarian Fragmentation
@@ -153,7 +151,7 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Anchoring the Soul in Revelation and Authentic Knowledge
@@ -202,7 +200,7 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Fortifying the Soul Through Abundant Supplication
@@ -223,7 +221,6 @@ description: "An authoritative guide on recognizing the nature of worldly tribul
             The Messenger of Allah ﷺ instructed: “Seek refuge in Allah from trials, whether apparent or hidden.”
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Four Protections</span>
           <h3 class="text-xl font-medium text-white">Refuge in Prayer</h3>

@@ -4,9 +4,8 @@ title: "Towards Understanding of Al-Tadmuriyyah"
 author: "Shaykh ul-Islām Ibn Taymiyyah"
 explanationBy: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Aqīdah & Theology"
-readTime: "5 min read"
 dateAdded: 2026-09-03
-description: "A foundational guide to Allah’s Names and Attributes according to Ahl al-Sunnah, affirming truth and refuting deviation."
+description: "Allah’s Names and Attributes according to Ahl al-Sunnah, affirming truth and refuting deviation."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Animations -->
@@ -38,16 +37,16 @@ description: "A foundational guide to Allah’s Names and Attributes according t
   <!-- Main Header -->
   <header class="mb-12 text-center">
     <div class="inline-block px-4 py-1.5 mb-4 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#d6b278]/20">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="mt-2 mb-4 text-5xl font-normal leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="mt-2 mb-4 text-5xl font-normal leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] font-light text-lg sm:text-xl">
       By {{ author }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span>
     </p>
     <p class="text-[#B3ADB9] text-sm sm:text-base font-light mt-1">
-      Explained by {{ explanationBy }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span>
+      Commentary by {{ explanationBy }} <span class="text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span>
     </p>
   </header>
 
@@ -57,7 +56,7 @@ description: "A foundational guide to Allah’s Names and Attributes according t
     <section class="space-y-6 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Principle I</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           The Foundations of Affirmation & Negation
         </h2>
       </div>
@@ -124,7 +123,7 @@ description: "A foundational guide to Allah’s Names and Attributes according t
     <section class="space-y-6 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Principle II</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           Affirmative & Negative Attributes
         </h2>
       </div>
@@ -177,7 +176,7 @@ description: "A foundational guide to Allah’s Names and Attributes according t
     <section class="space-y-6 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Principle III</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           Categorization of Historical Deviations
         </h2>
       </div>
@@ -232,7 +231,7 @@ description: "A foundational guide to Allah’s Names and Attributes according t
     <section class="space-y-6 reveal-on-scroll">
       <div class="text-center space-y-2 border-b border-[#24211e] pb-4">
         <p class="text-base font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</p>
-        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl font-serif-sub">
+        <h2 class="text-3xl font-medium tracking-wide text-white sm:text-4xl">
           Dangers & Pitfalls of Theological Deviation
         </h2>
       </div>

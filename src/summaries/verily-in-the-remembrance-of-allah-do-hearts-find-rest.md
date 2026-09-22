@@ -3,9 +3,8 @@ layout: base.njk
 title: "Finding Rest in the Remembrance of Allah"
 author: "Shaykh ‘Abdur-Razzāq al-Badr"
 category: "Purification of the Soul"
-readTime: "6 min read"
 dateAdded: 2026-09-03
-description: "An editorial exposition on Quran 13:28, the three conditions of the human heart, and how divine remembrance serves as an impenetrable fortress against spiritual decay."
+description: "Quran 13:28, the heart’s conditions, and remembrance as spiritual protection."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
     <!-- Foundational Opening Quote Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] italic leading-relaxed">
           “Those who believed, and whose hearts find rest in the remembrance of Allâh: verily, in the remembrance of Allâh do hearts find rest.”
         </p>
         <p class="text-sm text-[#d6b278] uppercase tracking-wider font-mono">
@@ -73,7 +72,7 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Anatomy of Spiritual Restlessness
@@ -99,7 +98,7 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           A Taxonomy of the Human Heart
@@ -112,7 +111,6 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
 
       <!-- Grid Callout for Three Types of Hearts -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. The Sound Heart</span>
           <h3 class="text-xl font-medium text-white">Qalb Salīm</h3>
@@ -120,7 +118,6 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
             A heart cleansed from polytheism (<e>Shirk</e>) and hypocrisy (<e>Nifāq</e>). It acts with pure intention, seeking only Allah’s pleasure.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. The Dead Heart</span>
           <h3 class="text-xl font-medium text-white">Qalb Mayyit</h3>
@@ -128,7 +125,6 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
             A heart turned entirely away from its Creator. It worships worldly desires, neglects acts of devotion, and ignores divine commands.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. The Fluctuating Heart</span>
           <h3 class="text-xl font-medium text-white">Qalb Mutaraddid</h3>
@@ -136,7 +132,6 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
             A heart in which life and disease struggle for dominance. Its ultimate state depends on which influence—truth or temptation—prevails.
           </p>
         </div>
-
       </div>
 
       <!-- Proof Quote Card -->
@@ -150,7 +145,7 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Remembrance as the Criterion of Life and Death
@@ -203,7 +198,7 @@ description: "An editorial exposition on Quran 13:28, the three conditions of th
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-8 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Impermeable Fortress

@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Wisdoms of Fasting"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Worship & Wisdom"
-readTime: "6 min read"
 dateAdded: 2026-09-01
-description: "An exploration of the profound spiritual, moral, psychological, and physical wisdoms embedded within the divine obligation of fasting."
+description: "The spiritual, moral, psychological, and physical wisdoms behind fasting."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "An exploration of the profound spiritual, moral, psychological, an
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "An exploration of the profound spiritual, moral, psychological, an
     <!-- Opening Lead Card: The Premise of Divine Wisdom -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] leading-relaxed">
           Allah, the Glorified, possesses complete authority and perfect wisdom in all that He creates and legislates. He has neither created human beings in vain nor left them without purposeful guidance.
         </p>
         <p class="text-base text-[#B3ADB9] border-t border-[#332f2b] pt-3">
@@ -66,7 +65,7 @@ description: "An exploration of the profound spiritual, moral, psychological, an
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Test of Sincerity & True Servitude
@@ -84,7 +83,7 @@ description: "An exploration of the profound spiritual, moral, psychological, an
       <!-- Proof Card on Desires vs Truth -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Divine Warning</span>
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
           “And if the truth had been in accordance with their desires, verily, the heavens and the earth, and whosoever is therein would have been corrupted!”
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">— Sūrah al-Mu’minūn [23:71]</span>
@@ -100,7 +99,7 @@ description: "An exploration of the profound spiritual, moral, psychological, an
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Cultivating Piety & Emotional Self-Restraint
@@ -114,7 +113,7 @@ description: "An exploration of the profound spiritual, moral, psychological, an
       <!-- Primary Quranic Verse Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Objective of Fasting</span>
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
           “O you who believe, fasting is prescribed for you as it was prescribed for those before you, so that you may attain piety.”
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">— Sūrah al-Baqarah [2:183]</span>
@@ -122,7 +121,6 @@ description: "An exploration of the profound spiritual, moral, psychological, an
 
       <!-- Prophetic Guidance Grid Callout -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Internal Guardrail</span>
           <h3 class="text-xl font-medium text-white">Restraint from Sin</h3>
@@ -130,7 +128,6 @@ description: "An exploration of the profound spiritual, moral, psychological, an
             Whenever a fasting person contemplates a transgression, the awareness of their sacred state acts as an immediate spiritual intervention, halting sinful action before execution.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Prophetic Instruction</span>
           <h3 class="text-xl font-medium text-white">“I Am Fasting”</h3>
@@ -138,13 +135,12 @@ description: "An exploration of the profound spiritual, moral, psychological, an
             The Prophet ﷺ commanded the one fasting when insulted or provoked to declare: “I am fasting”—reminding the antagonist of the sacred boundary and reminding oneself to forego retaliation.
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Heart Clarity, Gratitude, and Humility
@@ -157,7 +153,6 @@ description: "An exploration of the profound spiritual, moral, psychological, an
 
       <!-- 3-Column Concept Grid -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. Clarity</span>
           <h3 class="text-lg font-medium text-white">Spiritual Reflection</h3>
@@ -165,7 +160,6 @@ description: "An exploration of the profound spiritual, moral, psychological, an
             Fulfilling every physical appetite breeds negligence and blinds the heart. Fasting vacates the vessel, leaving space for contemplation and remembrance.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Gratitude</span>
           <h3 class="text-lg font-medium text-white">Recognizing Favors</h3>
@@ -173,7 +167,6 @@ description: "An exploration of the profound spiritual, moral, psychological, an
             Temporary deprivation forces the wealthy to recognize Allah's basic blessings—food, clean water, and companionship—which many across creation continuously lack.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. Humility</span>
           <h3 class="text-lg font-medium text-white">Subduing Ego</h3>
@@ -181,13 +174,12 @@ description: "An exploration of the profound spiritual, moral, psychological, an
             Constant satiation leads to self-deceit, pride, and arrogance. Fasting breaks egoistic impulses, producing genuine humility before Allah and compassion toward people.
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Self-Mastery, Spiritual Defense, and Physical Vitality

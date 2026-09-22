@@ -3,9 +3,8 @@ layout: base.njk
 title: "The Foundations of the Islamic Awakening"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Creed & Methodology"
-readTime: "7 min read"
 dateAdded: 2026-09-01
-description: "A definitive guide on the primary sources, unified methodology, spiritual tranquility, and da‘wah principles necessary for a genuine Islamic awakening."
+description: "The foundations, methodology, tranquility, and da‘wah principles of Islamic awakening."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -37,9 +36,9 @@ description: "A definitive guide on the primary sources, unified methodology, sp
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }} • {{ readTime }}
+      {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl font-serif-title">
+    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -52,7 +51,7 @@ description: "A definitive guide on the primary sources, unified methodology, sp
     <!-- Overview Lead Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] leading-relaxed">
           A genuine revival of faith must be built upon unwavering divine foundations. For an Islamic awakening to bear enduring fruit, the youth must anchor their endeavors in authentic revelation and a shared, tested methodology.
         </p>
         <p class="text-base text-[#B3ADB9] border-t border-[#332f2b] pt-3">
@@ -63,7 +62,7 @@ description: "A definitive guide on the primary sources, unified methodology, sp
 
     <!-- PRINCIPLE I -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle I</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           The Three Pillars of Revival
@@ -112,7 +111,7 @@ description: "A definitive guide on the primary sources, unified methodology, sp
 
     <!-- PRINCIPLE II -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle II</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Contemplation of the Qur’an & Inner Tranquility
@@ -126,7 +125,7 @@ description: "A definitive guide on the primary sources, unified methodology, sp
       <!-- Divine Mandate Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Purpose of Revelation</span>
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
           “This is a blessed Book which We have revealed to you, so that they may ponder over its verses, and that people of understanding may take heed.”
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">— Sūrah Ṣād [38:29]</span>
@@ -134,7 +133,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
 
       <!-- Textual Evidence Grid -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Consequence of Turning Away</span>
           <h3 class="text-xl font-medium text-white">Guidance vs. Misery</h3>
@@ -143,7 +141,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Sūrah ṬāHā [20:123-124]</span>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">The Good Life Defined</span>
           <h3 class="text-xl font-medium text-white">Peace of the Believer</h3>
@@ -152,7 +149,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
           </p>
           <span class="text-xs font-mono text-[#d6b278] block">— Sūrah an-Naḥl [16:97]</span>
         </div>
-
       </div>
 
       <p class="text-lg sm:text-xl text-[#B3ADB9]">
@@ -165,7 +161,7 @@ description: "A definitive guide on the primary sources, unified methodology, sp
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Historical Narrative</span>
           <span class="text-xs font-mono text-[#B3ADB9]">Reflections on Serenity</span>
         </div>
-        <h3 class="font-serif text-2xl text-white">Al-Ḥāfiẓ Ibn Ḥajar <span class="text-sm font-sans text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> & The Oil Merchant</h3>
+        <h3 class="text-2xl text-white">Al-Ḥāfiẓ Ibn Ḥajar <span class="text-sm font-sans text-[#B3ADB9]">رَحِمَهُ ٱللَّٰهُ</span> & The Oil Merchant</h3>
         <p class="text-base text-[#ECE8EF] leading-relaxed">
           While traveling in a grand procession as the Chief Judge of Egypt, Al-Ḥāfiẓ Ibn Ḥajar passed a poor Jewish oil vendor clad in dirty garments. Stopping the carriage, the merchant challenged him: <em>“Your Prophet says that the world is a prison for the believer and a paradise for the disbeliever. Yet you are a supreme judge in comfort, while I suffer in hardship!”</em>
         </p>
@@ -180,7 +176,7 @@ description: "A definitive guide on the primary sources, unified methodology, sp
 
     <!-- PRINCIPLE III -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle III</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Anchoring in the Sunnah & Meaning of Testimony
@@ -197,7 +193,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
 
       <!-- 4-Pillars Grid Callout -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Pillar 01</span>
           <h3 class="text-xl font-medium text-white">Obedience</h3>
@@ -205,7 +200,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
             Yielding willingly and completely to everything he commanded.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Pillar 02</span>
           <h3 class="text-xl font-medium text-white">Abstaining</h3>
@@ -213,7 +207,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
             Avoiding and refraining from everything he forbade or censured.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Pillar 03</span>
           <h3 class="text-xl font-medium text-white">Affirmation</h3>
@@ -221,7 +214,6 @@ description: "A definitive guide on the primary sources, unified methodology, sp
             Trusting and believing unconditionally in all the truths he conveyed.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Pillar 04</span>
           <h3 class="text-xl font-medium text-white">Exclusive Legislation</h3>
@@ -229,13 +221,12 @@ description: "A definitive guide on the primary sources, unified methodology, sp
             Worshipping Allah strictly according to what he prescribed, without innovation.
           </p>
         </div>
-
       </div>
     </section>
 
     <!-- PRINCIPLE IV -->
     <section class="space-y-6 reveal-on-scroll">
-      <div class="space-y-2 border-b border-[#332f2b] pb-4">
+      <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
         <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Principle IV</span>
         <h2 class="text-3xl font-medium text-white sm:text-4xl">
           Methodology and Hierarchy of Da‘wah
