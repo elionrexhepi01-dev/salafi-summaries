@@ -2,11 +2,16 @@
 layout: base.njk
 title: Salafi Summaries
 pagination:
-  data: collections.summaries
-  size: 12
-  alias: summaries
-permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagination.pageNumber + 1 }}/index.html{% endif %}"
+  data: collections.pagedSummariesByLang
+  size: 1
+  alias: pagedData
+permalink: "{% if pagedData.lang.code == 'en' %}{% if pagedData.pageNumber == 0 %}index.html{% else %}page/{{ pagedData.pageNumber + 1 }}/index.html{% endif %}{% else %}{% if pagedData.pageNumber == 0 %}{{ pagedData.lang.code }}/index.html{% else %}{{ pagedData.lang.code }}/page/{{ pagedData.pageNumber + 1 }}/index.html{% endif %}{% endif %}"
 ---
+
+{% set currentLang = pagedData.lang %}
+{% set langSummaries = pagedData.items %}
+{% set pageNum = pagedData.pageNumber %}
+{% set totalPages = pagedData.totalPages %}
 
 <!-- HERO SECTION -->
 <section class="relative w-full h-screen flex flex-col justify-between items-center text-center px-4 py-8 overflow-hidden bg-[#1c1a17]">
@@ -59,21 +64,54 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
 
 </section>
 
+<!-- DYNAMIC LANGUAGE SELECTOR GRID -->
+<section class="max-w-5xl px-6 pt-12 mx-auto">
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-[#24211e]/80 border border-[#332e29]">
+    <div>
+      <span class="text-xs uppercase tracking-[0.25em] text-[#d6b278] font-medium block">
+        SUMMARY LANGUAGE
+      </span>
+      <p class="text-xs text-[#b3a898] mt-0.5 font-light">
+        Select language for book summaries:
+      </p>
+    </div>
+
+    <!-- Scalable Multi-Language Buttons -->
+    <div class="flex flex-wrap items-center w-full gap-2 sm:w-auto">
+      {% for lang in languages %}
+        {% set isActive = (lang.code == currentLang.code) %}
+        <a 
+          href="{% if lang.code == 'en' %}/#summaries{% else %}/{{ lang.code }}/#summaries{% endif %}" 
+          class="px-4 py-2 rounded-xl text-xs font-medium transition-all duration-300 {% if isActive %}bg-[#d6b278] text-[#1c1a17] font-semibold shadow-sm{% else %}bg-[#1c1a17] text-[#b3a898] hover:text-[#ede8df] border border-[#332e29] hover:border-[#d6b278]/40{% endif %}"
+        >
+          {{ lang.label }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- MAIN CONTENT / SUMMARIES GRID -->
-<main id="summaries" class="max-w-5xl px-6 py-20 mx-auto sm:py-28">
-  
-  <!-- Section Title: SUMMARIES -->
-  <div class="scroll-reveal mb-10 pb-4 border-b border-[#332e29]/60 flex flex-col items-center text-center">
+<main id="summaries" class="max-w-5xl px-6 py-16 mx-auto">
+
+  <div class="scroll-reveal mb-10 pb-4 border-b border-[#332e29]/60 flex flex-col items-start">
     <span class="text-xs tracking-[0.35em] uppercase text-[#d6b278] font-medium block mb-1">
-      THE COLLECTION
+      THE COLLECTION ({{ currentLang.label | upper }})
     </span>
-    <h2 class="text-3xl font-normal tracking-wide text-white sm:text-4xl">
+
+    <h2 class="text-3xl font-normal tracking-wide text-white sm:text-4xl font-serif-title">
       PUBLISHED SUMMARIES
+
+      {% if totalPages > 1 %}
+        <span class="text-lg text-[#b3a898] font-sans font-light">
+          — Page {{ pageNum + 1 }} of {{ totalPages }}
+        </span>
+      {% endif %}
     </h2>
   </div>
 
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2 sm:gap-8">
-    {% for summary in summaries %}
+    {% for summary in langSummaries %}
       <a 
         href="{{ summary.url }}" 
         class="scroll-reveal group block p-8 rounded-2xl bg-[#24211e]/80 hover:bg-[#2b2724] border border-[#332e29] hover:border-[#d6b278]/40 transition-all duration-300 hover:-translate-y-1.5 active:scale-[0.98] shadow-sm hover:shadow-xl hover:shadow-black/30"
@@ -97,54 +135,46 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}page/{{ pagin
       </a>
     {% else %}
       <div class="col-span-full text-center py-16 border border-dashed border-[#332e29] rounded-2xl text-[#b3a898] font-light text-sm">
-        No summaries published yet.
+        No summaries published yet {{ currentLang.label }}. 
       </div>
     {% endfor %}
   </div>
-</main>
-
-<!-- PAGINATION CONTROLS -->
-  {% if pagination.pages.length > 1 %}
-  <nav aria-label="Pagination Navigation" class="flex items-center justify-center gap-2 mt-12 pt-8 border-t border-[#332e29]/60">
-    {# Previous Button #}
-    {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}#summaries" class="inline-flex items-center px-3.5 py-2 rounded-xl bg-[#24211e] hover:bg-[#2d2a26] border border-[#332e29] hover:border-[#d6b278]/40 text-xs font-medium text-[#b3a898] hover:text-[#ede8df] transition-colors">
-        &larr; Prev
-      </a>
-    {% else %}
-      <span class="inline-flex items-center px-3.5 py-2 rounded-xl bg-[#1c1a17]/50 border border-[#332e29]/40 text-xs font-medium text-[#b3a898]/30 cursor-not-allowed">
-        &larr; Prev
-      </span>
-    {% endif %}
-
-    {# Page Number Links #}
-    <div class="flex items-center gap-1 sm:gap-2">
-      {% for pageEntry in pagination.pages %}
-        {% set pageUrl = pagination.hrefs[loop.index0] %}
-        {% if pageUrl == page.url %}
-          <span aria-current="page" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-[#d6b278] text-[#1c1a17] text-xs font-semibold shadow-sm">
-            {{ loop.index }}
-          </span>
-        {% else %}
-          <a href="{{ pageUrl }}#summaries" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-[#24211e] hover:bg-[#2d2a26] border border-[#332e29] hover:border-[#d6b278]/40 text-xs font-medium text-[#b3a898] hover:text-[#ede8df] transition-colors">
-            {{ loop.index }}
+  
+  <!-- 12-ITEM INDEPENDENT PAGINATION CONTROLS -->
+  {% if totalPages > 1 %}
+    <nav class="flex items-center justify-between mt-12 pt-8 border-t border-[#332e29]/60">
+      <div>
+        {% if pageNum > 0 %}
+          {% if currentLang.code == 'en' %}
+            {% set prevUrl = '/' if pageNum == 1 else '/page/' ~ pageNum ~ '/' %}
+          {% else %}
+            {% set prevUrl = '/' ~ currentLang.code ~ '/' if pageNum == 1 else '/' ~ currentLang.code ~ '/page/' ~ pageNum ~ '/' %}
+          {% endif %}
+          <a href="{{ prevUrl }}#summaries" class="px-5 py-2.5 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] transition-colors">
+            ← Previous Page
           </a>
         {% endif %}
-      {% endfor %}
-    </div>
+      </div>
 
-    {# Next Button #}
-    {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}#summaries" class="inline-flex items-center px-3.5 py-2 rounded-xl bg-[#24211e] hover:bg-[#2d2a26] border border-[#332e29] hover:border-[#d6b278]/40 text-xs font-medium text-[#b3a898] hover:text-[#ede8df] transition-colors">
-        Next &rarr;
-      </a>
-    {% else %}
-      <span class="inline-flex items-center px-3.5 py-2 rounded-xl bg-[#1c1a17]/50 border border-[#332e29]/40 text-xs font-medium text-[#b3a898]/30 cursor-not-allowed">
-        Next &rarr;
+      <span class="text-xs text-[#b3a898] font-light">
+        Page {{ pageNum + 1 }} of {{ totalPages }}
       </span>
-    {% endif %}
-  </nav>
+
+      <div>
+        {% if pageNum < totalPages - 1 %}
+          {% if currentLang.code == 'en' %}
+            {% set nextUrl = '/page/' ~ (pageNum + 2) ~ '/' %}
+          {% else %}
+            {% set nextUrl = '/' ~ currentLang.code ~ '/page/' ~ (pageNum + 2) ~ '/' %}
+          {% endif %}
+          <a href="{{ nextUrl }}#summaries" class="px-5 py-2.5 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] transition-colors">
+            Next Page →
+          </a>
+        {% endif %}
+      </div>
+    </nav>
   {% endif %}
+</main>
 
 <!-- SECTION: OUR PURPOSE -->
 <section class="max-w-4xl px-6 py-12 mx-auto scroll-reveal">

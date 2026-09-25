@@ -3,6 +3,7 @@ layout: base.njk
 title: "The Book of Monotheism"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
 category: "Aqīdah & Foundations"
+lang: "en"
 dateAdded: 2026-09-05
 description: "The essence, categories, virtues, and opposites of Islamic Monotheism."
 ---
@@ -38,7 +39,7 @@ description: "The essence, categories, virtues, and opposites of Islamic Monothe
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
       {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
+    <h1 class="text-4xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -90,10 +91,8 @@ description: "The essence, categories, virtues, and opposites of Islamic Monothe
       <p class="text-lg sm:text-xl text-[#B3ADB9]">
         Sound Islamic doctrine organizes monotheism into three distinct, interconnected branches that together form a complete comprehension of the Divine:
       </p>
-
       <!-- Grid for Categories -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. Names & Attributes</span>
           <h3 class="text-xl font-medium text-white">Tawḥīd al-Asmā’ wa al-Ṣifāt</h3>

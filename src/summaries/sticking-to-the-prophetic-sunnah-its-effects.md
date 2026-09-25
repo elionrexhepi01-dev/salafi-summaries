@@ -3,6 +3,7 @@ layout: base.njk
 title: "Sticking to the Prophetic Sunnah & Its Effects"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Sunnah & Methodology"
+lang: "en"
 dateAdded: 2026-09-03
 description: "The obligation to follow the Sunnah and its spiritual and practical effects."
 ---
@@ -38,7 +39,7 @@ description: "The obligation to follow the Sunnah and its spiritual and practica
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
       {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
+    <h1 class="text-4xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">

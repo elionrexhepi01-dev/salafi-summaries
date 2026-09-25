@@ -3,6 +3,7 @@ layout: base.njk
 title: "The Inner Secrets of Worship"
 author: "Shaykh Aḥmad ibn Qudāmah al-Maqdisī"
 category: "Spiritual Purification & Ethics"
+lang: "en"
 dateAdded: 2026-09-02
 description: "The ten foundations of worship, spiritual devotion, and inner purification."
 ---
@@ -38,7 +39,7 @@ description: "The ten foundations of worship, spiritual devotion, and inner puri
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
       {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
+    <h1 class="text-4xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">

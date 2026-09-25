@@ -3,6 +3,7 @@ layout: base.njk
 title: "The Excellence of Supplicating to Allah and Constantly Remembering Him"
 author: "Shaykh Ṣāliḥ ibn Fawzān al-Fawzān"
 category: "Remembrance & Supplication"
+lang: "en"
 dateAdded: 2026-09-01
 description: "Dhikr of the tongue and heart, protection from heedlessness, and the virtue of Du‘ā."
 ---
@@ -38,7 +39,7 @@ description: "Dhikr of the tongue and heart, protection from heedlessness, and t
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
       {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
+    <h1 class="text-4xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -241,7 +242,7 @@ description: "Dhikr of the tongue and heart, protection from heedlessness, and t
           Abundant supplication serves as a vital safeguard against tests and tribulations, both apparent and hidden. The Prophet ﷺ specifically commanded seeking refuge from four severe afflictions:
         </p>
 
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base text-[#ECE8EF] pt-2 font-mono">
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base text-[#ECE8EF] pt-2">
           <li class="flex items-center gap-2">
             <span class="text-[#d6b278]">•</span> Punishment of Hellfire
           </li>

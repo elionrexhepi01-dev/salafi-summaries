@@ -3,6 +3,7 @@ layout: base.njk
 title: "The Role of the Woman in Rectifying Society"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 category: "Society & Family"
+lang: "en"
 dateAdded: 2026-09-01
 description: "Women’s domestic, moral, and educational roles in building a righteous society."
 ---
@@ -38,7 +39,7 @@ description: "Women’s domestic, moral, and educational roles in building a rig
     <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
       {{ category }}
     </div>
-    <h1 class="text-5xl leading-tight text-white sm:text-6xl">
+    <h1 class="text-4xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
@@ -51,7 +52,7 @@ description: "Women’s domestic, moral, and educational roles in building a rig
     <!-- Overview Lead Card -->
     <section class="reveal-on-scroll">
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-4">
-        <p class="text-xl sm:text-2xl text-[#ECE8EF] font-serif leading-relaxed">
+        <p class="text-xl sm:text-2xl text-[#ECE8EF] leading-relaxed">
           The rectification of any human society relies upon two essential, complementary pillars: the public domain of civic life and the sacred interior of the home.
         </p>
         <p class="text-base text-[#B3ADB9] border-t border-[#332f2b] pt-3">
@@ -94,7 +95,7 @@ description: "Women’s domestic, moral, and educational roles in building a rig
       <!-- Divine Command Quote Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Divine Instruction</span>
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
           “And abide in your houses and do not display yourselves as was the practice of the former times of ignorance. Establish prayer, give zakāh, and obey Allah and His Messenger. Allah intends only to remove impurity from you, O members of the [Prophet’s] household, and to purify you completely.”
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">— Sūrah al-Aḥzāb [33:33]</span>
@@ -161,7 +162,7 @@ description: "Women’s domestic, moral, and educational roles in building a rig
       <!-- Wisdom Scripture Card -->
       <div class="bg-[#24211e] border-l-2 border-[#d6b278] p-6 sm:p-8 rounded-r-lg space-y-3">
         <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Divine Grant</span>
-        <p class="text-lg sm:text-xl text-[#ECE8EF] italic font-serif">
+        <p class="text-lg sm:text-xl text-[#ECE8EF] italic">
           “He grants wisdom to whom He pleases, and whoever has been granted wisdom has certainly been given abundant good.”
         </p>
         <span class="text-xs font-mono text-[#d6b278] uppercase block">— Sūrah al-Baqarah [2:269]</span>
