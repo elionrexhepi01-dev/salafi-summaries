@@ -82,7 +82,7 @@ description: "Thellësitë gjuhësore, vlerat dhe kuptimet teologjike të Lā �
   <div class="space-y-2 border-b border-[#332f2b] pb-4 text-center">
     <span class="text-sm font-mono uppercase tracking-widest text-[#d6b278]">Parimi I</span>
     <h2 class="text-3xl font-medium text-white sm:text-4xl">
-      Epërsia e Edhkārit Autentik Profetik
+      Epërsia e Dhikrit Autentik Profetik
     </h2>
   </div>
 
