@@ -156,7 +156,6 @@ description: "Natyra e vërtetë e karakterit fisnik dhe mënyra e kultivimit t�
 
   <!-- Comparative Framework Grid -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <!-- Toward Creator -->
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-4">
       <div class="space-y-1">
@@ -205,7 +204,6 @@ description: "Natyra e vërtetë e karakterit fisnik dhe mënyra e kultivimit t�
         </li>
       </ul>
     </div>
-
   </div>
 
   <!-- Family Benchmark Callout -->

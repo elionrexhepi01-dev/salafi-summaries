@@ -203,7 +203,6 @@ description: "The essence, categories, virtues, and opposites of Islamic Monothe
 
       <!-- Grid comparing Major and Minor Shirk -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
             <span class="text-sm font-mono text-[#d6b278] uppercase">Major Shirk</span>
@@ -222,7 +221,6 @@ description: "The essence, categories, virtues, and opposites of Islamic Monothe
             Statements or actions that lead toward major shirk or aggrandize creation without reaching actual worship. Examples include swearing oaths by other than Allah or performing deeds for subtle ostentation (<e>Riyā’</e>).
           </p>
         </div>
-
       </div>
 
       <!-- Specific Prohibited Practices Callout -->

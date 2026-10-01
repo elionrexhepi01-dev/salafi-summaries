@@ -153,7 +153,6 @@ description: "Tri llojet e të rinjve, shkaqet e krizës shpirtërore dhe shëri
 
   <!-- Grid of Root Causes -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Faktori I</span>
       <h3 class="text-xl font-medium text-white">Përtacia & Papunësia</h3>
@@ -182,7 +181,6 @@ description: "Tri llojet e të rinjve, shkaqet e krizës shpirtërore dhe shëri
         Konsumimi i pakontrolluar i përmbajtjeve të dëmshme përmes literaturës, platformave digjitale dhe mediave të internetit.
       </p>
     </div>
-
   </div>
 
   <!-- Misconception Callout -->

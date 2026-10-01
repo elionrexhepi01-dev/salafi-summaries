@@ -205,7 +205,6 @@ description: "Thelbi, kategoritë, vlerat dhe të kundërtat e Teuhidit Islam."
 
   <!-- Grid comparing Major and Minor Shirk -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
         <span class="text-sm font-mono text-[#d6b278] uppercase">Shirku i Madh</span>
@@ -224,7 +223,6 @@ description: "Thelbi, kategoritë, vlerat dhe të kundërtat e Teuhidit Islam."
         Fjalë ose vepra që çojnë drejt shirkut të madh ose e madhërojnë krijesën pa arritur në adhurim të vërtetë. Shembujt përfshijnë betimin në diçka tjetër përveç Allahut ose kryerjen e veprave për një syefaqësi të fshehtë (<e>Riyā’</e>).
       </p>
     </div>
-
   </div>
 
   <!-- Specific Prohibited Practices Callout -->

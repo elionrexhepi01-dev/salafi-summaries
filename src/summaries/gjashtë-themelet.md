@@ -91,7 +91,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
 
   <!-- Textual Evidence Grid -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Njësia Hyjnore</span>
       <h3 class="text-xl font-medium text-white">Adhurimi Vetëm për Të</h3>
@@ -124,7 +123,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
       </p>
       <span class="text-xs font-mono text-[#d6b278] block">— Sūrah az-Zumar [39:54]</span>
     </div>
-
   </div>
 </section>
 
@@ -152,7 +150,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
 
   <!-- Grid Warnings against Splitting -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Paralajmërim i Rëndë</span>
       <h3 class="text-xl font-medium text-white">Rreziku i Përçarjes</h3>
@@ -169,7 +166,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
       </p>
       <span class="text-xs font-mono text-[#d6b278] block">— Sūrah al-Anfāl [8:46]</span>
     </div>
-
   </div>
   <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
     <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Shkëputja nga Fraksionet</span>
@@ -253,7 +249,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
 
   <!-- Grid Callout for Knowledge Virtues -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Dallimi Kuranor</span>
       <h3 class="text-xl font-medium text-white">Vlera e Pakrahasueshme e Dijetarëve</h3>
@@ -284,7 +279,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
       </p>
       <span class="text-xs font-mono text-[#d6b278] block">— Sūrah al-Mujādilah [58:11]</span>
     </div>
-
   </div>
 </section>
 
@@ -312,7 +306,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
 
   <!-- Criteria Grid Callouts -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Kriteri 01</span>
       <h3 class="text-xl font-medium text-white">Ndjekja e Pejgamberit ﷺ</h3>
@@ -329,7 +322,6 @@ description: "Gjashtë parime themelore nga Kurani dhe Sunneti për besim të sa
       </p>
       <span class="text-xs font-mono text-[#d6b278] block">— Sūrah an-Najm [53:32]</span>
     </div>
-
   </div>
   <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-2">
     <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Mbrojtja nga Mashtrimi Shejtanor</span>

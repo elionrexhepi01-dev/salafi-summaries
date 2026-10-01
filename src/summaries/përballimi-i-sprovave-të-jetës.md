@@ -100,7 +100,6 @@ description: "Njohja e sprovave të kësaj bote, shmangia e përçarjes dhe mbro
 
   <!-- Grid Comparison: Adversity vs Prosperity -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. Sprovat e Vështirësisë</span>
       <h3 class="text-xl font-medium text-white">Vështirësia & Humbja</h3>
@@ -115,7 +114,6 @@ description: "Njohja e sprovave të kësaj bote, shmangia e përçarjes dhe mbro
         Begatitë si fëmijët, pasuria dhe tregtia sprovojnë nëse lidhjet me këtë botë e zbehin përkushtimin parësor të njeriut ndaj Allahut.
       </p>
     </div>
-
   </div>
 
   <p class="text-lg sm:text-xl text-[#B3ADB9]">
@@ -212,7 +210,6 @@ description: "Njohja e sprovave të kësaj bote, shmangia e përçarjes dhe mbro
 
   <!-- Prophetic Refuge Cards -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Urdhër Profetik</span>
       <h3 class="text-xl font-medium text-white">Mbrojtja nga të Gjitha Sprovat</h3>
@@ -227,7 +224,6 @@ description: "Njohja e sprovave të kësaj bote, shmangia e përçarjes dhe mbro
         Kërkoni mbrojtje nga katër gjëra: dënimi i Zjarrit të Xhehenemit, dënimi i varrit, sprovat e jetës dhe vdekjes dhe sprova e Dexhxhālit (<e>Dajjāl</e>).
       </p>
     </div>
-
   </div>
 
   <!-- Callout on Prostration -->

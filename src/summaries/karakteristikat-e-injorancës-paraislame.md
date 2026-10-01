@@ -108,7 +108,6 @@ description: "Një analizë e Jāhilīyyah, duke nxjerrë në pah devijimet e sa
 
       <!-- Grid Callout for Epistemological Fallacies -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">01. Gabimi i shumicës</span>
           <h3 class="text-xl font-medium text-white">Mashtrimi përmes shumicës</h3>
@@ -116,7 +115,6 @@ description: "Një analizë e Jāhilīyyah, duke nxjerrë në pah devijimet e sa
             Ata supozonin se nëse një zakon ose besim mbahej nga shumica, atëherë kjo ishte provë përfundimtare e saktësisë së tij.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">02. Paragjykimi materialist</span>
           <h3 class="text-xl font-medium text-white">Barazimi i fuqisë me të vërtetën</h3>
@@ -124,7 +122,6 @@ description: "Një analizë e Jāhilīyyah, duke nxjerrë në pah devijimet e sa
             Ata supozonin se të pasurit dhe të fuqishmit ishin domosdoshmërisht të udhëzuar, ndërsa të varfrit dhe të dobëtit i konsideronin ndjekës të së pavërtetës.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">03. Paragjykimi partiak</span>
           <h3 class="text-xl font-medium text-white">Pranimi i përzgjedhur</h3>
@@ -132,7 +129,6 @@ description: "Një analizë e Jāhilīyyah, duke nxjerrë në pah devijimet e sa
             Ata e refuzonin vazhdimisht të vërtetën absolute nëse ajo shprehej nga grupe rivale ose nga njerëz që nuk i pëlqenin.
           </p>
         </div>
-
         <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
           <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">04. Arsyetimi i gabuar</span>
           <h3 class="text-xl font-medium text-white">Analogji të pavlefshme</h3>
@@ -141,7 +137,6 @@ description: "Një analizë e Jāhilīyyah, duke nxjerrë në pah devijimet e sa
           </p>
         </div>
       </div>
-
       <p class="text-lg sm:text-xl text-[#ECE8EF]">
         Konfuzioni intelektual çoi drejtpërdrejt në shpërbërjen shoqërore. Ata mbetën vazhdimisht të përçarë dhe u ndanë në grupe që luftonin kundër njëri-tjetrit, ndërkohë që kundërshtimin ndaj udhëheqjes së ligjshme dhe rendit e shihnin si shenjë të pavarësisë fisnike.
       </p>

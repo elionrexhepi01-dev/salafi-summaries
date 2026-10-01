@@ -201,7 +201,6 @@ description: "Katër parime themelore që dallojnë Teuhidin nga shirku dhe ndë
 
   <!-- Comparison Grid: Ancient vs Modern -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <div class="flex items-center justify-between border-b border-[#332f2b] pb-2">
         <span class="text-sm font-mono text-[#d6b278] uppercase">Të Lashtët</span>
@@ -220,7 +219,6 @@ description: "Katër parime themelore që dallojnë Teuhidin nga shirku dhe ndë
         Në të kundërt, shkelësit e mëvonshëm kryejnë shirk vazhdimisht — si në kohë qetësie, ashtu edhe në kohë vështirësish të mëdha, duke iu drejtuar krijesave edhe kur përballen me sprova që rrezikojnë jetën.
       </p>
     </div>
-
   </div>
 
   <!-- Conclusion Summary Card -->

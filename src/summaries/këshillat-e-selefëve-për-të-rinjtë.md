@@ -113,7 +113,6 @@ description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tej
             >— Pejgamberi Muḥammad ﷺ</span
           >
         </div>
-
         <div
           class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3"
         >
@@ -186,7 +185,6 @@ description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tej
             >
           </p>
         </div>
-
         <div
           class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3"
         >
@@ -205,7 +203,6 @@ description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tej
             >
           </p>
         </div>
-
         <div
           class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3"
         >
@@ -224,7 +221,6 @@ description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tej
             >
           </p>
         </div>
-
         <div
           class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3"
         >
@@ -302,7 +298,6 @@ description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tej
             agjëronte muajt e shenjtë, krahas të hënave dhe të enjteve.
           </p>
         </div>
-
         <div
           class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3"
         >

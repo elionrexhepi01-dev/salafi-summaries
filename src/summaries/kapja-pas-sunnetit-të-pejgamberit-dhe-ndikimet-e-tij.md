@@ -76,7 +76,6 @@ description: "Detyrimi për të ndjekur Sunnetin dhe ndikimet e tij shpirtërore
 
   <!-- Quranic Proofs Grid -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Urdhri për Bindje</span>
       <h3 class="text-xl font-medium text-white">Bindja e Dyfishtë</h3>
@@ -109,7 +108,6 @@ description: "Detyrimi për të ndjekur Sunnetin dhe ndikimet e tij shpirtërore
       </p>
       <span class="text-xs font-mono text-[#d6b278] block">— Sūrah al-Aḥzāb [33:21]</span>
     </div>
-
   </div>
 </section>
 
@@ -172,7 +170,6 @@ description: "Detyrimi për të ndjekur Sunnetin dhe ndikimet e tij shpirtërore
 
   <!-- Four Effects Grid -->
   <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
     <div class="bg-[#1c1a18] p-6 rounded-lg border border-[#332f2b] space-y-3">
       <span class="text-xs font-mono uppercase tracking-widest text-[#d6b278]">Ndikimi 01</span>
       <h3 class="text-xl font-medium text-white">Prania e Zemrës në Adhurim</h3>
@@ -201,7 +198,6 @@ description: "Detyrimi për të ndjekur Sunnetin dhe ndikimet e tij shpirtërore
         Sunneti i vërtetë e ankoron besimtarin në moderimin islam (<e>Wasaṭiyyah</e>), duke e mbrojtur atë si nga ekstremizmi fetar (<e>Ghuluww</e>) ashtu edhe nga neglizhenca dhe lëshimi (<e>Tafrīṭ</e>).
       </p>
     </div>
-
   </div>
 </section>
 
