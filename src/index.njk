@@ -135,39 +135,39 @@ permalink: "{% if pagedData.lang.code == 'en' %}{% if pagedData.pageNumber == 0 
   </div>
   
 <!-- 12-ITEM INDEPENDENT PAGINATION CONTROLS -->
-  {% if totalPages > 1 %}
-    <nav class="flex items-center justify-center gap-6 mt-12 pt-8 border-t border-[#332e29]/60">
-      <div>
-        {% if pageNum > 0 %}
-          {% if currentLang.code == 'en' %}
-            {% set prevUrl = '/' if pageNum == 1 else '/page/' ~ pageNum ~ '/' %}
-          {% else %}
-            {% set prevUrl = '/' ~ currentLang.code ~ '/' if pageNum == 1 else '/' ~ currentLang.code ~ '/page/' ~ pageNum ~ '/' %}
-          {% endif %}
-          <a href="{{ prevUrl }}#summaries" class="px-5 py-2.5 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] transition-colors">
-            ← Previous Page
-          </a>
-        {% endif %}
-      </div>
+{% if totalPages > 1 %}
+  <nav class="flex items-center justify-center gap-6 mt-12 pt-8 border-t border-[#332e29]/60">
 
-      <span class="text-xs text-[#b3a898] font-light">
-        Page {{ pageNum + 1 }} of {{ totalPages }}
-      </span>
+    {% if pageNum > 0 %}
+      {% if currentLang.code == 'en' %}
+        {% set prevUrl = '/' if pageNum == 1 else '/page/' ~ pageNum ~ '/' %}
+      {% else %}
+        {% set prevUrl = '/' ~ currentLang.code ~ '/' if pageNum == 1 else '/' ~ currentLang.code ~ '/page/' ~ pageNum ~ '/' %}
+      {% endif %}
 
-      <div>
-        {% if pageNum < totalPages - 1 %}
-          {% if currentLang.code == 'en' %}
-            {% set nextUrl = '/page/' ~ (pageNum + 2) ~ '/' %}
-          {% else %}
-            {% set nextUrl = '/' ~ currentLang.code ~ '/page/' ~ (pageNum + 2) ~ '/' %}
-          {% endif %}
-          <a href="{{ nextUrl }}#summaries" class="px-5 py-2.5 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] transition-colors">
-            Next Page →
-          </a>
-        {% endif %}
-      </div>
-    </nav>
-  {% endif %}
+      <a href="{{ prevUrl }}#summaries" class="px-5 py-2.5 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] transition-colors">
+        ← Previous Page
+      </a>
+    {% endif %}
+
+    <span class="text-xs text-[#b3a898] font-light">
+      Page {{ pageNum + 1 }} of {{ totalPages }}
+    </span>
+
+    {% if pageNum < totalPages - 1 %}
+      {% if currentLang.code == 'en' %}
+        {% set nextUrl = '/page/' ~ (pageNum + 2) ~ '/' %}
+      {% else %}
+        {% set nextUrl = '/' ~ currentLang.code ~ '/page/' ~ (pageNum + 2) ~ '/' %}
+      {% endif %}
+
+      <a href="{{ nextUrl }}#summaries" class="px-5 py-2.5 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] transition-colors">
+        Next Page →
+      </a>
+    {% endif %}
+
+  </nav>
+{% endif %}
 </main>
 
 <!-- SECTION: OUR PURPOSE -->
