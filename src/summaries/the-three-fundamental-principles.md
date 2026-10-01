@@ -2,7 +2,6 @@
 layout: base.njk
 title: "The Three Fundamental Principles"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
-category: "Aqīdah & Foundations"
 lang: "en"
 dateAdded: 2026-09-05
 description: "A study of four essential obligations and the three questions of the grave."
@@ -36,9 +35,6 @@ description: "A study of four essential obligations and the three questions of t
   
   <!-- Header Section -->
   <header class="text-center mb-14">
-    <div class="inline-block px-4 py-1.5 mb-4 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#d6b278]/20">
-      {{ category }}
-    </div>
     <h1 class="mt-2 mb-4 text-4xl font-normal leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>

@@ -2,7 +2,6 @@
 layout: base.njk
 title: "Këshillat e Selefëve për të rinjtë"
 author: "Shaykh ‘Abdur Razzāq al-Badr"
-category: "Rinia dhe udhëzimi"
 lang: "sq"
 dateAdded: 2026-09-02
 description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tejkalimit të zvarritjes."
@@ -43,11 +42,6 @@ description: "Urtësi të përjetshme rreth rinisë, kërkimit të dijes dhe tej
 <article class="max-w-3xl mx-auto px-6 py-16 text-[#ECE8EF] animate-page-entry">
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
-    <div
-      class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]"
-    >
-      {{ category }}
-    </div>
     <h1 class="text-4xl leading-tight text-white sm:text-6xl">{{ title }}</h1>
     <p class="text-[#d6b278] text-lg sm:text-xl font-light">
       Nga {{ author }} <span class="text-[#B3ADB9]">حفظه الله</span>

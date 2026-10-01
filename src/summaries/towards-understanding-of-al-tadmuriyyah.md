@@ -3,7 +3,6 @@ layout: base.njk
 title: "Towards Understanding of Al-Tadmuriyyah"
 author: "Shaykh ul-Islām Ibn Taymiyyah"
 explanationBy: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
-category: "Aqīdah & Theology"
 lang: "en"
 dateAdded: 2026-09-03
 description: "Allah’s Names and Attributes according to Ahl al-Sunnah, affirming truth and refuting deviation."
@@ -37,9 +36,6 @@ description: "Allah’s Names and Attributes according to Ahl al-Sunnah, affirmi
   
   <!-- Main Header -->
   <header class="mb-12 text-center">
-    <div class="inline-block px-4 py-1.5 mb-4 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#d6b278]/20">
-      {{ category }}
-    </div>
     <h1 class="mt-2 mb-4 text-4xl font-normal leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>

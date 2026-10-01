@@ -2,7 +2,6 @@
 layout: base.njk
 title: "Tetë themele për një jetë të pastër dhe të lumtur"
 author: "Shaykh ‘Abd al-Raḥmān ibn Nāṣir as-Sa‘dī"
-category: "Pastrim i shpirtit dhe mirëqenie"
 lang: "sq"
 dateAdded: 2026-09-01
 description: "Tejkalimi i ankthit, kultivimi i qetësisë së brendshme dhe arritja e kënaqësisë përmes imanit."
@@ -32,9 +31,6 @@ description: "Tejkalimi i ankthit, kultivimi i qetësisë së brendshme dhe arri
  
   <!-- Centered Header -->
   <header class="mb-16 space-y-4 text-center">
-    <div class="inline-block px-4 py-1.5 text-sm font-mono uppercase tracking-widest text-[#d6b278] bg-[#24211e] rounded-full border border-[#332f2b]">
-      {{ category }}
-    </div>
     <h1 class="text-4xl leading-tight text-white sm:text-6xl">
       {{ title }}
     </h1>
