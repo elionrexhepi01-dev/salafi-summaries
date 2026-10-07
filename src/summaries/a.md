@@ -3,8 +3,8 @@ layout: base.njk
 title: "The Three Fundamental Principles"
 author: "Shaykh Muhammad Ibn Abdul Wahhab"
 lang: "en"
-dateAdded: 2026-09-05
-description: "The Three Fundamental Principles"
+dateAdded: 2026-10-07
+description: "A foundational treatise on Tawhid, the three fundamental questions, and the essentials of Islam."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -58,7 +58,7 @@ description: "The Three Fundamental Principles"
 
         <div class="bg-[#24211e] border border-[#332f2b] p-5 sm:p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
-            <span class="text-[#d6b278]">First:</span> Knowledge, which means: awareness of Allaah, awareness of His Prophet, and awareness of the Religion of Islaam, based on evidences.
+            <span class="text-[#d6b278]">First:</span> Knowledge, which means: awareness of Allaah, awareness of His Prophet, and awareness of the Religion of Islam, based on evidences.
           </p>
         </div>
 
@@ -195,51 +195,65 @@ description: "The Three Fundamental Principles"
       <div class="space-y-6">
 
         <p class="text-lg leading-relaxed sm:text-xl">
-          The types of worship that Allaah commanded, such as Islaam, Eemaan and Ihsaan, which includes:
+          The types of worship that Allaah commanded, such as Islam, Iman and Ihsan, which includes:
         </p>
 
         <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Supplication</span> (Du’aa)
+            <span class="text-[#d6b278]">Supplication</span>
+            (Du’aa)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Fear</span> (Khawf)
+            <span class="text-[#d6b278]">Fear</span>
+            (Khawf)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Hope</span> (Rajaa)
+            <span class="text-[#d6b278]">Hope</span>
+            (Rajaa)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Reliance</span> (Tawakkul)
+            <span class="text-[#d6b278]">Reliance</span>
+            (Tawakkul)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Longing</span> (Raghbah)
+            <span class="text-[#d6b278]">Longing</span>
+            (Raghbah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Dreading</span> (Rahbah)
+            <span class="text-[#d6b278]">Dreading</span>
+            (Rahbah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Submissiveness</span> (Khushoo’)
+            <span class="text-[#d6b278]">Submissiveness</span>
+            (Khushoo’)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Awe</span> (Khashyah)
+            <span class="text-[#d6b278]">Awe</span>
+            (Khashyah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Repentance</span> (Inaabah)
+            <span class="text-[#d6b278]">Repentance</span>
+            (Inaabah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Seeking Assistance</span> (Isti’aanah)
+            <span class="text-[#d6b278]">Seeking Assistance</span>
+            (Isti’aanah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Seeking Refuge</span> (Isti’aadhah)
+            <span class="text-[#d6b278]">Seeking Refuge</span>
+            (Isti’aadhah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Asking for Help</span> (Istighaathah)
+            <span class="text-[#d6b278]">Asking for Help</span>
+            (Istighaathah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Offering Sacrifices</span> (Dhabah)
+            <span class="text-[#d6b278]">Offering Sacrifices</span>
+            (Dhabah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Making Oaths</span> (Nadhar)
+            <span class="text-[#d6b278]">Making Oaths</span>
+            (Nadhar)
           </div>
         </div>
 
@@ -273,7 +287,7 @@ description: "The Three Fundamental Principles"
         </p>
 
         <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
-          ‘O Muhammad, inform me about Islaam.’
+          ‘O Muhammad, inform me about Islam.’
         </p>
 
         <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
@@ -289,7 +303,7 @@ description: "The Three Fundamental Principles"
         </p>
 
         <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
-          Then he said: ‘Now inform me about Eemaan.’
+          Then he said: ‘Now inform me about Iman.’
         </p>
 
         <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
@@ -301,7 +315,7 @@ description: "The Three Fundamental Principles"
         </p>
 
         <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
-          Now inform me about Ihsaan.
+          Now inform me about Ihsan.
         </p>
 
         <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
@@ -347,7 +361,7 @@ description: "The Three Fundamental Principles"
     <!-- The Third Fundamental Principle -->
     <section class="space-y-8 reveal-on-scroll">
 
-      <h2 class="text-3xl font-normal leading-tight text-white sm:text-4xl border-b border-[#24211e] pb-5 text-centere">
+      <h2 class="text-3xl font-normal leading-tight text-white sm:text-4xl border-b border-[#24211e] pb-5 text-center">
         The Third Fundamental Principle
       </h2>
 
