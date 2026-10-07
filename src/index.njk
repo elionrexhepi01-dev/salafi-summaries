@@ -149,7 +149,7 @@ permalink: "{% if pagedData.lang.code == 'en' %}{% if pagedData.pageNumber == 0 
         {% endif %}
 
         <a
-          href="{{ prevUrl }}#summaries"
+          href="{{ prevUrl }}"
           aria-label="Previous page"
           class="inline-flex items-center justify-center px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] hover:text-[#d6b278] transition-colors whitespace-nowrap"
         >
@@ -183,7 +183,7 @@ permalink: "{% if pagedData.lang.code == 'en' %}{% if pagedData.pageNumber == 0 
               {% endif %}
 
               <a
-                href="{{ pageUrl }}#summaries"
+                href="{{ pageUrl }}"  
                 class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-medium text-[#b3a898] hover:text-[#ede8df] hover:bg-[#24211e] border border-transparent hover:border-[#332e29] transition-colors"
               >
                 {{ pageNumber }}
@@ -268,7 +268,7 @@ permalink: "{% if pagedData.lang.code == 'en' %}{% if pagedData.pageNumber == 0 
         {% endif %}
 
         <a
-          href="{{ nextUrl }}#summaries"
+          href="{{ nextUrl }}"
           aria-label="Next page"
           class="inline-flex items-center justify-center px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] hover:text-[#d6b278] transition-colors whitespace-nowrap"
         >
