@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Tetë themele për një jetë të pastër dhe të lumtur"
+title: "Tetë Themele për një Jetë të Pastër dhe të Lumtur"
 author: "Shaykh ‘Abd al-Raḥmān ibn Nāṣir as-Sa‘dī"
 lang: "sq"
 dateAdded: 2026-09-01

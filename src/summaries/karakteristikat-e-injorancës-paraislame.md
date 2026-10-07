@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Karakteristikat e injorancës paraislame"
+title: "Karakteristikat e Injorancës Paraislame"
 author: "Shaykh al-Islām Muḥammad ibn ‘Abdul-Wahhāb"
 lang: "sq"
 dateAdded: 2026-09-05

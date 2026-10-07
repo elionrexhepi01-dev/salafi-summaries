@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Këshillat e Selefëve për të rinjtë"
+title: "Këshillat e Selefëve për të Rinjtë"
 author: "Shaykh ‘Abdur Razzāq al-Badr"
 lang: "sq"
 dateAdded: 2026-09-02

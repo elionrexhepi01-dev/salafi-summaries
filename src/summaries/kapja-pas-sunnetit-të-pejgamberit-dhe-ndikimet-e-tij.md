@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Kapja pas Sunnetit të Pejgamberit ﷺ dhe ndikimet e tij"
+title: "Kapja pas Sunnetit të Pejgamberit ﷺ dhe Ndikimet e tij"
 author: "Shaykh Muḥammad ibn Ṣāliḥ al-‘Uthaymīn"
 lang: "sq"
 dateAdded: 2026-09-03
