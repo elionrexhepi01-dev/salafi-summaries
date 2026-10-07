@@ -134,162 +134,72 @@ permalink: "{% if pagedData.lang.code == 'en' %}{% if pagedData.pageNumber == 0 
     {% endfor %}
   </div>
   
-<!-- PAGINATION CONTROLS -->
-{% if totalPages > 1 %}
-  <nav class="mt-12 pt-8 border-t border-[#332e29]/60" aria-label="Pagination">
-
-    <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-3">
-
-      <!-- Previous Page -->
-      <div class="flex justify-start min-w-0">
+<!-- 12-ITEM INDEPENDENT PAGINATION CONTROLS -->
+  {% if totalPages > 1 %}
+    <nav aria-label="Pagination Navigation" class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-12 pt-8 border-t border-[#332e29]/60">
+      
+      {# Previous Page Button #}
+      <div>
         {% if pageNum > 0 %}
           {% if currentLang.code == 'en' %}
             {% set prevUrl = '/' if pageNum == 1 else '/page/' ~ pageNum ~ '/' %}
           {% else %}
             {% set prevUrl = '/' ~ currentLang.code ~ '/' if pageNum == 1 else '/' ~ currentLang.code ~ '/page/' ~ pageNum ~ '/' %}
           {% endif %}
-
-          <a
-            href="{{ prevUrl }}#summaries"
-            aria-label="Previous page"
-            class="inline-flex items-center justify-center px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] hover:text-[#d6b278] transition-colors whitespace-nowrap"
-          >
-            <span class="hidden sm:inline">← Previous</span>
-            <span class="sm:hidden">← Prev.</span>
+          <a href="{{ prevUrl }}#summaries" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278]/40 transition-colors">
+            &larr; Prev
           </a>
+        {% else %}
+          <span class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-medium bg-[#1c1a17]/50 text-[#b3a898]/30 border border-[#332e29]/40 cursor-not-allowed">
+            &larr; Prev
+          </span>
         {% endif %}
       </div>
 
-      <!-- Page Numbers -->
-      <div class="flex items-center justify-center gap-1 shrink-0 whitespace-nowrap">
-
+      {# Numbered Page Buttons #}
+      <div class="flex flex-wrap items-center justify-center gap-1.5">
         {% for i in range(0, totalPages) %}
-
-          {% set pageNumber = i + 1 %}
-
-          {# Always show first page #}
-          {% if i == 0 %}
-
-            {% if pageNum == i %}
-              <span
-                aria-current="page"
-                class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#d6b278] text-[#1c1a17]"
-              >
-                {{ pageNumber }}
-              </span>
-            {% else %}
-              {% if currentLang.code == 'en' %}
-                {% set pageUrl = '/' %}
-              {% else %}
-                {% set pageUrl = '/' ~ currentLang.code ~ '/' %}
-              {% endif %}
-
-              <a
-                href="{{ pageUrl }}#summaries"
-                class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-medium text-[#b3a898] hover:text-[#ede8df] hover:bg-[#24211e] border border-transparent hover:border-[#332e29] transition-colors"
-              >
-                {{ pageNumber }}
-              </a>
-            {% endif %}
-
-          {# Ellipsis before the current page area #}
-          {% elif i == 1 and pageNum > 3 %}
-
-            <span class="inline-flex items-center justify-center w-6 h-9 text-xs text-[#b3a898]/60 select-none">
-              …
-            </span>
-
-          {# Pages around current page + last page #}
-          {% elif i == totalPages - 1 %}
-
-            {% if pageNum < totalPages - 4 %}
-              <span class="inline-flex items-center justify-center w-6 h-9 text-xs text-[#b3a898]/60 select-none">
-                …
-              </span>
-            {% endif %}
-
-            {% if pageNum == i %}
-              <span
-                aria-current="page"
-                class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#d6b278] text-[#1c1a17]"
-              >
-                {{ pageNumber }}
-              </span>
-            {% else %}
-              {% if currentLang.code == 'en' %}
-                {% set pageUrl = '/page/' ~ pageNumber ~ '/' %}
-              {% else %}
-                {% set pageUrl = '/' ~ currentLang.code ~ '/page/' ~ pageNumber ~ '/' %}
-              {% endif %}
-
-              <a
-                href="{{ pageUrl }}"
-                class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-medium text-[#b3a898] hover:text-[#ede8df] hover:bg-[#24211e] border border-transparent hover:border-[#332e29] transition-colors"
-              >
-                {{ pageNumber }}
-              </a>
-            {% endif %}
-
-          {# Nearby pages around current page #}
-          {% elif i >= pageNum - 1 and i <= pageNum + 1 %}
-
-            {% if pageNum == i %}
-              <span
-                aria-current="page"
-                class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#d6b278] text-[#1c1a17]"
-              >
-                {{ pageNumber }}
-              </span>
-            {% else %}
-              {% if currentLang.code == 'en' %}
-                {% set pageUrl = '/page/' ~ pageNumber ~ '/' %}
-              {% else %}
-                {% set pageUrl = '/' ~ currentLang.code ~ '/page/' ~ pageNumber ~ '/' %}
-              {% endif %}
-
-              <a
-                href="{{ pageUrl }}"
-                class="inline-flex items-center justify-center min-w-9 h-9 px-2 rounded-xl text-xs sm:text-sm font-medium text-[#b3a898] hover:text-[#ede8df] hover:bg-[#24211e] border border-transparent hover:border-[#332e29] transition-colors"
-              >
-                {{ pageNumber }}
-              </a>
-            {% endif %}
-
+          {% set pageIndex = i + 1 %}
+          {% if currentLang.code == 'en' %}
+            {% set pageUrl = '/' if i == 0 else '/page/' ~ pageIndex ~ '/' %}
+          {% else %}
+            {% set pageUrl = '/' ~ currentLang.code ~ '/' if i == 0 else '/' ~ currentLang.code ~ '/page/' ~ pageIndex ~ '/' %}
           {% endif %}
 
+          {% if i == pageNum %}
+            {# Active Page #}
+            <span aria-current="page" class="inline-flex items-center justify-center min-w-[36px] h-9 px-2.5 rounded-xl bg-[#d6b278] text-[#1c1a17] text-xs font-semibold shadow-sm">
+              {{ pageIndex }}
+            </span>
+          {% else %}
+            {# Inactive Page Link #}
+            <a href="{{ pageUrl }}#summaries" class="inline-flex items-center justify-center min-w-[36px] h-9 px-2.5 rounded-xl bg-[#24211e] hover:bg-[#2d2a26] border border-[#332e29] hover:border-[#d6b278]/40 text-xs font-medium text-[#b3a898] hover:text-[#ede8df] transition-colors">
+              {{ pageIndex }}
+            </a>
+          {% endif %}
         {% endfor %}
-
       </div>
 
-      <!-- Next Page -->
-      <div class="flex justify-end min-w-0">
+      {# Next Page Button #}
+      <div>
         {% if pageNum < totalPages - 1 %}
           {% if currentLang.code == 'en' %}
             {% set nextUrl = '/page/' ~ (pageNum + 2) ~ '/' %}
           {% else %}
             {% set nextUrl = '/' ~ currentLang.code ~ '/page/' ~ (pageNum + 2) ~ '/' %}
           {% endif %}
-
-          <a
-            href="{{ nextUrl }}#summaries"
-            aria-label="Next page"
-            class="inline-flex items-center justify-center px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278] hover:text-[#d6b278] transition-colors whitespace-nowrap"
-          >
-            <span class="hidden sm:inline">Next →</span>
-            <span class="sm:hidden">Next →</span>
+          <a href="{{ nextUrl }}#summaries" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-medium bg-[#24211e] text-[#ede8df] border border-[#332e29] hover:border-[#d6b278]/40 transition-colors">
+            Next &rarr;
           </a>
+        {% else %}
+          <span class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-medium bg-[#1c1a17]/50 text-[#b3a898]/30 border border-[#332e29]/40 cursor-not-allowed">
+            Next &rarr;
+          </span>
         {% endif %}
       </div>
 
-    </div>
-
-    <!-- Page Counter -->
-    <p class="mt-4 text-center text-xs text-[#b3a898]/70 font-light">
-      Page {{ pageNum + 1 }} of {{ totalPages }}
-    </p>
-
-  </nav>
-{% endif %}
+    </nav>
+  {% endif %}
 </main>
 
 <!-- SECTION: OUR PURPOSE -->
