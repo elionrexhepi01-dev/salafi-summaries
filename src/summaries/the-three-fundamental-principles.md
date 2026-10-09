@@ -4,7 +4,7 @@ title: "The Three Fundamental Principles"
 author: "Shaykh Muhammad Ibn Abdul Wahhab"
 lang: "en"
 dateAdded: 2026-10-09
-description: "A foundational treatise on Tawhid, the three fundamental questions, and the essentials of Islam."
+description: "A foundational treatise on Tawhid, the three fundamental questions, and Islam."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->

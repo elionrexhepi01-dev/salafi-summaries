@@ -4,7 +4,7 @@ title: "The Book of Monotheism"
 author: "Shaykh Muhammad Ibn Abdul Wahhab"
 lang: "en"
 dateAdded: 2026-10-09
-description: "A foundational treatise on At-Tauhid, the fear of Shirk, and the prohibition of polytheistic acts."
+description: "A foundational treatise on Tawhid, fearing Shirk, and avoiding polytheism."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
@@ -296,13 +296,11 @@ description: "A foundational treatise on At-Tauhid, the fear of Shirk, and the p
               To vow to other than Allah is an act of Shirk
             </p>
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
             <p class="text-lg leading-relaxed sm:text-xl text-[#ECE8EF]">
               To seek Refuge in other than Allah is a part of Shirk
             </p>
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
             <p class="text-lg leading-relaxed sm:text-xl text-[#ECE8EF]">
               To seek help in other than Allah (Istighatha) or to invoke other than Him is an act of Shirk

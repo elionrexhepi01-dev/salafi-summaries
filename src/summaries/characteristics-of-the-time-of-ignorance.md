@@ -4,7 +4,7 @@ title: "Characteristics Of The Time Of Ignorance"
 author: "Shaykh Muhammad Ibn Abdul Wahhab"
 lang: "en"
 dateAdded: 2026-10-09
-description: "A summary of the traits and characteristics prevalent among the people of the Time of Ignorance (Jahiliyyah)."
+description: "An overview of the traits and characteristics of Jahiliyyah."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->

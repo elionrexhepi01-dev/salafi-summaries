@@ -4,7 +4,7 @@ title: "The Four Principles"
 author: "Shaykh Muhammad Ibn Abdul Wahhab"
 lang: "en"
 dateAdded: 2026-10-09
-description: "A foundational treatise outlining the four core principles regarding Monotheism (Tawhid) and Polytheism (Shirk)."
+description: "A foundational treatise on the four principles of Tawhid and Shirk."
 ---
 
 <!-- Custom CSS for Scroll-Reveal & Page Animations -->
