@@ -3,7 +3,7 @@ layout: base.njk
 title: "The Three Fundamental Principles"
 author: "Shaykh Muhammad Ibn Abdul Wahhab"
 lang: "en"
-dateAdded: 2026-10-07
+dateAdded: 2026-10-09
 description: "A foundational treatise on Tawhid, the three fundamental questions, and the essentials of Islam."
 ---
 
@@ -93,7 +93,7 @@ description: "A foundational treatise on Tawhid, the three fundamental questions
 
         <div class="bg-[#1c1a18] border-l-2 border-[#d6b278] p-5 sm:p-6 rounded-r-lg">
           <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
-            “Chapter: Knowledge comes before speech and action.”
+            “Chapter: <span class="text-[#d6b278]">Knowledge</span> comes before speech and action.”
           </p>
         </div>
 
@@ -200,59 +200,59 @@ description: "A foundational treatise on Tawhid, the three fundamental questions
 
         <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Supplication</span>
+            <span class="text-[#d6b278]">Supplication</span><br>
             (Du’aa)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Fear</span>
+            <span class="text-[#d6b278]">Fear</span><br>
             (Khawf)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Hope</span>
+            <span class="text-[#d6b278]">Hope</span><br>
             (Rajaa)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Reliance</span>
+            <span class="text-[#d6b278]">Reliance</span><br>
             (Tawakkul)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Longing</span>
+            <span class="text-[#d6b278]">Longing</span><br>
             (Raghbah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Dreading</span>
+            <span class="text-[#d6b278]">Dreading</span><br>
             (Rahbah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Submissiveness</span>
+            <span class="text-[#d6b278]">Submissiveness</span><br>
             (Khushoo’)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Awe</span>
+            <span class="text-[#d6b278]">Awe</span><br>
             (Khashyah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Repentance</span>
+            <span class="text-[#d6b278]">Repentance</span><br>
             (Inaabah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Seeking Assistance</span>
+            <span class="text-[#d6b278]">Seeking Assistance</span><br>
             (Isti’aanah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Seeking Refuge</span>
+            <span class="text-[#d6b278]">Seeking Refuge</span><br>
             (Isti’aadhah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Asking for Help</span>
+            <span class="text-[#d6b278]">Asking for Help</span><br>
             (Istighaathah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Offering Sacrifices</span>
+            <span class="text-[#d6b278]">Offering Sacrifices</span><br>
             (Dhabah)
           </div>
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
-            <span class="text-[#d6b278]">Making Oaths</span>
+            <span class="text-[#d6b278]">Making Oaths</span><br>
             (Nadhar)
           </div>
         </div>
@@ -419,7 +419,7 @@ description: "A foundational treatise on Tawhid, the three fundamental questions
     <!-- Closing -->
     <section class="space-y-6 reveal-on-scroll border-t border-[#24211e] pt-10">
 
-      <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF]">
+      <p class="text-lg sm:text-xl leading-relaxed text-[#ECE8EF] text-center">
         And Allaah knows best. May Allaah send His peace and blessings on Muhammad, his
         family and his Companions.
       </p>
