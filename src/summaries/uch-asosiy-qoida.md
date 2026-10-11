@@ -193,67 +193,54 @@ description: "Tavhid, uch asosiy savol va Islom haqida asosiy risola."
             <span class="text-[#d6b278]">Duo qilish</span><br>
             (Du’o)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Qo‘rqish</span><br>
             (Xavf)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Umid qilish</span><br>
             (Rajo)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Tavakkul qilish</span><br>
             (Tavakkul)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Rag‘bat va istak</span><br>
             (Rag‘ba)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Qo‘rquv bilan tiyilish</span><br>
             (Rahba)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Xushu’</span><br>
             (Xushu’)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Allohdan hayiqish</span><br>
             (Xashya)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Allohga qaytish</span><br>
             (Inoba)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Yordam so‘rash</span><br>
             (Isti’ona)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Panoh so‘rash</span><br>
             (Isti’oza)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Madad so‘rash</span><br>
             (Istig‘osa)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Qurbonlik qilish</span><br>
             (Zabh)
           </div>
-
           <div class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]">
             <span class="text-[#d6b278]">Nazr qilish</span><br>
             (Nazr)
@@ -386,7 +373,6 @@ description: "Tavhid, uch asosiy savol va Islom haqida asosiy risola."
             U zot ummatlarini yo‘llagan yaxshilik — <span class="text-white">Tavhid</span> va Alloh yaxshi ko‘radigan hamda rozi bo‘ladigan barcha narsalardir.
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
             U zot ummatlarini ogohlantirgan yomonlik — <span class="text-white">Shirk</span> va Alloh yomon ko‘radigan hamda rad etadigan barcha narsalardir.

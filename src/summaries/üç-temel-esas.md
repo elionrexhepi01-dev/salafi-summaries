@@ -371,7 +371,6 @@ description: "Tevhid, üç temel soru ve İslam hakkında temel bir risale."
             Ümmetini yönlendirdiği hayır şuydu: <span class="text-white">Tevhid</span> ve Allah'ın sevdiği ve razı olduğu her şey.
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
             Ümmetini sakındırdığı şer ise şuydu: <span class="text-white">Şirk</span> ve Allah'ın sevmediği ve reddettiği her şey.

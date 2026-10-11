@@ -371,7 +371,6 @@ description: "Um tratado fundamental sobre o Tawhid, as três questões fundamen
             O bem para o qual ele orientava a sua Ummah era: <span class="text-white">Tawhid</span> e tudo aquilo que Allah ama e com que Se agrada.
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
             O mal contra o qual advertia a sua Ummah era: <span class="text-white">Shirk</span> e tudo aquilo que Allah detesta e rejeita.

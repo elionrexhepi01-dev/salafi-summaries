@@ -372,7 +372,6 @@ description: "Un traité fondamental sur le Tawhid, les trois questions fondamen
             Le bien vers lequel il a guidé sa communauté est le <span class="text-white">Tawhid</span>, ainsi que tout ce qu’Allah aime et agrée.
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
             Le mal contre lequel il a mis sa communauté en garde est le <span class="text-white">Shirk</span>, ainsi que tout ce qu’Allah déteste et rejette.

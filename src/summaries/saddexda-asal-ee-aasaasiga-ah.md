@@ -218,35 +218,30 @@ description: "Qoraal aasaasi ah oo ku saabsan Tawxiidka, saddexda su'aalood ee a
             <span class="text-[#d6b278]">Ducada</span><br />
             (Du'aa)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Cabsida</span><br />
             (Khawf)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Rajada</span><br />
             (Rajaa)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Tawakkulka</span><br />
             (Tawakkul)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Rabitaanka</span><br />
             (Raghbah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
@@ -254,56 +249,48 @@ description: "Qoraal aasaasi ah oo ku saabsan Tawxiidka, saddexda su'aalood ee a
             ><br />
             (Rahbah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Khushuuca</span><br />
             (Khushoo')
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Alle-ka-cabsiga</span><br />
             (Khashyah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">U noqoshada Allaah</span><br />
             (Inaabah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Caawimaad dalbashada</span><br />
             (Isti'aanah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Magangelyo dalbashada</span><br />
             (Isti'aadhah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Gargaarka dalbashada</span><br />
             (Istighaathah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >
             <span class="text-[#d6b278]">Gowracidda xoolaha</span><br />
             (Dhabah)
           </div>
-
           <div
             class="bg-[#24211e] border border-[#332f2b] p-4 rounded-lg text-center text-base text-[#ECE8EF]"
           >

@@ -371,7 +371,6 @@ description: "Risalah mendasar tentang Tauhid, tiga pertanyaan pokok, dan Islam.
             Kebaikan yang beliau tunjukkan kepada umatnya adalah: <span class="text-white">Tauhid</span> dan segala sesuatu yang dicintai dan diridai Allah.
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
             Keburukan yang beliau peringatkan kepada umatnya adalah: <span class="text-white">Syirik</span> dan segala sesuatu yang dibenci dan ditolak oleh Allah.

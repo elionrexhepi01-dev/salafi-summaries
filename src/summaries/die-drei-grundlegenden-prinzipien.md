@@ -371,7 +371,6 @@ description: "Eine grundlegende Abhandlung über Tauhid, die drei grundlegenden 
             Das Gute, zu dem er seine Ummah aufrief, war: <span class="text-white">Tauhid</span> und alles, was Allah liebt und womit Er zufrieden ist.
           </p>
         </div>
-
         <div class="bg-[#24211e] border border-[#332f2b] p-6 rounded-lg">
           <p class="text-lg leading-relaxed sm:text-xl">
             Das Schlechte, vor dem er seine Ummah warnte, war: <span class="text-white">Schirk</span> und alles, was Allah verabscheut und zurückweist.
